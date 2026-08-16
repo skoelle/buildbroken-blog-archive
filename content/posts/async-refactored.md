@@ -1,5 +1,5 @@
 ---
-title: "Asynchrone Kommunikation mit dem Async-Pattern (Refactored)"
+title: "Async-Pattern (Refactored)"
 date: 2010-05-06
 slug: async-refactored
 original_url: "https://aztec-project.org/blog/async-refactored.html"
@@ -144,7 +144,7 @@ return number \* number;
 
 ## Kommentare (Archiv)
 
-1. <img src="/images/async-refactored/3e7b6cb163ea9cc8549abcb8b5a03e2e.jpeg" width="32" height="32" class="avatar avatar-32 photo"/> **[Ralf Westphal](http://ralfw.blogspot.com/)**
+1. <img src="/images/async-refactored/3e7b6cb163ea9cc8549abcb8b5a03e2e.jpeg" width="32" height="32" class="avatar avatar-32 photo" alt="Avatar"/> **[Ralf Westphal](http://ralfw.blogspot.com/)**
 
    [Mai 6, 2010 um 3:02 pm](/posts/async-refactored/)
 

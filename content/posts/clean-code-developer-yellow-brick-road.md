@@ -1,5 +1,5 @@
 ---
-title: "Clean Code Developer – The Yellow Brick Road of the Coder"
+title: "Clean Code Developer – The Yellow Brick Road"
 date: 2009-07-14
 slug: clean-code-developer-yellow-brick-road
 original_url: "https://aztec-project.org/blog/clean-code-developer-yellow-brick-road.html"

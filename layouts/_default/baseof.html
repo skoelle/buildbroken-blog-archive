@@ -2,11 +2,56 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   {{- $title := cond .IsHome .Site.Title .Title }}
+  {{- if and .IsNode (ne .Kind "home") }}
+    {{- if eq .Kind "term" }}{{ $title = printf "%s (%s)" .Title (cond (eq .Data.Singular "tag") "Tag" "Kategorie") }}{{ end }}
+  {{- end }}
+  <title>{{ if .IsHome }}{{ $title }}{{ else }}{{ $title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   {{- $desc := "" }}
-  {{- if .IsHome }}{{ $desc = .Site.Params.description }}{{ else }}{{ $desc = .Description }}{{ end }}
+  {{- if .IsHome }}
+    {{- $desc = .Site.Params.description }}
+  {{- else if .IsNode }}
+    {{- if eq .Kind "term" }}
+      {{- if eq .Data.Singular "tag" }}
+        {{- $desc = printf "Alle Beiträge mit dem Tag „%s“ im build broken Blog (2009–2010)." .Title }}
+      {{- else if eq .Data.Singular "category" }}
+        {{- $desc = printf "Alle Beiträge in der Kategorie „%s“ im build broken Blog (2009–2010)." .Title }}
+      {{- else if eq .Data.Singular "author" }}
+        {{- $desc = printf "Alle Beiträge von %s im build broken Blog (2009–2010)." .Title }}
+      {{- else }}
+        {{- $desc = printf "Alle Beiträge zu %s im build broken Blog (2009–2010)." .Title }}
+      {{- end }}
+    {{- else if eq .Kind "section" }}
+      {{- if eq .Section "posts" }}
+        {{- $desc = "Alle Blogartikel des build broken Archivs (2009–2010): Clean Code, ASP.NET, MVC, MVP, WinForms, StupidDB, NoSQL, Scrum." }}
+      {{- else if eq .Section "tags" }}
+        {{- $desc = "Alle Schlagwörter (Tags) des build broken Blog-Archivs (2009–2010)." }}
+      {{- else if eq .Section "categories" }}
+        {{- $desc = "Alle Kategorien des build broken Blog-Archivs (2009–2010)." }}
+      {{- else if eq .Section "author" }}
+        {{- $desc = "Alle Autoren des build broken Blog-Archivs (2009–2010)." }}
+      {{- else }}
+        {{- $desc = printf "Übersicht %s im build broken Blog (2009–2010)." (lower .Title) }}
+      {{- end }}
+    {{- else if eq .Kind "taxonomy" }}
+      {{- if or (eq .Data.Plural "tags") (eq .Title "Tags") }}
+        {{- $desc = "Alle Schlagwörter (Tags) des build broken Blog-Archivs (2009–2010)." }}
+      {{- else if or (eq .Data.Plural "categories") (eq .Title "Categories") }}
+        {{- $desc = "Alle Kategorien des build broken Blog-Archivs (2009–2010)." }}
+      {{- else if or (eq .Data.Plural "authors") (eq .Data.Singular "author") }}
+        {{- $desc = "Alle Autoren des build broken Blog-Archivs (2009–2010)." }}
+      {{- else }}
+        {{- $desc = printf "Übersicht %s im build broken Blog (2009–2010)." (lower .Title) }}
+      {{- end }}
+    {{- else }}
+      {{- $desc = printf "Übersicht %s im build broken Blog (2009–2010)." (lower .Title) }}
+    {{- end }}
+  {{- else if eq .Kind "404" }}
+    {{- $desc = "Die angeforderte Seite wurde nicht gefunden – build broken Blog-Archiv (2009–2010)." }}
+  {{- else }}
+    {{- $desc = .Description }}
+  {{- end }}
   {{- if not $desc }}{{ $desc = .Summary | plainify }}{{ end }}
   {{- $desc = strings.TrimSpace (strings.TrimRight "…" $desc) | truncate 160 }}
   {{- if $desc }}<meta name="description" content="{{ $desc }}">{{ end }}

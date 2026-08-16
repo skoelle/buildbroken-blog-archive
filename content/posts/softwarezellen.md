@@ -1,5 +1,5 @@
 ---
-title: "Softwarezellen – eine Lösung um die Komplexität zu beherrschen"
+title: "Softwarezellen – die Komplexität beherrschen"
 date: 2010-01-27
 slug: softwarezellen
 original_url: "https://aztec-project.org/blog/softwarezellen.html"

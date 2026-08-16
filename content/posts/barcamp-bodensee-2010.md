@@ -33,7 +33,7 @@ Es gab noch viele weitere gute Sessions, das Wetter hat gestern gut mitgespielt 
 
 Die [love coaches von be2](http://www.be2.de/blog/) waren auch wieder dabei und [verlosen heute eine faltbare Sitzcouch](http://www.be2.de/blog/barcamp/), die Flexible Love Bank von myfab.
 
-[<img src="/images/barcamp-bodensee-2010/IMG_0247-300x225.jpg" title="be2 Verlosung" width="300" height="225" class="alignnone size-medium wp-image-1056"/>](/images/barcamp-bodensee-2010/IMG_0247.jpg)
+[<img src="/images/barcamp-bodensee-2010/IMG_0247-300x225.jpg" title="be2 Verlosung" width="300" height="225" class="alignnone size-medium wp-image-1056" alt="be2 Verlosung"/>](/images/barcamp-bodensee-2010/IMG_0247.jpg)
 
 ## Kommentare (Archiv)
 

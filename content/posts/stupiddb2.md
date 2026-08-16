@@ -92,7 +92,7 @@ Verwendet ihr schon NoSQL?
 
    die DLL und der Sourcecode kann nun als ZIP direkt runtergeladen werden:
 
-   [http://www.aztec-project.org](http://www.aztec-project.org/)
+   [/](/)
 
    Gruss  
    Stefan

@@ -1,5 +1,5 @@
 ---
-title: "Asynchrone Kommunikation mit dem Async-Pattern"
+title: "Kommunikation mit dem Async-Pattern"
 date: 2010-05-05
 slug: async
 original_url: "https://aztec-project.org/blog/aync.html"
@@ -22,7 +22,7 @@ Im Gegensatz zur synchronen Kommunikation handelt es sich bei der asynchronen Ko
 
 Asynchrone Kommunikation bietet sich in unterschiedlichsten Situationen an. So ist es z.B. sinnvoll, dass eine WinForms-Anwendung asynchron mit einem Webservice kommuniziert, da der Haupt-Thread der WinForm-Anwendung sonst so lange blockiert wäre, bis der Webservice die Antwort auf die Anfrage liefert. Die Folge wäre, dass im Titel der Anwendung stehen würde, dass die Anwendung nicht antwortet (s. Abbildung 1). Viele Benutzer denken dass es sich bei dieser Meldung um einen Fehler im Programm handelt und beenden das Programm fix über den Task-Manager. Dabei lag es nur an der etwas länger dauernden Kommunikation zwischen der WinForm-Anwendung und dem Webservice.
 
-[<img src="/images/async/keineRueckmeldung.png" title="keineRueckmeldung" width="308" height="53" class="aligncenter size-full wp-image-973"/>](/images/async/keineRueckmeldung.png) Abbildung 1
+[<img src="/images/async/keineRueckmeldung.png" title="keineRueckmeldung" width="308" height="53" class="aligncenter size-full wp-image-973" alt="keineRueckmeldung"/>](/images/async/keineRueckmeldung.png) Abbildung 1
 
 Ein weiterer Grund für eine asynchrone Kommunikation wäre, wenn eine Anwendung nur Nachrichten verschicken möchte und es im Grunde keine Rolle spielt, ob diese Nachricht korrekt verarbeitet wurde. Vorstellbar wäre hier Loggen von Aktionen. Mir wäre es jetzt egal, ob die Nachricht korrekt gespeichert wurde oder nicht. Ich will nur nicht, dass meine Anwendung, nur weil Daten geloggt werden müssen, langsamer wird. Es handelt sich ja bei den Log-Daten nicht um Informationen die für die Abarbeitung notwendig sind.
 
@@ -36,7 +36,7 @@ Nun aber genug geredet, jetzt wird programmiert. Für das Beispiel habe ich mich
 
 Die Abbildung 2 zeigt die UI der Anwendung. Bei dem Drücken des „Run“-Buttons, soll die eingegebene Zahl asynchron quadriert werden und im Anschluss in das Feld „Ergebnis“ ausgegeben werden.
 
-[<img src="/images/async/Form1.png" title="Form1" width="300" height="200" class="aligncenter size-full wp-image-980"/>](/images/async/Form1.png)Abbildung 2
+[<img src="/images/async/Form1.png" title="Form1" width="300" height="200" class="aligncenter size-full wp-image-980" alt="Form1"/>](/images/async/Form1.png)Abbildung 2
 
 Der Code hinter der UI sieht folgendermaßen aus. Beim instanziieren des Forms, wird eine Instanz des Calculators erstellt und ein Delegate auf das „CalcCompleted“-Event registriert. Dieses Event wird aufgerufen sobald der Calculator mit der Berechnung fertig ist.
 
@@ -185,7 +185,7 @@ Sobald die Berechnung abgeschlossen ist, wird der Thread mit dem MainThread übe
 
 ## Kommentare (Archiv)
 
-1. <img src="/images/async/3e7b6cb163ea9cc8549abcb8b5a03e2e.jpeg" width="32" height="32" class="avatar avatar-32 photo"/> **[Ralf Westphal](http://ralfw.blogspot.com/)**
+1. <img src="/images/async/3e7b6cb163ea9cc8549abcb8b5a03e2e.jpeg" width="32" height="32" class="avatar avatar-32 photo" alt="Avatar"/> **[Ralf Westphal](http://ralfw.blogspot.com/)**
 
    [Mai 6, 2010 um 10:34 am](/posts/async/)
 

@@ -24,7 +24,7 @@ Was haltet ihr von Coding bei der Einstellung? Ist das auch in Europa üblich? W
 
 ## Kommentare (Archiv)
 
-1. <img src="/images/programmierer/3e7b6cb163ea9cc8549abcb8b5a03e2e.jpeg" width="32" height="32" class="avatar avatar-32 photo"/> **[Ralf Westphal](http://ralfw.blogspot.com/)**
+1. <img src="/images/programmierer/3e7b6cb163ea9cc8549abcb8b5a03e2e.jpeg" width="32" height="32" class="avatar avatar-32 photo" alt="Avatar"/> **[Ralf Westphal](http://ralfw.blogspot.com/)**
 
    [März 14, 2010 um 1:09 pm](/posts/programmierer/)
 

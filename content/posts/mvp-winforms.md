@@ -14,7 +14,7 @@ Im Teil 1 ([MVP mit WinForms](/posts/mvp-winforms/)) habe ich die Grundgedanken 
 **Das Beispielprojekt**  
 Zur Demonstration habe ich ein Beispielprogramm mit MVP entwickelt, welches einen sehr einfachen Twitterclient darstellt. Das Beispiel wurde nach Contract-First komponentenorientiert gebaut und besteht neben der MVP-Komponente aus weiteren Komponenten.
 
-[<img src="/images/mvp-winforms/Foto1.jpg" title="TwitterClient Architektur" width="200" height="159" class="alignnone size-full wp-image-900"/>](/images/mvp-winforms/Foto1.jpg)
+[<img src="/images/mvp-winforms/Foto1.jpg" title="TwitterClient Architektur" width="200" height="159" class="alignnone size-full wp-image-900" alt="TwitterClient Architektur"/>](/images/mvp-winforms/Foto1.jpg)
 
 Die weiteren Komponenten haben nichts mit MVP zu tun, sondern sollen nur zeigen, wie man MVP in diesem Umfeld integriert. -> [Den kompletten Sourcecode downloaden](/assets/TwitterClient.zip)
 
@@ -30,7 +30,7 @@ Um die Funktionen abzubilden, sind 3 Screens notwendig:
 2. Form für das Absenden eines Twitter-Status-Updates  
 3. Konfigurationsbildschirm für den Twitter-Account
 
-[<img src="/images/mvp-winforms/Foto2-300x143.jpg" title="TwitterClient UI" width="300" height="143" class="alignnone size-medium wp-image-901"/>](/images/mvp-winforms/Foto2.jpg)
+[<img src="/images/mvp-winforms/Foto2-300x143.jpg" title="TwitterClient UI" width="300" height="143" class="alignnone size-medium wp-image-901" alt="TwitterClient UI"/>](/images/mvp-winforms/Foto2.jpg)
 
 Jedes WinForm besteht aus einer View-Klasse (dem WinForm), einem Model, welches als Singleton im IoC-Container konfiguriert wird und einem Presenter. Die einzelnen Funktionen in den Views sind im Beispielprojekt durch Tests abgedeckt und zeigen die notwendigen Tests für diese Art der Implementierung. Gerade durch geringen Funktionsumfang kann man das Muster der Verwendung gut erkennen.
 

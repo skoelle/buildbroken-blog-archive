@@ -1,5 +1,5 @@
 ---
-title: "ASP.MVC 2 – Vortrag von Albert bei münchener UserGroup"
+title: "ASP.MVC 2 – Vortrag bei münchener UserGroup"
 date: 2009-10-30
 slug: asp-mvc-2
 original_url: "https://aztec-project.org/blog/asp-mvc-2.html"

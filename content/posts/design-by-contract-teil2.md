@@ -1,5 +1,5 @@
 ---
-title: "Design by Contract – jetzt auch mit C# – Teil 2"
+title: "Design by Contract – Teil 2"
 date: 2009-11-05
 slug: design-by-contract-teil2
 original_url: "https://aztec-project.org/blog/design-by-contract-teil2.html"

@@ -1,5 +1,5 @@
 ---
-title: "Gibt es negative Energien in der deutschen ALT.NET Bewegung?"
+title: "Negative Energien in der ALT.NET Bewegung?"
 date: 2009-08-26
 slug: alt-net-energien
 original_url: "https://aztec-project.org/blog/alt-net-energien.html"
