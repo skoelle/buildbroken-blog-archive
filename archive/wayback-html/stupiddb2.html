@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0104)https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" class=" pvhtqwk idc0_350"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./stupiddb2_files/athena.js.Download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app215.us.archive.org';v.server_ms=601;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./stupiddb2_files/bundle-playback.js.Download" charset="utf-8"></script>
+<script type="text/javascript" src="./stupiddb2_files/wombat.js.Download" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="./stupiddb2_files/ruffle.js.Download"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/","20210419190605","https://web.archive.org/","web","/_static/",
+	      "1618859165");
+</script>
+<link rel="stylesheet" type="text/css" href="./stupiddb2_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./stupiddb2_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+
+<title>build broken » NoSQL mit StupidDB</title>
+<meta name="generator" content="WordPress 5.3.1">
+<meta name="theme" content="Mandigo 1.41">
+<link rel="stylesheet" href="./stupiddb2_files/style.css" type="text/css" media="screen">
+<style type="text/css">
+
+body {
+	font-family: Arial, Sans-Serif;
+	background-color: #44484F;
+}
+
+a {
+	font-weight: bold;
+}
+
+.narrowcolumn .entry, .widecolumn .entry {
+	line-height: 1.4em;
+}
+
+.inline-widgets #wp-calendar caption, .blogname, .blogdesc {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.blogname {
+	font-size: 4em;
+	margin-top: 15px;
+}
+
+.posttitle, #comments, #respond .title, #respond.pre27, #trackbacks {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.commentlist li, #commentform input, #commentform textarea {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+#commentform p {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.sidebars {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+
+#page {
+	width: 987px;
+}
+
+#header {
+	background: url(https://web.archive.org/web/20210419190605im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/header-1024.png);
+	height: 243px;
+	width: 987px;
+}
+
+#headerimg {
+	height: 226px;
+	width: 961px;
+	background: url(https://web.archive.org/web/20210419190605im_/http://blog.aztec-project.org/wp-content/themes/mandigo/schemes/orange/images/head-1024.jpg) bottom center no-repeat;
+}
+
+#main {
+	background: url(https://web.archive.org/web/20210419190605im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/bg-1024.png);
+	width: 957px;
+}
+
+#footer {
+	background: url(https://web.archive.org/web/20210419190605im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/foot-1024.png);
+}
+
+.post {
+	text-align: justify;
+	background: #FAFAFA; 
+	border: 1px solid #EEEEEE; 
+}
+
+
+#footer {
+	width: 987px;
+}
+
+
+.sidebars {
+	background: #EEEEEE;
+	border: 1px solid #DDDDDD;
+}
+
+#sidebar1 .sidebars {
+	width: 210px;
+}
+
+#sidebar2 .sidebars {
+	width: 210px;
+}
+
+
+.entry img {
+	float: none;
+}
+
+.sidebars li {
+	list-style-image: url(https://web.archive.org/web/20210419190605im_/http://blog.aztec-project.org/wp-content/themes/mandigo/schemes/orange/images/star.gif);
+}
+
+.commentlist {
+}
+
+.commentlist li {
+	list-style: none;
+}
+
+#wp-calendar {
+	margin: 0 !important; margin-top: -1.5em;
+}
+
+#wp-calendar caption {
+	margin-top: -1.4em;
+}
+
+/* dirty fix for the event calendar plugin */
+div#wp-calendar .nav {
+	margin: 0;
+}
+/* end dirty fix */
+
+.datestamp div {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Sans-Serif;
+}
+
+.cal3 {
+}
+
+.pages {
+	text-align: right;
+}
+
+.pages ul li.has_sub {
+	background: url(https://web.archive.org/web/20210419190605im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/icons/bullet_arrow_right.png) no-repeat center right;
+}
+
+.head_overlay {
+	background: url(https://web.archive.org/web/20210419190605im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/head_overlay.png);
+}
+
+
+
+
+<br />
+<b>Warning</b>:  Use of undefined constant WPLANG - assumed 'WPLANG' (this will throw an Error in a future version of PHP) in <b>/homepages/24/d13434269/htdocs/clickandbuilds/buildbroken/wp-content/themes/mandigo/style.css.php</b> on line <b>384</b><br />
+</style>
+<link rel="stylesheet" href="./stupiddb2_files/scheme.css" type="text/css" media="screen">
+<link rel="alternate" type="application/rss+xml" title="build broken RSS Feed" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/feed/">
+<link rel="pingback" href="https://blog.aztec-project.org/xmlrpc.php">
+<link rel="dns-prefetch" href="https://web.archive.org/web/20210419190605/https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://web.archive.org/web/20210419190605/https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="build broken » NoSQL mit StupidDB Comments Feed" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/feed/">
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/web.archive.org\/web\/20210419190605\/https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/web.archive.org\/web\/20210419190605\/https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/web.archive.org\/web\/20210419190605\/http:\/\/blog.aztec-project.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./stupiddb2_files/wp-emoji-release.min.js.Download" type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="./stupiddb2_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./stupiddb2_files/jetpack.css" type="text/css" media="all">
+<link rel="https://api.w.org/" href="https://blog.aztec-project.org/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.aztec-project.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.aztec-project.org/wp-includes/wlwmanifest.xml">
+<link rel="prev" title="Beispiel Model-View-Presenter mit WinForms" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/">
+<link rel="next" title="(Spreu + Weizen).Select(Programmierer)" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/03/14/spreu-weizen-selectprogrammierer/">
+<meta name="generator" content="WordPress 5.3.1">
+<link rel="canonical" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/">
+<link rel="shortlink" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/?p=916">
+<link rel="alternate" type="application/json+oembed" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.aztec-project.org%2F2010%2F02%2F22%2Fnosql-mit-stupiddb%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.aztec-project.org%2F2010%2F02%2F22%2Fnosql-mit-stupiddb%2F&amp;format=xml">
+<style type="text/css">img#wpstats{display:none}</style>
+<script type="text/javascript" src="./stupiddb2_files/jquery.js.Download"></script>
+<script type="text/javascript" src="./stupiddb2_files/jquery.ifixpng.js.Download"></script>
+<script type="text/javascript">jQuery.noConflict();</script>
+<style type="text/css">
+  .entry img, .entry embed, .entry object { max-width: 880px; width: expression(this.clientWidth > 880 ? 880 : true); }
+  .entry img { height: auto; }</style>
+<meta property="fb:admins" content="1109299946">
+<meta property="fb:app_id" content="134622216554391"></head>
+<body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;"><template shadowrootmode="closed"><div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20210419190605/https%3A//blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="https://web.archive.org/web/" title="Wayback Machine home page"><img src="https://web.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0"></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="https://web.archive.org/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/" onfocus="this.focus();this.select();" style="flex:1;" autocomplete="off"><input type="hidden" name="type" value="replay"><input type="hidden" name="date" value="20210419190605"><input type="submit" value="Go">
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+                <div class="s" id="wm-nav-captures" style="flex:1;"><a class="t" href="https://web.archive.org/web/*/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/" title="See a list of every capture for this URL">19 captures</a><div class="r" title="Timespan for captures of this URL">25 Feb 2010 - 19 Apr 2021</div></div>
+        <div class="k">
+          <a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/" id="wm-graph-anchor">
+            <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+              <canvas id="wm-sparkline-canvas" width="750" height="27" border="0"></canvas>
+            <div class="yt" style="display: none; width: 25px; height: 27px;"></div><div class="mt" style="display: none; width: 2px; height: 27px;"></div></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+        <tbody>
+          <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+          <tr class="m">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20210117155704/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/" title="17 Jan 2021"><strong>Jan</strong></a></td>
+            <td class="c" id="displayMonthEl" title="You are here: 19:06:05 Apr 19, 2021">APR</td>
+            <td class="f" nowrap="nowrap">May</td>
+          </tr>
+          <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+          <tr class="d">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20210117155704/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/" title="15:57:04 Jan 17, 2021"><img src="https://web.archive.org/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0"></a></td>
+            <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 19:06:05 Apr 19, 2021">19</td>
+            <td class="f" nowrap="nowrap"><img src="https://web.archive.org/_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"></td>
+          </tr>
+          <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+          <tr class="y">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20161013221921/http://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/" title="13 Oct 2016"><strong>2016</strong></a></td>
+            <td class="c" id="displayYearEl" title="You are here: 19:06:05 Apr 19, 2021">2021</td>
+            <td class="f" nowrap="nowrap">2022</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+                <span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#" title="Share via My Web Archive" style="display: inline-block;">
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in" style="display: none;">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        </span>
+                <a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+        <a id="wm-tb-close" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="https://web.archive.org/web/20210419190605/http://web.archive.org/screenshot/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/" id="wm-screenshot" title="screenshot" style="visibility: hidden;">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+        <a id="wm-share-facebook" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#" data-url="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+        <a id="wm-share-twitter" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#" data-url="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+        <a id="wm-expand" class="wm-btn wm-closed" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#expand"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+        <div id="wm-capinfo-notice" source="api"></div>
+                <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/commoncrawl)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/commoncrawl" target="_new"><span class="wm-title">Common Crawl</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Web crawl data from Common Crawl.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="https://web.archive.org/_static/images/loading.gif" alt="loading"></div>
+    </div>
+    </div>
+  </div></div></div><link rel="stylesheet" type="text/css" href="./stupiddb2_files/banner-styles.css"><link rel="stylesheet" type="text/css" href="./stupiddb2_files/iconochive.css"><div class="wb-autocomplete-suggestions "></div></template>
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(750,27,25,2,"web","https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/","20210419190605",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=3PDvdIFv"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ 
+<div id="page">
+<div id="header" class="png">
+<div id="headerimg">
+<h1 class="blogname" id="blogname"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/">build broken</a></h1><span class="blogname text-stroke-br">build broken</span><span class="blogname text-stroke-bl">build broken</span><span class="blogname text-stroke-tr">build broken</span><span class="blogname text-stroke-tl">build broken</span>
+<h6 class="blogdesc" id="blogdesc">but we can fix it! Sometimes :)</h6><span class="blogdesc text-stroke-br">but we can fix it! Sometimes :)</span><span class="blogdesc text-stroke-bl">but we can fix it! Sometimes :)</span><span class="blogdesc text-stroke-tr">but we can fix it! Sometimes :)</span><span class="blogdesc text-stroke-tl">but we can fix it! Sometimes :)</span>
+<ul class="pages png head_overlay">
+<li class="page_item"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/">Home</a></li>
+<li class="page_item page-item-2"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/about/">About</a></li>
+</ul>
+</div>
+</div>
+<div id="main" class="png">
+<table>
+<tbody><tr>
+<td id="content" class="widecolumn">
+<div class="navigation">
+<div class="alignleft">«&nbsp;<a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" rel="prev">Beispiel Model-View-Presenter mit WinForms</a></div>
+<div class="alignright"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/03/14/spreu-weizen-selectprogrammierer/" rel="next">(Spreu + Weizen).Select(Programmierer)</a>&nbsp;»</div>
+</div>
+<div class="post" id="post-916">
+<div class="postinfo">
+<div class="datestamp">
+<div>
+<span class="cal1 cal1x">Feb</span>
+<span class="cal2">22</span>
+<span class="cal3">2010</span>
+</div>
+</div>
+<span class="switch-post">
+<a href="javascript:toggleSidebars();" class="switch-sidebars"><img src="./stupiddb2_files/bullet_sidebars_hide.png" alt="" class="png"></a><a href="javascript:togglePost(916);" id="switch-post-916"><img src="./stupiddb2_files/bullet_toggle_minus.png" alt="" class="png"></a>
+</span>
+<h2 class="posttitle"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/" rel="bookmark" title="Permanent Link: NoSQL mit StupidDB">NoSQL mit StupidDB</a></h2>
+<small>
+Posted by <a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/author/sko/" title="Posts by Stefan Kölle">Stefan Kölle</a> in <a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/category/stupiddb/" rel="category tag">StupidDB</a>, tags: <a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/tag/datenbank/" rel="tag">Datenbank</a>, <a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/tag/nosql/" rel="tag">NoSQL</a>, <a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/tag/schemalos/" rel="tag">Schemalos</a> </small>
+</div>
+<div class="entry">
+<p>Seit ein paar Monaten wird der Begriff <a href="https://web.archive.org/web/20210419190605/https://www.computerworld.com/s/article/9135086/No_to_SQL_Anti_database_movement_gains_steam" target="_blank">NoSQL (Not only SQL)</a> immer häufiger verwendet. Wir sind mit unserer schemalosen Datenbank <a href="https://web.archive.org/web/20210419190605/https://sourceforge.net/projects/stupiddb/" target="_blank">StupidDB</a> vor eineinhalb Jahren bereits auf diesen Zug aufgesprungen und jetzt hat sie einen Überbegriff bekommen: auch StupidDB ist NoSQL!</p>
+<p>Auf dem <a href="https://web.archive.org/web/20210419190605/http://www.bcnue2.de/" target="_blank">BarCamp in Nürnberg</a> war NoSQL auch ein Thema und <a href="https://web.archive.org/web/20210419190605/https://twitter.com/jweiss" target="_blank">Jonathan Weiss</a> hat in seiner Session gut dargestellt, dass relationale Datenbanken nicht immer die Lösung für alle Probleme sind. NoSQL Datenbanken speichern meist dokumentenorientiert und sind dadurch nicht an ein festes Schema gebunden. Relationale Datenbanken haben ein fixes Schema und erlauben dynamische Abfragen der Daten, bei NoSQL ist dies umgekehrt. Weitere Informationen zu <a href="https://web.archive.org/web/20210419190605/https://en.wikipedia.org/wiki/NoSQL" target="_blank">NoSQL bei Wikipedia</a>.</p>
+<p>Im <a href="https://web.archive.org/web/20210419190605/http://www.dotnetpro.de/articles/onlinearticle3220.aspx" target="_blank">März Heft der dotnetpro</a> stelle ich ausführlich den Einsatz von StupidDB vor. Das Heft ist am 18.2.2010 erschienen und sollte jetzt in jedem gut sortierten Kiosk erhältlich sein.</p>
+<p>Für alle, die sich Heft nicht griffbereit haben, ich habe bereits Mitte letzten Jahres in einem Blogpost den <a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/" target="_blank">Einsatz von StupidDB</a> beschrieben. Hier sieht man zumindest die Grundzüge der StupidDB. Das aktuelle dotnetpro Heft lohnt sich jedoch trotzdem, da hier noch weitere Artikel zum Thema NoSQL zu finden sind. Unter anderem das <a href="https://web.archive.org/web/20210419190605/https://loungerepo.codeplex.com/" target="_blank">Lounge Repository</a> von <a href="https://web.archive.org/web/20210419190605/http://www.ralfw.de/default.html" target="_blank">Ralf Westphal</a> und auch CouchDB.</p>
+<p>Als neuester Vertreter in der NoSQL Bewegung gilt MongoDB. Eine Opensource Implementierung die nun auch Sourceforge einsetzt. Auch dafür gibt es schon <a href="https://web.archive.org/web/20210419190605/http://odetocode.com/Blogs/scott/archive/2009/10/13/experimenting-with-mongodb-from-c.aspx" target="_blank">Blogposts</a> und Tests mit .NET.</p>
+<p>Zudem hat <a href="https://web.archive.org/web/20210419190605/http://ayende.com/Blog/Default.aspx" target="_blank">Ayende Rahien</a> im Herbst letzten Jahres auch seine <a href="https://web.archive.org/web/20210419190605/http://odetocode.com/Blogs/scott/archive/2009/10/13/experimenting-with-mongodb-from-c.aspx" target="_blank">Rhino Divan DB</a> vorgestellt. Interessant klingt auch <a href="https://web.archive.org/web/20210419190605/http://blog.technewlogic.de/StaticContent/Pages/ObjectLounge_Main.aspx" target="_blank">Object Lounge</a>.</p>
+<p>Es scheint also ein Bedarf an alternativer Datenpersistenz zu bestehen, wird sich zeigen wohin dieses Jahr die Reise bei NoSQL geht.</p>
+<p>Wer sich den aktuellen Code einmal ansehen möchte, kann dies gerne unter folgendem Link ansehen:<br>
+<a href="https://web.archive.org/web/20210419190605/https://stupiddb.svn.sourceforge.net/svnroot/stupiddb/trunk" target="_blank">https://stupiddb.svn.sourceforge.net/svnroot/stupiddb/trunk</a></p>
+<p>Als DLL haben wir StupidDB auf <a href="https://web.archive.org/web/20210419190605/http://www.aztec-project.org/" target="_blank">www.aztec-project.org</a> bereitgestellt.</p>
+<p>Verwendet ihr schon NoSQL?</p>
+<p><a href="https://web.archive.org/web/20210419190605/http://dotnet-kicks.de/kick/?url=http%3a%2f%2fblog.aztec-project.org%2f2010%2f02%2f22%2fnosql-mit-stupiddb%2f"><img src="./stupiddb2_files/KickItImageGenerator.ashx" border="0" alt="kick it on dotnet-kicks.de"></a></p>
+<p class="postmetadata alt clear">
+<small>
+This entry was posted on Monday, February 22nd, 2010 at 9:31 am and is filed under <a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/category/stupiddb/" rel="category tag">StupidDB</a>. You can follow any responses to this entry through the <a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/feed/">RSS 2.0</a> feed. You can <a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#respond">leave a response</a>, or <a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/trackback/" rel="trackback">trackback</a> from your own site.
+</small>
+</p>
+</div>
+</div>
+<div id="comments">
+8 Responses to “NoSQL mit StupidDB”
+</div>
+<ol class="commentlist" id="commentlist">
+<li class="comment even thread-even depth-1 alt" id="comment-315">
+<div id="div-comment-315" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#"><img src="./stupiddb2_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb2_files/005d365c632be8a03279c1f8f8423027" srcset="https://web.archive.org/web/20210419190605im_/http://0.gravatar.com/avatar/005d365c632be8a03279c1f8f8423027?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn">Nils</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#comment-315">
+February 27, 2010 at 3:59 pm </a>
+</div>
+<div class="comment"><p>Und wo kann man sich diese schamlose – ah, schemalose Datenbank nun runterladen?</p></div>
+</div>
+</li>
+<li class="comment byuser comment-author-sko bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-316">
+<div id="div-comment-316" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#"><img src="./stupiddb2_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb2_files/dd231104fe0e1a7b87be55834a7c0c86.jpeg" srcset="https://web.archive.org/web/20210419190605im_/http://1.gravatar.com/avatar/dd231104fe0e1a7b87be55834a7c0c86?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn"><a href="https://web.archive.org/web/20210419190605/http://www.stefankoelle.de/" rel="external nofollow ugc" class="url">Stefan Kölle</a></cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#comment-316">
+February 27, 2010 at 6:33 pm </a>
+</div>
+<div class="comment"><p>Hallo Nils,</p></div>
+<div class="comment"><p>ich habe in der Tat vergessen in diesem Blogpost die URL noch einmal zu posten.</p></div>
+<div class="comment"><p>Habe ich nun nachgeholt.</p></div>
+<div class="comment"><p>Der aktuelle Sourcecode ist hier zu finden:<br>
+<a href="https://web.archive.org/web/20210419190605/https://stupiddb.svn.sourceforge.net/svnroot/stupiddb/trunk" rel="nofollow ugc">https://stupiddb.svn.sourceforge.net/svnroot/stupiddb/trunk</a></p></div>
+<div class="comment"><p>Bin gespannt was du dazu sagst…</p></div>
+<div class="comment"><p>Gruesse<br>
+Stefan</p></div>
+</div>
+</li>
+<li class="comment even thread-even depth-1 alt" id="comment-418">
+<div id="div-comment-418" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#"><img src="./stupiddb2_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb2_files/39e3ef3d9d80fa8bb7d59d44a08f62a8" srcset="https://web.archive.org/web/20210419190605im_/http://0.gravatar.com/avatar/39e3ef3d9d80fa8bb7d59d44a08f62a8?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn">ronald</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#comment-418">
+March 26, 2010 at 10:37 am </a>
+</div>
+<div class="comment"><p>Hallo,<br>
+ich wollte die stupiddb austesten, leider kann ich die dll nicht zum download finden. bei der url, welche im dotnet-pro artikel beschrieben, finde ich keine files zum download. (–&gt; oder ist das so gewollt)?<br>
+vielleicht kann mir jemand helfen 🙂</p></div>
+<div class="comment"><p>dank ronald</p></div>
+</div>
+</li>
+<li class="comment byuser comment-author-sko bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-420">
+<div id="div-comment-420" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#"><img src="./stupiddb2_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb2_files/dd231104fe0e1a7b87be55834a7c0c86.jpeg" srcset="https://web.archive.org/web/20210419190605im_/http://1.gravatar.com/avatar/dd231104fe0e1a7b87be55834a7c0c86?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn"><a href="https://web.archive.org/web/20210419190605/http://www.stefankoelle.de/" rel="external nofollow ugc" class="url">Stefan Kölle</a></cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#comment-420">
+March 26, 2010 at 2:15 pm </a>
+</div>
+<div class="comment"><p>Hallo Ronald,</p></div>
+<div class="comment"><p>StupidDB gibt es im Moment nur direkt im SourceCode, die aktuelle Version kann man direkt per SVN downloaden:<br>
+<a href="https://web.archive.org/web/20210419190605/https://stupiddb.svn.sourceforge.net/svnroot/stupiddb/trunk" rel="nofollow ugc">https://stupiddb.svn.sourceforge.net/svnroot/stupiddb/trunk</a></p></div>
+<div class="comment"><p>Vielleicht sollten wir demnaechst auch die binaere Version davon bereitstellen.</p></div>
+<div class="comment"><p>Gruss<br>
+Stefan</p></div>
+</div>
+</li>
+<li class="comment even thread-even depth-1 alt" id="comment-421">
+<div id="div-comment-421" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#"><img src="./stupiddb2_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb2_files/39e3ef3d9d80fa8bb7d59d44a08f62a8" srcset="https://web.archive.org/web/20210419190605im_/http://0.gravatar.com/avatar/39e3ef3d9d80fa8bb7d59d44a08f62a8?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn">ronald</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#comment-421">
+March 26, 2010 at 2:53 pm </a>
+</div>
+<div class="comment"><p>ich habe leider kein svn. ich habe probiert die files einzeln runterzuladen, aber dann kommen viele Fehler. Finde deinen Vorschlag gar nicht schlecht oder code als ZIP für alle NICHT-svn Benutzer. Wäre super. Vielen Dank vorab, Ronald</p></div>
+</div>
+</li>
+<li class="comment byuser comment-author-sko bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-423">
+<div id="div-comment-423" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#"><img src="./stupiddb2_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb2_files/dd231104fe0e1a7b87be55834a7c0c86.jpeg" srcset="https://web.archive.org/web/20210419190605im_/http://1.gravatar.com/avatar/dd231104fe0e1a7b87be55834a7c0c86?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn"><a href="https://web.archive.org/web/20210419190605/http://www.stefankoelle.de/" rel="external nofollow ugc" class="url">Stefan Kölle</a></cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#comment-423">
+March 26, 2010 at 3:36 pm </a>
+</div>
+<div class="comment"><p>Werde mich am Wochenende um die Gezippte Version kuemmern…</p></div>
+</div>
+</li>
+<li class="comment byuser comment-author-sko bypostauthor even thread-even depth-1 alt" id="comment-428">
+<div id="div-comment-428" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#"><img src="./stupiddb2_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb2_files/dd231104fe0e1a7b87be55834a7c0c86.jpeg" srcset="https://web.archive.org/web/20210419190605im_/http://1.gravatar.com/avatar/dd231104fe0e1a7b87be55834a7c0c86?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn"><a href="https://web.archive.org/web/20210419190605/http://www.stefankoelle.de/" rel="external nofollow ugc" class="url">Stefan Kölle</a></cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#comment-428">
+March 27, 2010 at 8:04 pm </a>
+</div>
+<div class="comment"><p>Hallo Ronald,</p></div>
+<div class="comment"><p>die DLL und der Sourcecode kann nun als ZIP direkt runtergeladen werden:</p></div>
+<div class="comment"><p><a href="https://web.archive.org/web/20210419190605/http://www.aztec-project.org/" rel="nofollow ugc">http://www.aztec-project.org</a></p></div>
+<div class="comment"><p>Gruss<br>
+Stefan</p></div>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-438">
+<div id="div-comment-438" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#"><img src="./stupiddb2_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb2_files/39e3ef3d9d80fa8bb7d59d44a08f62a8" srcset="https://web.archive.org/web/20210419190605im_/http://0.gravatar.com/avatar/39e3ef3d9d80fa8bb7d59d44a08f62a8?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn">ronald</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#comment-438">
+March 29, 2010 at 9:09 am </a>
+</div>
+<div class="comment"><p>danke für die bereitstellung. habe es ausprobiert – sehr schönes teil 🙂 hatte keine probleme bei der erstellung einer demo (unter hilfe von eurem blog)</p></div>
+<div class="comment"><p>ich habe etwas ähnliches gebaut, um einstellungsdaten für anwendung zu speichern (z.B. com-port, parameter für prüfprogramme usw.) – letztlich funktioniert meine app ähnlich wie eure –&gt; Key – Value, generisch. den speicherort habe ich mit “providern” gelöst, somit kann der anwender entscheiden, ob die files auf der festplatte landen oder vielleicht doch in einer sql-db oder was ganz anderes.<br>
+vielleicht für euch hilfreich um eine GUI bereitzustellen:<br>
+die gui habe ich mit propertygrid gelöst. um dort dann z.B. Listeneinträge zu ergänzen, muss dann eine spez. liste erstellt werden, welche ICustomTypeDescriptor impl., ein eigener PropertyDescriptor (generisch) muss auch erstellt werden.<br>
+das brauchte ich, weil betreuer von einem automaten, ohne xml-kenntnisse die daten pflegen müssen.</p></div>
+<div class="comment"><p>grüße ronald</p></div>
+</div>
+</li>
+<li style="display: none;" class="alt">&nbsp;</li>
+</ol>
+<div class="navigation">
+<div class="alignleft"></div>
+<div class="alignright"></div>
+</div>
+<div id="respond">
+<div class="title">Leave a Reply</div>
+<div class="cancel-comment-reply">
+<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/#respond" style="display:none;">Click here to cancel reply</a></small>
+</div>
+<form action="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/wp-comments-post.php" method="post" id="commentform">
+<input type="hidden" name="comment_post_ID" value="916" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1">
+<label for="author"><small>Name (required)</small></label></p>
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2">
+<label for="email"><small>E-mail (will not be published) (required)</small></label></p>
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3">
+<label for="url"><small>Website</small></label></p>
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+<p>
+<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment">
+<input type="hidden" name="comment_post_ID" value="916">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f8535d4ae7"></p><p style="display: none;"></p> <br class="clear">
+<input type="hidden" id="ak_js" name="ak_js" value="1618859165937"></form>
+</div>
+<script type="text/javascript">
+<!-- // <![CDATA[
+
+		jQuery(document).ready(function() {
+			if (jQuery('#trackbacklist li').length == 1)
+				jQuery('#trackbacks, #trackbacklist').hide();
+			jQuery('li.comment>div>*').filter(':not(.comment-author, .comment-meta)').wrap('<div class="comment"><\/div>');
+			
+			jQuery('.comment-author').before('<span class="switch-post"><a href="#"><img src="https://web.archive.org/web/20210419190605/http://blog.aztec-project.org/wp-content/themes/mandigo/images/icons/bullet_toggle_minus.png" alt="" class="png" /><\/a><\/span>');
+		});
+
+// ]]> -->
+</script>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="footer" class="png">
+<p>
+Powered by <a href="https://web.archive.org/web/20210419190605/https://wordpress.org/">WordPress</a>, <a href="https://web.archive.org/web/20210419190605/http://www.onehertz.com/portfolio/wordpress/" target="_blank" title="WordPress themes">Mandigo theme</a> by tom.
+<br><a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/feed/"><img src="./stupiddb2_files/rss_s.gif" alt=""> Entries (RSS)</a>
+and <a href="https://web.archive.org/web/20210419190605/https://blog.aztec-project.org/comments/feed/"><img src="./stupiddb2_files/rss_s.gif" alt=""> Comments (RSS)</a>.
+</p>
+</div>
+</div>
+<script type="text/javascript" src="./stupiddb2_files/comment-reply.min.js.Download"></script>
+<script type="text/javascript" src="./stupiddb2_files/devicepx-jetpack.js.Download"></script>
+<script type="text/javascript" src="./stupiddb2_files/wp-embed.min.js.Download"></script>
+<script async="async" type="text/javascript" src="./stupiddb2_files/form.js.Download"></script>
+<script type="text/javascript" src="./stupiddb2_files/e-202116.js.Download" async="async" defer="defer"></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.0',blog:'170418232',post:'916',tz:'2',srv:'blog.aztec-project.org'} ]);
+	_stq.push([ 'clickTrackerInit', '170418232', '916' ]);
+</script>
+<script type="text/javascript">
+<!-- // <![CDATA[
+
+	jQuery(document).ready(function() {
+		jQuery('#rssicon, #searchsubmit').hover(
+			function() { this.src = this.src.replace('.gif','_hover.gif'); },
+			function() { this.src = this.src.replace('_hover.gif','.gif'); }
+		);
+
+		jQuery('.entry img[align=left]' ).addClass('alignleft' );
+		jQuery('.entry img[align=right]').addClass('alignright');
+		
+		if (jQuery.browser.msie) {
+			if (/^[56]/.test(jQuery.browser.version)) {
+				jQuery.ifixpng('https://web.archive.org/web/20210419190605/http://blog.aztec-project.org/wp-content/themes/mandigo/images/1x1.gif');
+				jQuery('body, .png').ifixpng();
+				jQuery('.commentlist.pre27 .avatar').height(36);
+			}
+
+		}
+		
+		jQuery('p:has(.dropcap)').append('<br class="clear"/>');
+
+		togglePost = function(id) {
+			if (!id) return;
+			icon = jQuery('#switch-post-'+ id +' img');
+			icon.attr('src', /minus/.test(icon.attr('src')) ? icon.attr('src').replace('minus', 'plus') : icon.attr('src').replace('plus', 'minus'));
+			jQuery('#post-'+ id +' .entry').animate({ height: 'toggle', opacity: 'toggle' }, 1000);
+		}
+
+		jQuery('.switch-post img').bind('click', function() {
+			id = jQuery(this).parents('li').attr('id').replace(/[^\d]+-/, '');
+			icon = jQuery('#comment-'+ id +' .switch-post img');
+			src  = icon.attr('src');
+			icon.attr('src', /minus/.test(src) ? src.replace('minus', 'plus') : src.replace('plus', 'minus'));
+			jQuery('#comment-'+ id +' div.comment').animate({ height: 'toggle', opacity: 'toggle' }, 1000);
+			return false;
+		});
+
+		toggleSidebars = function() {
+			icon = jQuery('.switch-sidebars img');
+			icon.attr('src', /hide/.test(icon.attr('src')) ? icon.attr('src').replace('hide', 'show') : icon.attr('src').replace('show', 'hide'));
+			jQuery('.sidebars').animate({ width: 'toggle', height: 'toggle', padding: 'toggle', border: 'toggle' }, 1000);
+		}
+
+		jQuery('.widgettitle, .linkcat *:first, .wpg2blockwidget h3').click(function() {
+			jQuery(this).siblings().animate({ height: 'toggle', opacity: 'toggle' }, 1000);
+		}).css({cursor: 'n-resize'});
+
+		jQuery.each(['tl','tr','bl','br'],function() {
+			jQuery('#blogname').after('<span class="blogname text-stroke-'+ this +'">'+ jQuery('#blogname a').html() +'<\/span>');
+			jQuery('#blogdesc').after('<span class="blogdesc text-stroke-'+ this +'">'+ jQuery('#blogdesc'  ).html() +'<\/span>');
+		});
+
+		jQuery('#header .page_item:has(ul)').addClass('has_sub, png');
+		
+		jQuery('#header .page_item').hover(
+			function() {
+				ul = jQuery(this).find('>ul');
+				if (ul.hasClass('sliding')) return;
+				a  = jQuery(this).find('>a');
+				if (jQuery(this).parent().hasClass('pages')) {
+					y = a.position().top + a.height();
+				x = a.position().left + a.width() - ul.width();
+				}
+				else {
+					y = jQuery(this).position().top - 5;
+					x = jQuery(this).parent().width();
+				}
+				jQuery(this)
+					.find('>ul')
+					.css({left:x, top:y})
+					.addClass('sliding')
+					.slideDown(300, function() { jQuery(this).removeClass('sliding'); });
+			},
+			function() {
+				jQuery(this)
+					.find('>ul')
+					.addClass('sliding')
+					.slideUp(800, function() { jQuery(this).removeClass('sliding').hide(); });
+			}
+		);
+
+		jQuery('.commentlist li:even').addClass('alt');
+});
+// ]]> -->
+</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://web.archive.org/web/20210419190605/https://ssl." : "https://web.archive.org/web/20210419190605/http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./stupiddb2_files/ga.js.Download" type="text/javascript"></script><img src="./stupiddb2_files/g.gif" alt=":)" width="6" height="5" id="wpstats">
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9511047-1"); pageTracker._trackPageview(); } catch(err) {}</script>
+
+
+
+<div data-lastpass-root="" style="position: absolute !important; top: 0px !important; left: 0px !important; height: 0px !important; width: 0px !important;"><template shadowrootmode="closed"><div style="position: absolute; height: 100vh; width: 100vw; z-index: 2147483647; border-radius: 4px; top: 0px; left: 0px; max-height: 0px; max-width: 280px; min-width: auto;"><iframe data-lastpass-infield="true" allow="clipboard-write" src="chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/webclient-infield.html" style="border: none; height: 100%; width: 100%;"></iframe></div></template></div></body></html>

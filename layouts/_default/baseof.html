@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+<body>
+  <header class="site-header">
+    <img class="site-banner" src="{{ .Site.Params.bannerImage }}" alt="" width="961" height="226">
+    <div class="header-inner">
+      <h1 class="site-title"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
+      <p class="site-subtitle">{{ .Site.Params.subtitle }}</p>
+      {{ if .Site.Menus.main }}
+      <nav class="site-nav">
+        {{ range .Site.Menus.main }}
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </nav>
+      {{ end }}
+    </div>
+  </header>
+
+  <main class="site-main">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2009-{{ now.Format "2006" }} build broken &middot; <a href="{{ "/impressum/" | relURL }}">Impressum</a> &middot; archiviert als statische Seite.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,705 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0108)https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" class=" dovcss idc0_350"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./unittests-webforms_files/athena.js.Download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app201.us.archive.org';v.server_ms=429;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./unittests-webforms_files/bundle-playback.js.Download" charset="utf-8"></script>
+<script type="text/javascript" src="./unittests-webforms_files/wombat.js.Download" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="./unittests-webforms_files/ruffle.js.Download"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://blog.aztec-project.org:80/2009/09/07/unit-tests-fur-webforms/","20100413144045","https://web.archive.org/","web","/_static/",
+	      "1271169645");
+</script>
+<link rel="stylesheet" type="text/css" href="./unittests-webforms_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./unittests-webforms_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+
+
+<title>build broken » Unit-Tests für WebForms</title>
+
+<meta name="generator" content="WordPress abc">
+<meta name="theme" content="Mandigo 1.41">
+
+<link rel="stylesheet" href="./unittests-webforms_files/style.css" type="text/css" media="screen">
+<style type="text/css">
+
+body {
+	font-family: Arial, Sans-Serif;
+	background-color: #44484F;
+}
+
+a {
+	font-weight: bold;
+}
+
+.narrowcolumn .entry, .widecolumn .entry {
+	line-height: 1.4em;
+}
+
+.inline-widgets #wp-calendar caption, .blogname, .blogdesc {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.blogname {
+	font-size: 4em;
+	margin-top: 15px;
+}
+
+.posttitle, #comments, #respond .title, #respond.pre27, #trackbacks {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.commentlist li, #commentform input, #commentform textarea {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+#commentform p {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.sidebars {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+
+#page {
+	width: 987px;
+}
+
+#header {
+	background: url(https://web.archive.org/web/20100413144045im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/header-1024.png);
+	height: 243px;
+	width: 987px;
+}
+
+#headerimg {
+	height: 226px;
+	width: 961px;
+	background: url(https://web.archive.org/web/20100413144045im_/http://blog.aztec-project.org/wp-content/themes/mandigo/schemes/orange/images/head-1024.jpg) bottom center no-repeat;
+}
+
+#main {
+	background: url(https://web.archive.org/web/20100413144045im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/bg-1024.png);
+	width: 957px;
+}
+
+#footer {
+	background: url(https://web.archive.org/web/20100413144045im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/foot-1024.png);
+}
+
+.post {
+	text-align: justify;
+	background: #FAFAFA; 
+	border: 1px solid #EEEEEE; 
+}
+
+
+#footer {
+	width: 987px;
+}
+
+
+.sidebars {
+	background: #EEEEEE;
+	border: 1px solid #DDDDDD;
+}
+
+#sidebar1 .sidebars {
+	width: 210px;
+}
+
+#sidebar2 .sidebars {
+	width: 210px;
+}
+
+
+.entry img {
+	float: none;
+}
+
+.sidebars li {
+	list-style-image: url(https://web.archive.org/web/20100413144045im_/http://blog.aztec-project.org/wp-content/themes/mandigo/schemes/orange/images/star.gif);
+}
+
+.commentlist {
+}
+
+.commentlist li {
+	list-style: none;
+}
+
+#wp-calendar {
+	margin: 0 !important; margin-top: -1.5em;
+}
+
+#wp-calendar caption {
+	margin-top: -1.4em;
+}
+
+/* dirty fix for the event calendar plugin */
+div#wp-calendar .nav {
+	margin: 0;
+}
+/* end dirty fix */
+
+.datestamp div {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Sans-Serif;
+}
+
+.cal3 {
+}
+
+.pages {
+	text-align: right;
+}
+
+.pages ul li.has_sub {
+	background: url(https://web.archive.org/web/20100413144045im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/icons/bullet_arrow_right.png) no-repeat center right;
+}
+
+.head_overlay {
+	background: url(https://web.archive.org/web/20100413144045im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/head_overlay.png);
+}
+
+
+
+
+</style>
+<link rel="stylesheet" href="./unittests-webforms_files/scheme.css" type="text/css" media="screen">
+<link rel="alternate" type="application/rss+xml" title="build broken RSS Feed" href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/feed/">
+<link rel="pingback" href="https://blog.aztec-project.org/xmlrpc.php">
+
+<link rel="alternate" type="application/rss+xml" title="build broken » Unit-Tests für WebForms Kommentar Feed" href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/feed/">
+<script type="text/javascript" src="./unittests-webforms_files/comment-reply.js.Download"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.aztec-project.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.aztec-project.org/wp-includes/wlwmanifest.xml"> 
+<link rel="index" title="build broken" href="https://blog.aztec-project.org/">
+<link rel="start" title="Umsetzung des Plug-In-Patterns" href="https://blog.aztec-project.org/2009/06/05/umsetzung-des-plug-in-patterns/">
+<link rel="prev" title="Gibt es negative Energien in der deutschen ALT.NET Bewegung?" href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/08/26/gibt-es-negative-energien-in-der-deutschen-alt-net-bewegung/">
+<link rel="next" title=".NET Open Space 2009 in Leipzig" href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/10/23/net-open-space-2009-in-leipzig/">
+<link rel="canonical" href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/">
+
+<script type="text/javascript" src="./unittests-webforms_files/jquery.js.Download"></script>
+<script type="text/javascript" src="./unittests-webforms_files/jquery.ifixpng.js.Download"></script>
+<script type="text/javascript">jQuery.noConflict();</script>
+
+<style type="text/css">
+  .entry img, .entry embed, .entry object { max-width: 880px; width: expression(this.clientWidth > 880 ? 880 : true); }
+  .entry img { height: auto; }</style>
+
+</head>
+
+<body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;"><template shadowrootmode="closed"><div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;" class="">
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20100413144045/http%3A//blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="https://web.archive.org/web/" title="Wayback Machine home page"><img src="https://web.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0"></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="https://web.archive.org/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/" onfocus="this.focus();this.select();" style="flex:1;" autocomplete="off"><input type="hidden" name="type" value="replay"><input type="hidden" name="date" value="20100413144045"><input type="submit" value="Go">
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+                <div class="s" id="wm-nav-captures" style="flex:1;"><a class="t" href="https://web.archive.org/web/*/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/" title="See a list of every capture for this URL">4 captures</a><div class="r" title="Timespan for captures of this URL">26 Jan 2010 - 9 Aug 2020</div></div>
+        <div class="k">
+          <a href="https://web.archive.org/web/19960101000000/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/" id="wm-graph-anchor">
+            <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+              <canvas id="wm-sparkline-canvas" width="750" height="27" border="0"></canvas>
+            <div class="yt" style="display: none; width: 25px; height: 27px; left: 0px;"></div><div class="mt" style="display: none; width: 2px; height: 27px; left: 1px;"></div></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+        <tbody>
+          <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+          <tr class="m">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20100126002249/http://blog.aztec-project.org:80/2009/09/07/unit-tests-fur-webforms/" title="26 Jan 2010"><strong>Jan</strong></a></td>
+            <td class="c" id="displayMonthEl" title="You are here: 14:40:45 Apr 13, 2010">Apr</td>
+            <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20200809052744/https://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/" title="09 Aug 2020"><strong>Aug</strong></a></td>
+          </tr>
+          <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+          <tr class="d">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20100126002249/http://blog.aztec-project.org:80/2009/09/07/unit-tests-fur-webforms/" title="00:22:49 Jan 26, 2010"><img src="https://web.archive.org/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0"></a></td>
+            <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 14:40:45 Apr 13, 2010">13</td>
+            <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20200809052744/https://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/" title="05:27:44 Aug 09, 2020"><img src="https://web.archive.org/_static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"></a></td>
+          </tr>
+          <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+          <tr class="y">
+            <td class="b" nowrap="nowrap">2009</td>
+            <td class="c" id="displayYearEl" title="You are here: 14:40:45 Apr 13, 2010">2010</td>
+            <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20200809052744/https://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/" title="09 Aug 2020"><strong>2020</strong></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+                <span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/#" title="Share via My Web Archive" style="display: none;">
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in" style="display: inline-block;">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web" style="display: none;"></span>
+        </span>
+                <a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+        <a id="wm-tb-close" href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="https://web.archive.org/web/20100413144045/http://web.archive.org/screenshot/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/" id="wm-screenshot" title="screenshot" style="visibility: hidden;">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+        <a id="wm-share-facebook" href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/#" data-url="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org:80/2009/09/07/unit-tests-fur-webforms/" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+        <a id="wm-share-twitter" href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/#" data-url="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org:80/2009/09/07/unit-tests-fur-webforms/" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+        <a id="wm-expand" class="wm-btn wm-closed" href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/#expand"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+        <div id="wm-capinfo-notice" source="api"></div>
+                <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexa_web_2010)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/alexa_web_2010" target="_new"><span class="wm-title">alexa_web_2010</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  this data is currently not publicly accessible.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="https://web.archive.org/_static/images/loading.gif" alt="loading"></div>
+    </div>
+    </div>
+  </div></div></div><link rel="stylesheet" type="text/css" href="./unittests-webforms_files/banner-styles.css"><link rel="stylesheet" type="text/css" href="./unittests-webforms_files/iconochive.css"><div class="wb-autocomplete-suggestions "></div></template>
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20100413144045/http://blog.aztec-project.org:80/2009/09/07/unit-tests-fur-webforms/</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(750,27,25,2,"web","http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/","20100413144045",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=3PDvdIFv"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ 
+
+<div id="page">
+
+<div id="header" class="png">
+	<div id="headerimg">
+		<h1 class="blogname" id="blogname"><a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/">build broken</a></h1><span class="blogname text-stroke-br">build broken</span><span class="blogname text-stroke-bl">build broken</span><span class="blogname text-stroke-tr">build broken</span><span class="blogname text-stroke-tl">build broken</span>
+		<h6 class="blogdesc" id="blogdesc">but we can fix it! Sometimes :)</h6><span class="blogdesc text-stroke-br">but we can fix it! Sometimes :)</span><span class="blogdesc text-stroke-bl">but we can fix it! Sometimes :)</span><span class="blogdesc text-stroke-tr">but we can fix it! Sometimes :)</span><span class="blogdesc text-stroke-tl">but we can fix it! Sometimes :)</span>
+
+		<ul class="pages png head_overlay">
+			<li class="page_item"><a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/">Home</a></li>
+<li class="page_item page-item-2"><a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/about/" title="About">About</a></li>
+		</ul>
+	
+	</div>
+	
+</div>
+
+<div id="main" class="png">
+<table>
+<tbody><tr>
+	<td id="content" class="widecolumn">
+
+
+		<div class="navigation">
+			<div class="alignleft">«&nbsp;<a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/08/26/gibt-es-negative-energien-in-der-deutschen-alt-net-bewegung/" rel="prev">Gibt es negative Energien in der deutschen ALT.NET Bewegung?</a></div>
+			<div class="alignright"><a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/10/23/net-open-space-2009-in-leipzig/" rel="next">.NET Open Space 2009 in Leipzig</a>&nbsp;»</div>
+		</div>
+
+		<div class="post" id="post-606">
+			<div class="postinfo">
+				
+						<div class="datestamp">
+							<div>
+								<span class="cal1 cal1x">Sep</span>
+								<span class="cal2">07</span>
+								<span class="cal3">2009</span>
+							</div>
+						</div>
+						<span class="switch-post">
+					<a href="javascript:toggleSidebars();" class="switch-sidebars"><img src="./unittests-webforms_files/bullet_sidebars_hide.png" alt="" class="png"></a><a href="javascript:togglePost(606);" id="switch-post-606"><img src="./unittests-webforms_files/bullet_toggle_minus.png" alt="" class="png"></a>
+				</span>
+
+				<h2 class="posttitle"><a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/" rel="bookmark" title="Permanent Link: Unit-Tests für WebForms">Unit-Tests für WebForms</a></h2>
+				<small>
+Geschrieben von <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/author/chi/" title="Artikel von Christina Hirth">Christina Hirth</a> in <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/category/how-to/" title="Alle Artikel in How-To ansehen" rel="category tag">How-To</a>,  <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/category/unit-testing/" title="Alle Artikel in Unit Testing ansehen" rel="category tag">Unit Testing</a>,  <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/category/webanwendungen/" title="Alle Artikel in Webanwendungen ansehen" rel="category tag">Webanwendungen</a>, tags: <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/tag/unit-tests/" rel="tag">Unit-Tests</a>, <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/tag/webapplication/" rel="tag">Webapplication</a>				</small>
+
+			</div>
+
+			<div class="entry">
+<p>Obwohl die allgemeine Meinung ist, dass es sehr schwierig sei, kann man mit folgendem Workaround Webforms sehr einfach und sehr umfangreich testen. Bedingung 1: als Projekt kein Web Site Project sondern eine Web Application erstellen. Bedingung 2: Business Logic in die entsprechende Schicht auslagern.</p>
+<p>Nehmen wir zum Beispiel ein einfaches Formular. Nach Absenden des Formulars sollen die Werte aus den 2 Feldern addiert werden. Wenn man per QueryString einen Parameter <code>multiple</code> übergibt, soll das Ergebnis damit multipliziert werden.</p>
+<p><img src="./unittests-webforms_files/TestableWebForm.jpg" alt="Testable WebForm"> &nbsp; <img src="./unittests-webforms_files/TestableWebForm_Sent.jpg" alt="Testable WebForm Sent"></p>
+<p>Und nun zum Quellcode: Die automatisch erstellte .designer.cs muss entfernt werden, was man sowieso tun sollte, da man automatisch erstellten Code – also Code, den keiner außer Microsoft unter Kontrolle hat – vermeiden sollte.<br>
+Die Inhalte der .designer.cs – also die Definitionen der Web-Elemente – werden in der Klasse als <code>Public Properties</code> erstellt und instantiiert, um bei Zugriffen wie <code>TextBox.Text</code> keine NullReferenceException zu bekommen.</p>
+<div style="font-family: Courier New; font-size: 9pt; color: black; background: white;">
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;1</span>&nbsp;<span style="color: blue;">using</span> System;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;2</span>&nbsp;<span style="color: blue;">using</span> System.Web.UI.HtmlControls;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;3</span>&nbsp;<span style="color: blue;">using</span> System.Web.UI.WebControls;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;4</span>&nbsp;<span style="color: blue;">using</span> framework.Testable.Web.UI;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;5</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;6</span>&nbsp;<span style="color: blue;">namespace</span> TestableWebForm</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;7</span>&nbsp;{</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;8</span>&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: blue;">class</span> <span style="color: #2b91af;">DefaultPage</span> : System.Web.UI.<span style="color: #2b91af;">Page</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;9</span>&nbsp;&nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;10</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;11</span>&nbsp;<span style="color: blue;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; #region</span> Controls</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;12</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: #2b91af;">HtmlForm</span> Formular;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;13</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: #2b91af;">TextBox</span> Value1 = <span style="color: blue;">new</span> <span style="color: #2b91af;">TextBox</span>();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;14</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: #2b91af;">TextBox</span> Value2 = <span style="color: blue;">new</span> <span style="color: #2b91af;">TextBox</span>();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;15</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: #2b91af;">Label</span> Result = <span style="color: blue;">new</span> <span style="color: #2b91af;">Label</span>();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;16</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: #2b91af;">Button</span> Submit = <span style="color: blue;">new</span> <span style="color: #2b91af;">Button</span>();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;17</span>&nbsp;<span style="color: blue;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; #endregion</span></p>
+</div>
+<p>Um das Verhalten testen zu können, haben wir Adapter für die Klassen <code>System.Web.UI.Page</code>, <code>System.Web.HttpRequest</code> und <code>System.Web.HttpResponse</code> geschrieben, und zwar für die Properties und Methoden die uns vorerst interessieren: z.B. <code>Page.IsPostBack, Page.Request, Response.Redirect(string url, bool endResponse)</code>. Bei der Benennung haben wir einfach den Namespace <code>System</code> mit <code>framework.Testable</code> ersetzt und wir haben natürlich zu jedem Testable-Objekt einen Interface erstellt.</p>
+<div style="font-family: Courier New; font-size: 9pt; color: black; background: white;">
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;1</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;2</span>&nbsp;<span style="color: blue;">namespace</span> framework.Testable.Web</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;3</span>&nbsp;{</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;4</span>&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: blue;">namespace</span> UI</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;5</span>&nbsp;&nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;6</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: blue;">interface</span> <span style="color: #2b91af;">IPage</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;7</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;8</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">bool</span> IsPostBack{ <span style="color: blue;">get</span>; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;9</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: #2b91af;">IHttpRequest</span> Request{ <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;10</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: #2b91af;">IHttpResponse</span> Response{ <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;11</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;12</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;13</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: blue;">class</span> <span style="color: #2b91af;">Page</span> : <span style="color: #2b91af;">IPage</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;14</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;15</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">private</span> <span style="color: blue;">readonly</span> System.Web.UI.<span style="color: #2b91af;">Page</span> m_page;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;16</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">private</span> <span style="color: #2b91af;">IHttpRequest</span> m_request;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;17</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">private</span> <span style="color: #2b91af;">IHttpResponse</span> m_response;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;18</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;19</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> Page( System.Web.UI.<span style="color: #2b91af;">Page</span> page )</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;20</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;21</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_page = page;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;22</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_request = <span style="color: blue;">new</span> <span style="color: #2b91af;">HttpRequest</span>( m_page );</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;23</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_response = <span style="color: blue;">new</span> <span style="color: #2b91af;">HttpResponse</span>( m_page );</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;24</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;25</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;26</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: blue;">bool</span> IsPostBack</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;27</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;28</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">get</span>{ <span style="color: blue;">return</span> m_page.IsPostBack; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;29</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;30</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;31</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: #2b91af;">IHttpRequest</span> Request</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;32</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;33</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">get</span>{ <span style="color: blue;">return</span> m_request; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;34</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">set</span> { m_request = <span style="color: blue;">value</span>; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;35</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;36</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;37</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: #2b91af;">IHttpResponse</span> Response</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;38</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;39</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">get</span>{ <span style="color: blue;">return</span> m_response; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;40</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">set</span> { m_response = <span style="color: blue;">value</span>; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;41</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;42</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;43</span>&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;44</span>&nbsp;}</p>
+</div>
+<p>Um alle gemockte Objekte setzen zu können, haben wir unserer <code>Page</code>-Klasse auch Setter für <code>Request</code> und <code>Response</code> gegeben. Da man <code>Request.Params</code> nicht setzen kann, d.h. <code>Request.Params[]</code> immer ein NullReferenceException verursachen würde, haben wir das Auslesen der <code>Request</code>-Parameter in eine Methode <code>Request.GetParamValue(string name)</code> ausgelagert.</p>
+<p>Das war ungefähr alles: in der Seite nutzt man dann anstelle der eigenen Request und Response-Objekten die <code>Testable</code>-Objekte.</p>
+<div style="font-family: Courier New; font-size: 9pt; color: black; background: white;">
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;8</span>&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: blue;">class</span> <span style="color: #2b91af;">DefaultPage</span> : System.Web.UI.<span style="color: #2b91af;">Page</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;9</span>&nbsp;&nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;…</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;19</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">private</span> <span style="color: #2b91af;">IPage</span> m_page;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;20</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: blue;">void</span> SetTestableObjects( <span style="color: #2b91af;">IPage</span> page )</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;21</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;22</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_page = page;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;23</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;24</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;25</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: blue;">void</span> Page_Load( <span style="color: blue;">object</span> sender, <span style="color: #2b91af;">EventArgs</span> e )</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;26</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;27</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">if</span> (m_page == <span style="color: blue;">null</span>) m_page = <span style="color: blue;">new</span> <span style="color: #2b91af;">Page</span>( <span style="color: blue;">this</span> );</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;28</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">int</span> multiple = 1;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;29</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">if</span> (!<span style="color: blue;">string</span>.IsNullOrEmpty( m_page.Request.GetParamValue( <span style="color: #a31515;">"multiple"</span> ) )) multiple = <span style="color: #2b91af;">Convert</span>.ToInt32( m_page.Request.GetParamValue( <span style="color: #a31515;">"multiple"</span> ) );</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;30</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">if</span> (m_page.IsPostBack)</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;31</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;32</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Result.Text = ( (<span style="color: #2b91af;">Convert</span>.ToInt32( Value1.Text ) + <span style="color: #2b91af;">Convert</span>.ToInt32( Value2.Text ))*multiple ).ToString();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;33</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;34</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+</div>
+<p>Damit ist die Web-Anwendung bereit zum Testen. So schaut zum Beispiel ein Test für das Laden der Seite aus:</p>
+<div style="font-family: Courier New; font-size: 9pt; color: black; background: white;">
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;1</span>&nbsp;<span style="color: blue;">using</span> framework.Testable.Web;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;2</span>&nbsp;<span style="color: blue;">using</span> framework.Testable.Web.UI;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;3</span>&nbsp;<span style="color: blue;">using</span> NUnit.Framework;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;4</span>&nbsp;<span style="color: blue;">using</span> Rhino.Mocks;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;5</span>&nbsp;<span style="color: blue;">using</span> TestableWebForm;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;6</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;7</span>&nbsp;<span style="color: blue;">namespace</span> Tests</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;8</span>&nbsp;{</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;9</span>&nbsp;&nbsp;&nbsp;&nbsp; [<span style="color: #2b91af;">TestFixture</span>]</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;10</span>&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: blue;">class</span> <span style="color: #2b91af;">WebFormTests</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;11</span>&nbsp;&nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;12</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">private</span> <span style="color: #2b91af;">IPage</span> m_page;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;13</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">private</span> <span style="color: #2b91af;">IHttpRequest</span> m_request;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;14</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">private</span> <span style="color: #2b91af;">IHttpResponse</span> m_response;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;15</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">private</span> <span style="color: #2b91af;">DefaultPage</span> m_defaultPage;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;16</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;17</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; [<span style="color: #2b91af;">SetUp</span>]</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;18</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: blue;">void</span> Init()</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;19</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;20</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_page = <span style="color: #2b91af;">MockRepository</span>.GenerateStub&lt;<span style="color: #2b91af;">IPage</span>&gt;();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;21</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_request = <span style="color: #2b91af;">MockRepository</span>.GenerateStub&lt;<span style="color: #2b91af;">IHttpRequest</span>&gt;();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;22</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_response = <span style="color: #2b91af;">MockRepository</span>.GenerateStub&lt;<span style="color: #2b91af;">IHttpResponse</span>&gt;();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;23</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_page.Request = m_request;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;24</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_page.Response = m_response;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;25</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;26</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;27</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; [<span style="color: #2b91af;">Test</span>]</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;28</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: blue;">void</span> PageLoad_Loading_EmptyFields()</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;29</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;30</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: green;">// Arrange</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;31</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;32</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;33</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: green;">// Act</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;34</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_defaultPage = <span style="color: blue;">new</span> <span style="color: #2b91af;">DefaultPage</span>();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;35</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_defaultPage.SetTestableObjects(m_page);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;36</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_defaultPage.Page_Load( <span style="color: blue;">null</span>, <span style="color: blue;">null</span> );</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;37</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;38</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: green;">// Assert</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;39</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: #2b91af;">Assert</span>.IsEmpty( m_defaultPage.Value1.Text );</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;40</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: #2b91af;">Assert</span>.IsEmpty( m_defaultPage.Value2.Text );</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;41</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: #2b91af;">Assert</span>.IsEmpty(m_defaultPage.Result.Text);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;42</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+</div>
+<p>Und so für PostBack inklusive QueryString-Parameter:</p>
+<div style="font-family: Courier New; font-size: 9pt; color: black; background: white;">
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;63</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; [<span style="color: #2b91af;">Test</span>]</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;64</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">public</span> <span style="color: blue;">void</span> PageLoad_PostBackWithRequestValue_ResultIsCorrect()</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;65</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;66</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: green;">// Arrange</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;67</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">const</span> <span style="color: blue;">int</span> value1 = 1;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;68</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">const</span> <span style="color: blue;">int</span> value2 = 2;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;69</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">const</span> <span style="color: blue;">int</span> value3 = 3;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;70</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_request.Expect( a =&gt; a.GetParamValue( <span style="color: #a31515;">"multiple"</span> ) ).IgnoreArguments().Repeat.Twice().Return( value3.ToString() );</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;71</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_page.Expect( a =&gt; a.IsPostBack ).Return( <span style="color: blue;">true</span> );</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;72</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;73</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: green;">// Act</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;74</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_defaultPage = <span style="color: blue;">new</span> <span style="color: #2b91af;">DefaultPage</span>();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;75</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_defaultPage.SetTestableObjects( m_page );</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;76</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_defaultPage.Value1.Text = value1.ToString();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;77</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_defaultPage.Value2.Text = value2.ToString();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;78</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; m_defaultPage.Page_Load( <span style="color: blue;">null</span>, <span style="color: blue;">null</span> );</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;79</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;80</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: green;">// Assert</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;81</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: #2b91af;">Assert</span>.IsTrue( m_defaultPage.Result.Text == ( (value1 + value2)*value3 ).ToString() );</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;82</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+</div>
+<p>Dieses Vorgehen hat uns nicht nur den seit langen gesuchten Weg zum Testen von Webanwendungen geebnet, sondern zwingt auch den Entwickler dazu, alle Funktionalitäten, die nicht in einer Webseite sondern in die dll-s gehören, auszulagern. Damit dürfte es auch der richtige Weg der Clean Code Developers für die Arbeit mit WebForms sein.</p>
+<p>Was die Adapter-Klassen betrifft: inzwischen haben wir auch System.IO “adaptiert” und bald werden die anderen System-Klassen folgen, je nach Bedarf.<br>
+<a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/wp-content/uploads/2009/09/TestableWebForm.zip">Download VS2008-Projekt</a></p>
+<p><a href="https://web.archive.org/web/20100413144045/http://dotnet-kicks.de/kick/?url=http%3a%2f%2fblog.aztec-project.org%2f2009%2f09%2f07%2ftesten-von-webforms%2f"><img src="./unittests-webforms_files/KickItImageGenerator.ashx" border="0" alt="kick it on dotnet-kicks.de"></a></p>
+
+				<p class="postmetadata alt clear">
+					<small>
+Geschrieben am Montag, 7. September 2009  um 9:22 am und ist zu finden in <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/category/how-to/" title="Alle Artikel in How-To ansehen" rel="category tag">How-To</a>,  <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/category/unit-testing/" title="Alle Artikel in Unit Testing ansehen" rel="category tag">Unit Testing</a>,  <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/category/webanwendungen/" title="Alle Artikel in Webanwendungen ansehen" rel="category tag">Webanwendungen</a>. Du kannst die Antworten zu diesem Thema verfolgen unter <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/feed/">RSS 2.0</a> feed. Du kannst <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/#respond">Antwort</a>, oder <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/trackback/" rel="trackback">trackback</a> von deiner Seite. 
+					</small>
+				</p>
+			</div>
+		</div>
+
+
+	<div id="respond">
+		<div class="title">Hinterlasse einen Kommentar</div>
+
+
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/2009/09/07/unit-tests-fur-webforms/#respond" style="display:none;">Click here to cancel reply</a></small>
+</div>
+	<form action="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/wp-comments-post.php" method="post" id="commentform">
+	<input type="hidden" name="comment_post_ID" value="606" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+
+	<p><input type="text" name="author" id="author" value="" size="22" tabindex="1">
+	<label for="author"><small>Name (benötigt)</small></label></p>
+
+	<p><input type="text" name="email" id="email" value="" size="22" tabindex="2">
+	<label for="email"><small>E-mail (wird nicht veröffentlicht) (benötigt)</small></label></p>
+
+	<p><input type="text" name="url" id="url" value="" size="22" tabindex="3">
+	<label for="url"><small>Webseite</small></label></p>
+
+
+	<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+	<p>
+		<input name="submit" type="submit" id="submit" tabindex="5" value="Kommentar absenden">
+		<input type="hidden" name="comment_post_ID" value="606">
+	</p>
+
+
+	<p style="clear: both;" class="subscribe-to-comments">
+	<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;">
+	<label for="subscribe">Notify me of followup comments via e-mail</label>
+	</p>
+
+
+	<br class="clear">
+</form>
+
+	</div>
+
+<script type="text/javascript">
+<!-- // <![CDATA[
+
+		jQuery(document).ready(function() {
+			if (jQuery('#trackbacklist li').length == 1)
+				jQuery('#trackbacks, #trackbacklist').hide();
+			jQuery('li.comment>div>*').filter(':not(.comment-author, .comment-meta)').wrap('<div class="comment"><\/div>');
+			
+			jQuery('.comment-author').before('<span class="switch-post"><a href="#"><img src="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/wp-content/themes/mandigo/images/icons/bullet_toggle_minus.png" alt="" class="png" /><\/a><\/span>');
+		});
+
+// ]]> -->
+</script>
+	</td>
+
+<script src="./unittests-webforms_files/Loader_37820.js.Download" type="text/javascript"></script></tr>
+</tbody></table>
+</div>
+
+<div id="footer" class="png">
+	<p>
+		Unterstützt von <a href="https://web.archive.org/web/20100413144045/http://wordpress.org/">WordPress</a>, <a href="https://web.archive.org/web/20100413144045/http://www.onehertz.com/portfolio/wordpress/" target="_blank" title="WordPress themes">Mandigo theme</a> by tom.
+
+		<br><a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/feed/"><img src="./unittests-webforms_files/rss_s.gif" alt=""> Einträge (RSS)</a>
+		und <a href="https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/comments/feed/"><img src="./unittests-webforms_files/rss_s.gif" alt=""> Kommentare (RSS)</a>.
+	</p>
+</div>
+</div>
+
+
+<script type="text/javascript">
+<!-- // <![CDATA[
+
+	jQuery(document).ready(function() {
+		jQuery('#rssicon, #searchsubmit').hover(
+			function() { this.src = this.src.replace('.gif','_hover.gif'); },
+			function() { this.src = this.src.replace('_hover.gif','.gif'); }
+		);
+
+		jQuery('.entry img[align=left]' ).addClass('alignleft' );
+		jQuery('.entry img[align=right]').addClass('alignright');
+		
+		if (jQuery.browser.msie) {
+			if (/^[56]/.test(jQuery.browser.version)) {
+				jQuery.ifixpng('https://web.archive.org/web/20100413144045/http://blog.aztec-project.org/wp-content/themes/mandigo/images/1x1.gif');
+				jQuery('body, .png').ifixpng();
+				jQuery('.commentlist.pre27 .avatar').height(36);
+			}
+
+		}
+		
+		jQuery('p:has(.dropcap)').append('<br class="clear"/>');
+
+		togglePost = function(id) {
+			if (!id) return;
+			icon = jQuery('#switch-post-'+ id +' img');
+			icon.attr('src', /minus/.test(icon.attr('src')) ? icon.attr('src').replace('minus', 'plus') : icon.attr('src').replace('plus', 'minus'));
+			jQuery('#post-'+ id +' .entry').animate({ height: 'toggle', opacity: 'toggle' }, 1000);
+		}
+
+		jQuery('.switch-post img').bind('click', function() {
+			id = jQuery(this).parents('li').attr('id').replace(/[^\d]+-/, '');
+			icon = jQuery('#comment-'+ id +' .switch-post img');
+			src  = icon.attr('src');
+			icon.attr('src', /minus/.test(src) ? src.replace('minus', 'plus') : src.replace('plus', 'minus'));
+			jQuery('#comment-'+ id +' div.comment').animate({ height: 'toggle', opacity: 'toggle' }, 1000);
+			return false;
+		});
+
+		toggleSidebars = function() {
+			icon = jQuery('.switch-sidebars img');
+			icon.attr('src', /hide/.test(icon.attr('src')) ? icon.attr('src').replace('hide', 'show') : icon.attr('src').replace('show', 'hide'));
+			jQuery('.sidebars').animate({ width: 'toggle', height: 'toggle', padding: 'toggle', border: 'toggle' }, 1000);
+		}
+
+		jQuery('.widgettitle, .linkcat *:first, .wpg2blockwidget h3').click(function() {
+			jQuery(this).siblings().animate({ height: 'toggle', opacity: 'toggle' }, 1000);
+		}).css({cursor: 'n-resize'});
+
+		jQuery.each(['tl','tr','bl','br'],function() {
+			jQuery('#blogname').after('<span class="blogname text-stroke-'+ this +'">'+ jQuery('#blogname a').html() +'<\/span>');
+			jQuery('#blogdesc').after('<span class="blogdesc text-stroke-'+ this +'">'+ jQuery('#blogdesc'  ).html() +'<\/span>');
+		});
+
+		jQuery('#header .page_item:has(ul)').addClass('has_sub, png');
+		
+		jQuery('#header .page_item').hover(
+			function() {
+				ul = jQuery(this).find('>ul');
+				if (ul.hasClass('sliding')) return;
+				a  = jQuery(this).find('>a');
+				if (jQuery(this).parent().hasClass('pages')) {
+					y = a.position().top + a.height();
+				x = a.position().left + a.width() - ul.width();
+				}
+				else {
+					y = jQuery(this).position().top - 5;
+					x = jQuery(this).parent().width();
+				}
+				jQuery(this)
+					.find('>ul')
+					.css({left:x, top:y})
+					.addClass('sliding')
+					.slideDown(300, function() { jQuery(this).removeClass('sliding'); });
+			},
+			function() {
+				jQuery(this)
+					.find('>ul')
+					.addClass('sliding')
+					.slideUp(800, function() { jQuery(this).removeClass('sliding').hide(); });
+			}
+		);
+
+		jQuery('.commentlist li:even').addClass('alt');
+});
+// ]]> -->
+</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://web.archive.org/web/20100413144045/https://ssl." : "https://web.archive.org/web/20100413144045/http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./unittests-webforms_files/ga.js.Download" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9511047-1"); pageTracker._trackPageview(); } catch(err) {}</script>
+
+
+
+<div data-lastpass-root="" style="position: absolute !important; top: 0px !important; left: 0px !important; height: 0px !important; width: 0px !important;"><template shadowrootmode="closed"><div style="position: absolute; height: 100vh; width: 100vw; z-index: 2147483647; border-radius: 4px; top: 0px; left: 0px; max-height: 0px; max-width: 280px; min-width: auto;"><iframe data-lastpass-infield="true" allow="clipboard-write" src="chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/webclient-infield.html" style="border: none; height: 100%; width: 100%;"></iframe></div></template></div></body></html>

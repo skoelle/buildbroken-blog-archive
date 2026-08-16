@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+{{ if eq $paginator.PageNumber 1 }}
+{{ with .Content }}
+<div class="about-intro">{{ . }}</div>
+{{ end }}
+{{ end }}
+<div class="post-list">
+  {{ range $paginator.Pages }}
+    <article class="post-teaser">
+      <div class="date-badge">
+        <span class="month">{{ .Date.Format "Jan" }}</span>
+        <span class="day">{{ .Date.Format "02" }}</span>
+        <span class="year">{{ .Date.Format "2006" }}</span>
+      </div>
+      <div class="post-teaser-body">
+        {{- $post := . }}
+        <h2><a href="{{ $post.RelPermalink }}">{{ $post.Title }}</a></h2>
+        <p class="meta">
+          {{- $parts := slice }}
+          {{- $authorTerms := $post.GetTerms "author" }}
+          {{- if $authorTerms }}{{ $parts = $parts | append (printf "von <a href=\"%s\">%s</a>" (index $authorTerms 0).RelPermalink (index $authorTerms 0).Title) }}{{ else if $post.Params.author }}{{ $parts = $parts | append (printf "von %s" $post.Params.author) }}{{ end }}
+          {{- $catTerms := $post.GetTerms "categories" }}
+          {{- if $catTerms }}{{ $catLinks := slice }}{{ range $catTerms }}{{ $catLinks = $catLinks | append (printf "<a href=\"%s\">%s</a>" .RelPermalink .Title) }}{{ end }}{{ $parts = $parts | append (printf "in %s" (delimit $catLinks ", ")) }}{{ end }}
+          {{- $tagTerms := $post.GetTerms "tags" }}
+          {{- if $tagTerms }}{{ $tagLinks := slice }}{{ range $tagTerms }}{{ $tagLinks = $tagLinks | append (printf "<a href=\"%s\">%s</a>" .RelPermalink .Title) }}{{ end }}{{ $parts = $parts | append (printf ", tags: %s" (delimit $tagLinks ", ")) }}{{ end }}
+          {{- delimit $parts " " | safeHTML }}
+        </p>
+        <div class="excerpt">{{ replaceRE "<p[^>]*>\\s*(<a[^>]*>)?\\s*</a>?\\s*</p>" "" (replaceRE "<img[^>]*>" "" .Summary) | safeHTML }}</div>
+      </div>
+    </article>
+  {{ end }}
+</div>
+
+<nav class="pagination">
+  {{ template "_internal/pagination.html" . }}
+</nav>
+{{ end }}

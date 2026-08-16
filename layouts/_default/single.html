@@ -1,0 +1,51 @@
+{{ define "main" }}
+<nav class="post-nav-top">
+  {{ with .PrevInSection }}<a class="prev" href="{{ .RelPermalink }}">&laquo; {{ .Title }}</a>{{ end }}
+  {{ with .NextInSection }}<a class="next" href="{{ .RelPermalink }}">{{ .Title }} &raquo;</a>{{ end }}
+</nav>
+
+<article class="post">
+  <div class="date-badge">
+    <span class="month">{{ .Date.Format "Jan" }}</span>
+    <span class="day">{{ .Date.Format "02" }}</span>
+    <span class="year">{{ .Date.Format "2006" }}</span>
+  </div>
+
+  <div class="post-body">
+    <h1 class="post-title">{{ .Title }}</h1>
+    <p class="post-meta">
+      {{- $parts := slice }}
+      {{- $authorTerms := .GetTerms "author" }}
+      {{- if $authorTerms }}
+        {{- $authorLink := printf "<strong><a href=\"%s\">%s</a></strong>" (index $authorTerms 0).RelPermalink (index $authorTerms 0).Title }}
+        {{- $parts = $parts | append (printf "Geschrieben von %s" $authorLink) }}
+      {{- else if .Params.author }}
+        {{- $parts = $parts | append (printf "Geschrieben von <strong>%s</strong>" .Params.author) }}
+      {{- end }}
+      {{- $catTerms := .GetTerms "categories" }}
+      {{- if $catTerms }}
+        {{- $catLinks := slice }}
+        {{- range $catTerms }}{{ $catLinks = $catLinks | append (printf "<a href=\"%s\">%s</a>" .RelPermalink .Title) }}{{ end }}
+        {{- $parts = $parts | append (printf "in %s" (delimit $catLinks ", ")) }}
+      {{- end }}
+      {{- $tagTerms := .GetTerms "tags" }}
+      {{- if $tagTerms }}
+        {{- $tagLinks := slice }}
+        {{- range $tagTerms }}{{ $tagLinks = $tagLinks | append (printf "<a href=\"%s\">%s</a>" .RelPermalink .Title) }}{{ end }}
+        {{- $parts = $parts | append (printf ", tags: %s" (delimit $tagLinks ", ")) }}
+      {{- end }}
+      {{- delimit $parts " " | safeHTML }}
+    </p>
+
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+
+    {{ if .Params.archive_url }}
+    <p class="original-source"><small>Original im Internet Archive: <a href="{{ .Params.archive_url }}" target="_blank" rel="noopener">{{ .Params.archive_url }}</a></small></p>
+    {{ else if .Params.original_url }}
+    <p class="original-source"><small>Original: <a href="{{ .Params.original_url }}" target="_blank" rel="noopener">{{ .Params.original_url }}</a></small></p>
+    {{ end }}
+  </div>
+</article>
+{{ end }}

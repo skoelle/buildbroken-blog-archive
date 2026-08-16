@@ -1,0 +1,700 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0123)https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" class=" mnbxsr idc0_350"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./stupiddb1_files/athena.js.Download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app202.us.archive.org';v.server_ms=423;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./stupiddb1_files/bundle-playback.js.Download" charset="utf-8"></script>
+<script type="text/javascript" src="./stupiddb1_files/wombat.js.Download" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="./stupiddb1_files/ruffle.js.Download"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/","20210419185530","https://web.archive.org/","web","/_static/",
+	      "1618858530");
+</script>
+<link rel="stylesheet" type="text/css" href="./stupiddb1_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./stupiddb1_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+
+<title>build broken » StupidDB – object-persistence-framework</title>
+<meta name="generator" content="WordPress 5.3.1">
+<meta name="theme" content="Mandigo 1.41">
+<link rel="stylesheet" href="./stupiddb1_files/style.css" type="text/css" media="screen">
+<style type="text/css">
+
+body {
+	font-family: Arial, Sans-Serif;
+	background-color: #44484F;
+}
+
+a {
+	font-weight: bold;
+}
+
+.narrowcolumn .entry, .widecolumn .entry {
+	line-height: 1.4em;
+}
+
+.inline-widgets #wp-calendar caption, .blogname, .blogdesc {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.blogname {
+	font-size: 4em;
+	margin-top: 15px;
+}
+
+.posttitle, #comments, #respond .title, #respond.pre27, #trackbacks {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.commentlist li, #commentform input, #commentform textarea {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+#commentform p {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+.sidebars {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+
+#page {
+	width: 987px;
+}
+
+#header {
+	background: url(https://web.archive.org/web/20210419185530im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/header-1024.png);
+	height: 243px;
+	width: 987px;
+}
+
+#headerimg {
+	height: 226px;
+	width: 961px;
+	background: url(https://web.archive.org/web/20210419185530im_/http://blog.aztec-project.org/wp-content/themes/mandigo/schemes/orange/images/head-1024.jpg) bottom center no-repeat;
+}
+
+#main {
+	background: url(https://web.archive.org/web/20210419185530im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/bg-1024.png);
+	width: 957px;
+}
+
+#footer {
+	background: url(https://web.archive.org/web/20210419185530im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/foot-1024.png);
+}
+
+.post {
+	text-align: justify;
+	background: #FAFAFA; 
+	border: 1px solid #EEEEEE; 
+}
+
+
+#footer {
+	width: 987px;
+}
+
+
+.sidebars {
+	background: #EEEEEE;
+	border: 1px solid #DDDDDD;
+}
+
+#sidebar1 .sidebars {
+	width: 210px;
+}
+
+#sidebar2 .sidebars {
+	width: 210px;
+}
+
+
+.entry img {
+	float: none;
+}
+
+.sidebars li {
+	list-style-image: url(https://web.archive.org/web/20210419185530im_/http://blog.aztec-project.org/wp-content/themes/mandigo/schemes/orange/images/star.gif);
+}
+
+.commentlist {
+}
+
+.commentlist li {
+	list-style: none;
+}
+
+#wp-calendar {
+	margin: 0 !important; margin-top: -1.5em;
+}
+
+#wp-calendar caption {
+	margin-top: -1.4em;
+}
+
+/* dirty fix for the event calendar plugin */
+div#wp-calendar .nav {
+	margin: 0;
+}
+/* end dirty fix */
+
+.datestamp div {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, Sans-Serif;
+}
+
+.cal3 {
+}
+
+.pages {
+	text-align: right;
+}
+
+.pages ul li.has_sub {
+	background: url(https://web.archive.org/web/20210419185530im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/icons/bullet_arrow_right.png) no-repeat center right;
+}
+
+.head_overlay {
+	background: url(https://web.archive.org/web/20210419185530im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/head_overlay.png);
+}
+
+
+
+
+<br />
+<b>Warning</b>:  Use of undefined constant WPLANG - assumed 'WPLANG' (this will throw an Error in a future version of PHP) in <b>/homepages/24/d13434269/htdocs/clickandbuilds/buildbroken/wp-content/themes/mandigo/style.css.php</b> on line <b>384</b><br />
+</style>
+<link rel="stylesheet" href="./stupiddb1_files/scheme.css" type="text/css" media="screen">
+<link rel="alternate" type="application/rss+xml" title="build broken RSS Feed" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/feed/">
+<link rel="pingback" href="https://blog.aztec-project.org/xmlrpc.php">
+<link rel="dns-prefetch" href="https://web.archive.org/web/20210419185530/https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://web.archive.org/web/20210419185530/https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="build broken » StupidDB – object-persistence-framework Comments Feed" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/feed/">
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/web.archive.org\/web\/20210419185530\/https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/web.archive.org\/web\/20210419185530\/https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/web.archive.org\/web\/20210419185530\/http:\/\/blog.aztec-project.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.1"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./stupiddb1_files/wp-emoji-release.min.js.Download" type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="./stupiddb1_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./stupiddb1_files/jetpack.css" type="text/css" media="all">
+<link rel="https://api.w.org/" href="https://blog.aztec-project.org/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.aztec-project.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.aztec-project.org/wp-includes/wlwmanifest.xml">
+<link rel="prev" title=".NET Open Space Süd 2009" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/10/net-open-space-sud-2009/">
+<link rel="next" title="Bericht zum Open Space Süd 2009" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/bericht-zum-open-space-sud-2009/">
+<meta name="generator" content="WordPress 5.3.1">
+<link rel="canonical" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/">
+<link rel="shortlink" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/?p=407">
+<link rel="alternate" type="application/json+oembed" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.aztec-project.org%2F2009%2F07%2F13%2Fstupiddb-object-persistence-framework%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fblog.aztec-project.org%2F2009%2F07%2F13%2Fstupiddb-object-persistence-framework%2F&amp;format=xml">
+<style type="text/css">img#wpstats{display:none}</style>
+<script type="text/javascript" src="./stupiddb1_files/jquery.js.Download"></script>
+<script type="text/javascript" src="./stupiddb1_files/jquery.ifixpng.js.Download"></script>
+<script type="text/javascript">jQuery.noConflict();</script>
+<style type="text/css">
+  .entry img, .entry embed, .entry object { max-width: 880px; width: expression(this.clientWidth > 880 ? 880 : true); }
+  .entry img { height: auto; }</style>
+<meta property="fb:admins" content="1109299946">
+<meta property="fb:app_id" content="134622216554391"></head>
+<body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;"><template shadowrootmode="closed"><div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20210419185530/https%3A//blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="https://web.archive.org/web/" title="Wayback Machine home page"><img src="https://web.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0"></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="https://web.archive.org/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/" onfocus="this.focus();this.select();" style="flex:1;" autocomplete="off"><input type="hidden" name="type" value="replay"><input type="hidden" name="date" value="20210419185530"><input type="submit" value="Go">
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+                <div class="s" id="wm-nav-captures" style="flex:1;"><a class="t" href="https://web.archive.org/web/*/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/" title="See a list of every capture for this URL">22 captures</a><div class="r" title="Timespan for captures of this URL">16 Jul 2009 - 19 Apr 2021</div></div>
+        <div class="k">
+          <a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/" id="wm-graph-anchor">
+            <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+              <canvas id="wm-sparkline-canvas" width="750" height="27" border="0"></canvas>
+            <div class="yt" style="display: none; width: 25px; height: 27px;"></div><div class="mt" style="display: none; width: 2px; height: 27px;"></div></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+        <tbody>
+          <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+          <tr class="m">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20210117160948/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/" title="17 Jan 2021"><strong>Jan</strong></a></td>
+            <td class="c" id="displayMonthEl" title="You are here: 18:55:30 Apr 19, 2021">APR</td>
+            <td class="f" nowrap="nowrap">May</td>
+          </tr>
+          <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+          <tr class="d">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20210117160948/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/" title="16:09:48 Jan 17, 2021"><img src="https://web.archive.org/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0"></a></td>
+            <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 18:55:30 Apr 19, 2021">19</td>
+            <td class="f" nowrap="nowrap"><img src="https://web.archive.org/_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"></td>
+          </tr>
+          <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+          <tr class="y">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20161013224421/http://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/" title="13 Oct 2016"><strong>2016</strong></a></td>
+            <td class="c" id="displayYearEl" title="You are here: 18:55:30 Apr 19, 2021">2021</td>
+            <td class="f" nowrap="nowrap">2022</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+                <span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#" title="Share via My Web Archive" style="display: inline-block;">
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in" style="display: none;">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        </span>
+                <a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+        <a id="wm-tb-close" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="https://web.archive.org/web/20210419185530/http://web.archive.org/screenshot/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/" id="wm-screenshot" title="screenshot" style="visibility: hidden;">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+        <a id="wm-share-facebook" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#" data-url="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+        <a id="wm-share-twitter" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#" data-url="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+        <a id="wm-expand" class="wm-btn wm-closed" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#expand"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+        <div id="wm-capinfo-notice" source="api"></div>
+                <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/commoncrawl)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/commoncrawl" target="_new"><span class="wm-title">Common Crawl</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Web crawl data from Common Crawl.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="https://web.archive.org/_static/images/loading.gif" alt="loading"></div>
+    </div>
+    </div>
+  </div></div></div><link rel="stylesheet" type="text/css" href="./stupiddb1_files/banner-styles.css"><link rel="stylesheet" type="text/css" href="./stupiddb1_files/iconochive.css"><div class="wb-autocomplete-suggestions "></div></template>
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(750,27,25,2,"web","https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/","20210419185530",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=3PDvdIFv"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ 
+<div id="page">
+<div id="header" class="png">
+<div id="headerimg">
+<h1 class="blogname" id="blogname"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/">build broken</a></h1><span class="blogname text-stroke-br">build broken</span><span class="blogname text-stroke-bl">build broken</span><span class="blogname text-stroke-tr">build broken</span><span class="blogname text-stroke-tl">build broken</span>
+<h6 class="blogdesc" id="blogdesc">but we can fix it! Sometimes :)</h6><span class="blogdesc text-stroke-br">but we can fix it! Sometimes :)</span><span class="blogdesc text-stroke-bl">but we can fix it! Sometimes :)</span><span class="blogdesc text-stroke-tr">but we can fix it! Sometimes :)</span><span class="blogdesc text-stroke-tl">but we can fix it! Sometimes :)</span>
+<ul class="pages png head_overlay">
+<li class="page_item"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/">Home</a></li>
+<li class="page_item page-item-2"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/about/">About</a></li>
+</ul>
+</div>
+</div>
+<div id="main" class="png">
+<table>
+<tbody><tr>
+<td id="content" class="widecolumn">
+<div class="navigation">
+<div class="alignleft">«&nbsp;<a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/10/net-open-space-sud-2009/" rel="prev">.NET Open Space Süd 2009</a></div>
+<div class="alignright"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/bericht-zum-open-space-sud-2009/" rel="next">Bericht zum Open Space Süd 2009</a>&nbsp;»</div>
+</div>
+<div class="post" id="post-407">
+<div class="postinfo">
+<div class="datestamp">
+<div>
+<span class="cal1 cal1x">Jul</span>
+<span class="cal2">13</span>
+<span class="cal3">2009</span>
+</div>
+</div>
+<span class="switch-post">
+<a href="javascript:toggleSidebars();" class="switch-sidebars"><img src="./stupiddb1_files/bullet_sidebars_hide.png" alt="" class="png"></a><a href="javascript:togglePost(407);" id="switch-post-407"><img src="./stupiddb1_files/bullet_toggle_minus.png" alt="" class="png"></a>
+</span>
+<h2 class="posttitle"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/" rel="bookmark" title="Permanent Link: StupidDB – object-persistence-framework">StupidDB – object-persistence-framework</a></h2>
+<small>
+Posted by <a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/author/sko/" title="Posts by Stefan Kölle">Stefan Kölle</a> in <a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/category/release/" rel="category tag">Release</a>, <a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/category/stupiddb/" rel="category tag">StupidDB</a>, tags: <a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/tag/stupiddb/" rel="tag">StupidDB</a> </small>
+</div>
+<div class="entry">
+<p>Angeregt durch die Diskussion auf dem Open-Spaces zum Thema schemalose Datenbanken, werden wir heute bereits die Vorabversion unserer StupidDB als open-source releasen.</p>
+<p>Die StupidDB entstand bei uns aus der Notwendigkeit, immer wieder Objekte und Files schnell und einfach zu speichern, dies serverlos und trotzdem skalierbar und hochverfügbar vorzuhalten. Die StupidDB lässt sich am besten wie folgt beschreiben:</p>
+<blockquote><p>StupidDB ist ein einfaches Objektspeicherungs-Framework auf dem Filesystem. Vergleichbar mit dem WebCache kann man in der StupidDB jegliches Objekt ablegen, welches kosteneffizient auf dem Filesystem gespeichert wird. Geladen werden können Objekte und Binärdaten mit einem eindeutigen Key und einer Partition. Den echten Speicherort auf der Festplatte ermittelt StupidDB selbst. Durch Replikation des Filesystems z.B. per Windows-DFS ist zudem eine einfache Hochverfügbarkeit und Skalierbarkeit der Datenbasis herzustellen.</p></blockquote>
+<p>Angeregt durch einen <a href="https://web.archive.org/web/20210419185530/http://techblog.tilllate.com/2008/08/14/webtuesday-lightning-talk-slides/" target="_blank">Blogeintrag von tilllate.com</a> letztes Jahr, entstand bereits vor einem Jahr die erste Version von StupidDB, welches bis zum Blogeintrag nur aus einem Konzept bestand. Leo Büttiker hat zwar ein leicht anderes Konzept als unsere Implementierung, in den Kernpunkten ähnelt sich aber das Design. StupidDB bekam durch diesen Blogpost damals jedoch seinen Namen.</p>
+<p>Für folgende Anwendungsszenarien sehen wir StupidDB als geeignet:</p>
+<ul>
+<li> Userdaten wie Fotos und Mediadaten, die eine Datenbank nur unnötig aufblähen</li>
+<li> temporäre Daten</li>
+<li> Statusdaten</li>
+<li>Versionierung von Daten</li>
+</ul>
+<p>Als Vorteile gegenüber z.B. MogileFS, CouchDB zählt für uns vor allem, dass kein zentraler Server für die Datenbank benötigt wird, sondern nur ein Share im Netz. Die Implementierung ist dadurch enorm vereinfacht. Mit weiteren Windows-Board-Mitteln kann man danach das ganze System um Hochverfügbarkeit und Skalierbarkeit einfach ausbauen.</p>
+<p>Die Nutzung selbst ist denkbar einfach. Folgendes Mitarbeiter-Objekt möchte ich speichern.</p>
+<div style="font-family: Courier New; font-size: 10pt; color: black; background: white;">
+<p style="margin: 0px;"><span style="color: #2b91af;"> 65</span> <span style="color: blue;">public</span> <span style="color: blue;">class</span> <span style="color: #2b91af;">Mitarbeiter</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 66</span> {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 67</span> <span style="color: blue;">public</span> <span style="color: blue;">int</span> Id { <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 68</span> <span style="color: blue;">public</span> <span style="color: blue;">string</span> Name { <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 69</span> <span style="color: blue;">public</span> <span style="color: blue;">string</span> Vorname { <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 70</span> <span style="color: blue;">public</span> <span style="color: blue;">string</span> Ort { <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 71</span> <span style="color: blue;">public</span> <span style="color: blue;">string</span> Plz { <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 72</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 73</span> <span style="color: blue;">public</span> <span style="color: blue;">string</span> VollerName</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 74</span> {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 75</span> <span style="color: blue;">get</span> { <span style="color: blue;">return</span> <span style="color: blue;">string</span>.Format(<span style="color: #a31515;">“{0} {1}”</span>, Vorname, Name); }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 76</span> }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 77</span> }</p>
+</div>
+<p>Dazu nutzt man die Put-Methode der StupidDB.</p>
+<div style="font-family: Courier New; font-size: 10pt; color: black; background: white;">
+<p style="margin: 0px;"><span style="color: #2b91af;"> 20</span> <span style="color: #2b91af;">IStupidDB</span> stupidDB = <span style="color: blue;">new</span> <span style="color: #2b91af;">StupidDB</span>(<span style="color: #a31515;">“test”</span>);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 21</span> <span style="color: #2b91af;">Mitarbeiter</span> mitarbeiter = <span style="color: blue;">new</span> <span style="color: #2b91af;">Mitarbeiter</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 22</span> {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 23</span> Id = 1,</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 24</span> Name = <span style="color: #a31515;">“Christian”</span>,</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 25</span> Vorname = <span style="color: #a31515;">“Thomas”</span>,</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 26</span> Ort = <span style="color: #a31515;">“Rosenheim”</span>,</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 27</span> Plz = <span style="color: #a31515;">“83026”</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 28</span> };</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 29</span> stupidDB.Put( <span style="color: #a31515;">“TestPartition”</span>, <span style="color: #a31515;">“EinMitarbeiter”</span>, mitarbeiter );</p>
+</div>
+<p>Um das gleiche Objekt wieder zu lesen, nutzt man mal eine Get Methode. Die Parameter sind Partition und Key:</p>
+<div style="font-family: Courier New; font-size: 10pt; color: black; background: white;">
+<p style="margin: 0px;"><span style="color: #2b91af;"> 32</span> <span style="color: #2b91af;">Mitarbeiter</span> mitarbeiterAusgelesen =</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 33</span> (<span style="color: #2b91af;">Mitarbeiter</span>)stupidDB.GetObject(</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 34</span> <span style="color: #a31515;">“TestPartition”</span>,</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 35</span> <span style="color: #a31515;">“EinMitarbeiter”</span>,</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 36</span> <span style="color: blue;">typeof</span>(<span style="color: #2b91af;">Mitarbeiter</span>)</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 37</span> );</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 38</span> <span style="color: blue;">if</span> (mitarbeiterAusgelesen != <span style="color: blue;">null</span>)</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 39</span> {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 40</span> <span style="color: #2b91af;">Console</span>.WriteLine(<span style="color: #a31515;">“Name des Mitarbeiters: {0}”</span>,</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 41</span> mitarbeiterAusgelesen.VollerName);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 42</span> }</p>
+</div>
+<p>Die StupidDB selbst wird über die app.config definiert.</p>
+<div style="font-family: Courier New; font-size: 10pt; color: black; background: white;">
+<p style="margin: 0px;"><span style="color: #2b91af;"> 3</span> <span style="color: blue;">&lt;</span><span style="color: #a31515;">configuration</span><span style="color: blue;">&gt;</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 4</span> <span style="color: blue;"> &lt;</span><span style="color: #a31515;">configSections</span><span style="color: blue;">&gt;</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 5</span> <span style="color: blue;"> &lt;</span><span style="color: #a31515;">section</span><span style="color: blue;"> </span><span style="color: red;">name</span><span style="color: blue;">=</span>“<span style="color: blue;">stupidDB</span>“<span style="color: blue;"> </span><span style="color: red;">type</span><span style="color: blue;">=</span>“<span style="color: blue;">Aztec.StupidDB.DBConfigCollection, Aztec.StupidDB, Version=1.0.0.0, Culture=neutral</span>“<span style="color: blue;"> </span><span style="color: red;">allowLocation</span><span style="color: blue;">=</span>“<span style="color: blue;">true</span>“<span style="color: blue;"> </span><span style="color: red;">allowDefinition</span><span style="color: blue;">=</span>“<span style="color: blue;">Everywhere</span>“<span style="color: blue;">/&gt;</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 6</span> <span style="color: blue;"> &lt;/</span><span style="color: #a31515;">configSections</span><span style="color: blue;">&gt;</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 7</span> <span style="color: blue;"> &lt;</span><span style="color: #a31515;">stupidDB</span><span style="color: blue;">&gt;</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 8</span> <span style="color: blue;"> &lt;</span><span style="color: #a31515;">DB</span><span style="color: blue;"> </span><span style="color: red;">name</span><span style="color: blue;">=</span>“<span style="color: blue;">test</span>“<span style="color: blue;"> </span><span style="color: red;">root</span><span style="color: blue;">=</span>“<span style="color: blue;">temp\test</span>“<span style="color: blue;"> </span><span style="color: red;">tiefe</span><span style="color: blue;">=</span>“<span style="color: blue;">3</span>“<span style="color: blue;"> </span><span style="color: red;">versionierung</span><span style="color: blue;">=</span>“<span style="color: blue;">false</span>“<span style="color: blue;"> /&gt;</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 9</span> <span style="color: blue;"> &lt;/</span><span style="color: #a31515;">stupidDB</span><span style="color: blue;">&gt;</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;"> 10</span> <span style="color: blue;">&lt;/</span><span style="color: #a31515;">configuration</span><span style="color: blue;">&gt;</span></p>
+</div>
+<p>Wer sich den aktuellen Code einmal ansehen möchte, kann dies gerne unter folgendem Link ansehen:<a href="https://web.archive.org/web/20210419185530/https://stupiddb.svn.sourceforge.net/svnroot/stupiddb/trunk"><br>
+https://stupiddb.svn.sourceforge.net/svnroot/stupiddb/trunk</a></p>
+<p><a href="https://web.archive.org/web/20210419185530/http://dotnet-kicks.de/kick/?url=http%3a%2f%2fblog.aztec-project.org%2f2009%2f07%2f13%2fstupiddb-object-persistence-framework%2f"><img src="./stupiddb1_files/KickItImageGenerator.ashx" border="0" alt="kick it on dotnet-kicks.de"></a></p>
+<p class="postmetadata alt clear">
+<small>
+This entry was posted on Monday, July 13th, 2009 at 3:30 pm and is filed under <a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/category/release/" rel="category tag">Release</a>, <a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/category/stupiddb/" rel="category tag">StupidDB</a>. You can follow any responses to this entry through the <a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/feed/">RSS 2.0</a> feed. You can <a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#respond">leave a response</a>, or <a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/trackback/" rel="trackback">trackback</a> from your own site.
+</small>
+</p>
+</div>
+</div>
+<div id="comments">
+7 Responses to “StupidDB – object-persistence-framework”
+</div>
+<ol class="commentlist" id="commentlist">
+<li class="comment even thread-even depth-1 alt" id="comment-322">
+<div id="div-comment-322" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#"><img src="./stupiddb1_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb1_files/fd26012e9b6baacc2b78bcdb1740a61a" srcset="https://web.archive.org/web/20210419185530im_/http://0.gravatar.com/avatar/fd26012e9b6baacc2b78bcdb1740a61a?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn">Doku</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#comment-322">
+March 1, 2010 at 9:59 am </a>
+</div>
+<div class="comment"><p>Coole Sache, gibt es dazu eine Doku der Funktionen wie .Backup<br>
+und der möglichen werte, wie Tiefe, Versionierung etc?</p></div>
+<div class="comment"><p>Vielen Dank.</p></div>
+</div>
+</li>
+<li class="comment byuser comment-author-sko bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-324">
+<div id="div-comment-324" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#"><img src="./stupiddb1_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb1_files/dd231104fe0e1a7b87be55834a7c0c86.jpeg" srcset="https://web.archive.org/web/20210419185530im_/http://1.gravatar.com/avatar/dd231104fe0e1a7b87be55834a7c0c86?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn"><a href="https://web.archive.org/web/20210419185530/http://www.stefankoelle.de/" rel="external nofollow ugc" class="url">Stefan Kölle</a></cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#comment-324">
+March 1, 2010 at 12:21 pm </a>
+</div>
+<div class="comment"><p>Es gibt aktuell noch keine Doku, im Code wird einiges erklaert jedoch sicher nicht ausreichend. </p></div>
+<div class="comment"><p>In der aktuellen Ausgabe der dotnetpro gibt es jedoch einen Artikel zu StupidDB, dort erklaere ich die Parameter noch einmal genauer. Auch das Thema Tiefe, Versionierung usw. <a href="https://web.archive.org/web/20210419185530/http://www.dotnetpro.de/CurrentIssue.aspx" rel="nofollow ugc">http://www.dotnetpro.de/CurrentIssue.aspx</a></p></div>
+</div>
+</li>
+<li class="comment even thread-even depth-1 alt" id="comment-349">
+<div id="div-comment-349" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#"><img src="./stupiddb1_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb1_files/d1bda30d19e96280487c119546a5facc" srcset="https://web.archive.org/web/20210419185530im_/http://1.gravatar.com/avatar/d1bda30d19e96280487c119546a5facc?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn">UweD</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#comment-349">
+March 9, 2010 at 5:47 pm </a>
+</div>
+<div class="comment"><p>Scheint ja wirklich toll zu sein. Leider findet man im Web noch nicht allzuviel darüber. Der Artikel in der dotnetpro sagt einiges, aber zu dem Pfad kann ich nirgends etwas finden.<br>
+Wenn ich root=“temp\test“ angebe, wo liegt das dann physisch?</p></div>
+</div>
+</li>
+<li class="comment byuser comment-author-sko bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-350">
+<div id="div-comment-350" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#"><img src="./stupiddb1_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb1_files/dd231104fe0e1a7b87be55834a7c0c86.jpeg" srcset="https://web.archive.org/web/20210419185530im_/http://1.gravatar.com/avatar/dd231104fe0e1a7b87be55834a7c0c86?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn"><a href="https://web.archive.org/web/20210419185530/http://www.stefankoelle.de/" rel="external nofollow ugc" class="url">Stefan Kölle</a></cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#comment-350">
+March 9, 2010 at 5:52 pm </a>
+</div>
+<div class="comment"><p>Hallo, Uwe,</p></div>
+<div class="comment"><p>man kann bei root einfach einen absoluten Pfad angeben, z.B. c:\temp\stupiddb\</p></div>
+<div class="comment"><p>Ohne der Angabe eines Pfades wird die StupidDB im Ausfuehrungsverzeichnis angelegt.</p></div>
+<div class="comment"><p>Gruss<br>
+Stefan</p></div>
+</div>
+</li>
+<li class="comment even thread-even depth-1 alt" id="comment-503">
+<div id="div-comment-503" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#"><img src="./stupiddb1_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb1_files/0506b93e46367ba426b9351036ff69ef" srcset="https://web.archive.org/web/20210419185530im_/http://0.gravatar.com/avatar/0506b93e46367ba426b9351036ff69ef?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn">Uwe</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#comment-503">
+January 4, 2011 at 11:17 am </a>
+</div>
+<div class="comment"><p>Hallo,<br>
+ich bin nun nicht so firm in C#. Gibt es Beispiel für IStupidDB.Dir ?</p></div>
+<div class="comment"><p>Danke<br>
+Uwe</p></div>
+</div>
+</li>
+<li class="comment byuser comment-author-ase odd alt thread-odd thread-alt depth-1" id="comment-504">
+<div id="div-comment-504" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#"><img src="./stupiddb1_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb1_files/8e8da2fc0bc939d05e03fcaa078b3859.jpeg" srcset="https://web.archive.org/web/20210419185530im_/http://2.gravatar.com/avatar/8e8da2fc0bc939d05e03fcaa078b3859?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn"><a href="https://web.archive.org/web/20210419185530/http://www.in-your-face.org/" rel="external nofollow ugc" class="url">Andreas Seebauer</a></cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#comment-504">
+January 12, 2011 at 12:05 pm </a>
+</div>
+<div class="comment"><p>Hallo, Uwe,</p></div>
+<div class="comment"><p>hier ein kleines Beispiel für die Verwendung von IStupidDB.Dir in C#:</p></div>
+<div class="comment"><p>IStupidDB sdb = new StupidDB(“meinDbName”);<br>
+string partition = “Beispielpartition”;<br>
+string key = “Beispielkey”;<br>
+// Speichern des strings “Beispiel” unter Key “Beispielkey” in Partition “Beispielpartition”<br>
+sdb.Put(partition, key, “Beispiel”);<br>
+// Auflisten aller Keys in Partition “Beispielpartition”<br>
+List<string> listKeys = sdb.Dir(partition);</string></p></div>
+<div class="comment"><p>Mit den zurückgelieferten Keys können dann die Objekte via GetObject ausgelesen werden.<br>
+Ich hoffe das beantwortet deine Frage.</p></div>
+<div class="comment"><p>Gruß<br>
+Andreas</p></div>
+</div>
+</li>
+<li class="comment even thread-even depth-1 alt" id="comment-505">
+<div id="div-comment-505" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#"><img src="./stupiddb1_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./stupiddb1_files/0506b93e46367ba426b9351036ff69ef" srcset="https://web.archive.org/web/20210419185530im_/http://0.gravatar.com/avatar/0506b93e46367ba426b9351036ff69ef?s=64&amp;d=identicon&amp;r=g 2x" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn">Uwe</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#comment-505">
+January 12, 2011 at 4:23 pm </a>
+</div>
+<div class="comment"><p>Hallo Andreas,<br>
+nein, nicht ganz!<br>
+Laut Doc gibt es<br>
+Dir – Listet alle Schlüssel einer Partition) und<br>
+Dir – Liefert ein IDictionary aller Schlüssel mit zugehörigem Objekt .</p></div>
+<div class="comment"><p>Mit geht es um das 2. Dir.</p></div>
+<div class="comment"><p>Uwe</p></div>
+</div>
+</li>
+<li style="display: none;">&nbsp;</li>
+</ol>
+<div class="navigation">
+<div class="alignleft"></div>
+<div class="alignright"></div>
+</div>
+<div id="respond">
+<div class="title">Leave a Reply</div>
+<div class="cancel-comment-reply">
+<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/2009/07/13/stupiddb-object-persistence-framework/#respond" style="display:none;">Click here to cancel reply</a></small>
+</div>
+<form action="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/wp-comments-post.php" method="post" id="commentform">
+<input type="hidden" name="comment_post_ID" value="407" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1">
+<label for="author"><small>Name (required)</small></label></p>
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2">
+<label for="email"><small>E-mail (will not be published) (required)</small></label></p>
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3">
+<label for="url"><small>Website</small></label></p>
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+<p>
+<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment">
+<input type="hidden" name="comment_post_ID" value="407">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d53453affb"></p><p style="display: none;"></p> <br class="clear">
+<input type="hidden" id="ak_js" name="ak_js" value="1618858531818"></form>
+</div>
+<script type="text/javascript">
+<!-- // <![CDATA[
+
+		jQuery(document).ready(function() {
+			if (jQuery('#trackbacklist li').length == 1)
+				jQuery('#trackbacks, #trackbacklist').hide();
+			jQuery('li.comment>div>*').filter(':not(.comment-author, .comment-meta)').wrap('<div class="comment"><\/div>');
+			
+			jQuery('.comment-author').before('<span class="switch-post"><a href="#"><img src="https://web.archive.org/web/20210419185530/http://blog.aztec-project.org/wp-content/themes/mandigo/images/icons/bullet_toggle_minus.png" alt="" class="png" /><\/a><\/span>');
+		});
+
+// ]]> -->
+</script>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div id="footer" class="png">
+<p>
+Powered by <a href="https://web.archive.org/web/20210419185530/https://wordpress.org/">WordPress</a>, <a href="https://web.archive.org/web/20210419185530/http://www.onehertz.com/portfolio/wordpress/" target="_blank" title="WordPress themes">Mandigo theme</a> by tom.
+<br><a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/feed/"><img src="./stupiddb1_files/rss_s.gif" alt=""> Entries (RSS)</a>
+and <a href="https://web.archive.org/web/20210419185530/https://blog.aztec-project.org/comments/feed/"><img src="./stupiddb1_files/rss_s.gif" alt=""> Comments (RSS)</a>.
+</p>
+</div>
+</div>
+<script type="text/javascript" src="./stupiddb1_files/comment-reply.min.js.Download"></script>
+<script type="text/javascript" src="./stupiddb1_files/devicepx-jetpack.js.Download"></script>
+<script type="text/javascript" src="./stupiddb1_files/wp-embed.min.js.Download"></script>
+<script async="async" type="text/javascript" src="./stupiddb1_files/form.js.Download"></script>
+<script type="text/javascript" src="./stupiddb1_files/e-202116.js.Download" async="async" defer="defer"></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.0',blog:'170418232',post:'407',tz:'2',srv:'blog.aztec-project.org'} ]);
+	_stq.push([ 'clickTrackerInit', '170418232', '407' ]);
+</script>
+<script type="text/javascript">
+<!-- // <![CDATA[
+
+	jQuery(document).ready(function() {
+		jQuery('#rssicon, #searchsubmit').hover(
+			function() { this.src = this.src.replace('.gif','_hover.gif'); },
+			function() { this.src = this.src.replace('_hover.gif','.gif'); }
+		);
+
+		jQuery('.entry img[align=left]' ).addClass('alignleft' );
+		jQuery('.entry img[align=right]').addClass('alignright');
+		
+		if (jQuery.browser.msie) {
+			if (/^[56]/.test(jQuery.browser.version)) {
+				jQuery.ifixpng('https://web.archive.org/web/20210419185530/http://blog.aztec-project.org/wp-content/themes/mandigo/images/1x1.gif');
+				jQuery('body, .png').ifixpng();
+				jQuery('.commentlist.pre27 .avatar').height(36);
+			}
+
+		}
+		
+		jQuery('p:has(.dropcap)').append('<br class="clear"/>');
+
+		togglePost = function(id) {
+			if (!id) return;
+			icon = jQuery('#switch-post-'+ id +' img');
+			icon.attr('src', /minus/.test(icon.attr('src')) ? icon.attr('src').replace('minus', 'plus') : icon.attr('src').replace('plus', 'minus'));
+			jQuery('#post-'+ id +' .entry').animate({ height: 'toggle', opacity: 'toggle' }, 1000);
+		}
+
+		jQuery('.switch-post img').bind('click', function() {
+			id = jQuery(this).parents('li').attr('id').replace(/[^\d]+-/, '');
+			icon = jQuery('#comment-'+ id +' .switch-post img');
+			src  = icon.attr('src');
+			icon.attr('src', /minus/.test(src) ? src.replace('minus', 'plus') : src.replace('plus', 'minus'));
+			jQuery('#comment-'+ id +' div.comment').animate({ height: 'toggle', opacity: 'toggle' }, 1000);
+			return false;
+		});
+
+		toggleSidebars = function() {
+			icon = jQuery('.switch-sidebars img');
+			icon.attr('src', /hide/.test(icon.attr('src')) ? icon.attr('src').replace('hide', 'show') : icon.attr('src').replace('show', 'hide'));
+			jQuery('.sidebars').animate({ width: 'toggle', height: 'toggle', padding: 'toggle', border: 'toggle' }, 1000);
+		}
+
+		jQuery('.widgettitle, .linkcat *:first, .wpg2blockwidget h3').click(function() {
+			jQuery(this).siblings().animate({ height: 'toggle', opacity: 'toggle' }, 1000);
+		}).css({cursor: 'n-resize'});
+
+		jQuery.each(['tl','tr','bl','br'],function() {
+			jQuery('#blogname').after('<span class="blogname text-stroke-'+ this +'">'+ jQuery('#blogname a').html() +'<\/span>');
+			jQuery('#blogdesc').after('<span class="blogdesc text-stroke-'+ this +'">'+ jQuery('#blogdesc'  ).html() +'<\/span>');
+		});
+
+		jQuery('#header .page_item:has(ul)').addClass('has_sub, png');
+		
+		jQuery('#header .page_item').hover(
+			function() {
+				ul = jQuery(this).find('>ul');
+				if (ul.hasClass('sliding')) return;
+				a  = jQuery(this).find('>a');
+				if (jQuery(this).parent().hasClass('pages')) {
+					y = a.position().top + a.height();
+				x = a.position().left + a.width() - ul.width();
+				}
+				else {
+					y = jQuery(this).position().top - 5;
+					x = jQuery(this).parent().width();
+				}
+				jQuery(this)
+					.find('>ul')
+					.css({left:x, top:y})
+					.addClass('sliding')
+					.slideDown(300, function() { jQuery(this).removeClass('sliding'); });
+			},
+			function() {
+				jQuery(this)
+					.find('>ul')
+					.addClass('sliding')
+					.slideUp(800, function() { jQuery(this).removeClass('sliding').hide(); });
+			}
+		);
+
+		jQuery('.commentlist li:even').addClass('alt');
+});
+// ]]> -->
+</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://web.archive.org/web/20210419185530/https://ssl." : "https://web.archive.org/web/20210419185530/http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./stupiddb1_files/ga.js.Download" type="text/javascript"></script><img src="./stupiddb1_files/g.gif" alt=":)" width="6" height="5" id="wpstats">
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9511047-1"); pageTracker._trackPageview(); } catch(err) {}</script>
+
+
+
+<div data-lastpass-root="" style="position: absolute !important; top: 0px !important; left: 0px !important; height: 0px !important; width: 0px !important;"><template shadowrootmode="closed"><div style="position: absolute; height: 100vh; width: 100vw; z-index: 2147483647; border-radius: 4px; top: 0px; left: 0px; max-height: 0px; max-width: 280px; min-width: auto;"><iframe data-lastpass-infield="true" allow="clipboard-write" src="chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/webclient-infield.html" style="border: none; height: 100%; width: 100%;"></iframe></div></template></div></body></html>

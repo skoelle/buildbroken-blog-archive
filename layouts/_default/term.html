@@ -1,0 +1,20 @@
+{{ define "main" }}
+<h2 class="archive-title">{{ .Title }}</h2>
+{{ with .Content }}<div class="archive-intro">{{ . }}</div>{{ end }}
+<div class="post-list">
+  {{ range .Pages }}
+    <article class="post-teaser">
+      <div class="date-badge">
+        <span class="month">{{ .Date.Format "Jan" }}</span>
+        <span class="day">{{ .Date.Format "02" }}</span>
+        <span class="year">{{ .Date.Format "2006" }}</span>
+      </div>
+      <div class="post-teaser-body">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{ if .Params.author }}<p class="meta">von {{ .Params.author }}{{ if .Params.categories }} in {{ delimit .Params.categories ", " }}{{ end }}</p>{{ end }}
+        <div class="excerpt">{{ replaceRE "<p[^>]*>\\s*(<a[^>]*>)?\\s*</a>?\\s*</p>" "" (replaceRE "<img[^>]*>" "" .Summary) | safeHTML }}</div>
+      </div>
+    </article>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,17 @@
+baseURL = "https://buildbroken.moonweb.org/"
+locale = "de-de"
+title = "build broken"
+enableRobotsTXT = true
+paginate = 10
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "author"
+
+[params]
+  subtitle = "but we can fix it! Sometimes :)"
+  bannerImage = "/images/banner.jpg"
+
+[markup.goldmark.renderer]
+  unsafe = true

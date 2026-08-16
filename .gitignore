@@ -1,0 +1,20 @@
+# Hugo Build-Output (regenerierbar)
+public/
+
+# Python virtualenv & Cache
+.venv/
+__pycache__/
+*.pyc
+
+# Hugo-Build-Lock
+.hugo_build.lock
+
+# Wayback-CDX-Cache (regenerierbar via Downloader)
+archive/wayback-html/.cdx_cache.json
+
+# Betriebssystem / Editor
+.DS_Store
+Thumbs.db
+
+# Dev-Skript
+start-dev.sh

@@ -1,0 +1,285 @@
+{
+ "blog.html": {
+  "html_ts": "20250114141020",
+  "images": {}
+ },
+ "about.html": {
+  "html_ts": "20250601101252",
+  "images": {}
+ },
+ "dotnet-openspace-leipzig-2009-buchung.html": {
+  "html_ts": "20250705042252",
+  "images": {
+   "bullet_sidebars_hide.png": {
+    "url": "https://aztec-project.org/blog/dotnet-openspace-leipzig-2009-buchung_files/bullet_sidebars_hide.png",
+    "ts": "20250705042253"
+   },
+   "bullet_toggle_minus.png": {
+    "url": "https://aztec-project.org/blog/dotnet-openspace-leipzig-2009-buchung_files/bullet_toggle_minus.png",
+    "ts": "20250705042253"
+   },
+   "icon_wink.gif": {
+    "url": "https://aztec-project.org/blog/dotnet-openspace-leipzig-2009-buchung_files/icon_wink.gif",
+    "ts": "20250705042253"
+   },
+   "rss_s.gif": {
+    "url": "https://aztec-project.org/blog/dotnet-openspace-leipzig-2009-buchung_files/rss_s.gif",
+    "ts": "20250705042253"
+   }
+  }
+ },
+ "dotnet-openspace-leipzig-2009.html": {
+  "html_ts": "20260510022926",
+  "images": {}
+ },
+ "dotnet-openspace-sued-2009-buchung.html": {
+  "html_ts": "20250114132004",
+  "images": {}
+ },
+ "dotnet-openspace-sued-2009.html": {
+  "html_ts": "20250601101213",
+  "images": {
+   "16787936.jpg": {
+    "url": "https://aztec-project.org/blog/dotnet-openspace-sued-2009_files/16787936.jpg",
+    "ts": "20250601101214"
+   },
+   "P1010477.JPG": {
+    "url": "https://aztec-project.org/blog/dotnet-openspace-sued-2009_files/P1010477.JPG",
+    "ts": "20250601101214"
+   },
+   "bullet_sidebars_hide.png": {
+    "url": "https://aztec-project.org/blog/dotnet-openspace-sued-2009_files/bullet_sidebars_hide.png",
+    "ts": "20250601101213"
+   },
+   "bullet_toggle_minus.png": {
+    "url": "http://blog.aztec-project.org/wp-content/themes/mandigo/images/icons/bullet_toggle_minus.png",
+    "ts": "20151103215811"
+   },
+   "icon_smile.gif": {
+    "url": "https://aztec-project.org/blog/dotnet-openspace-sued-2009_files/icon_smile.gif",
+    "ts": "20250601101214"
+   },
+   "rss_s.gif": {
+    "url": "https://aztec-project.org/blog/dotnet-openspace-sued-2009_files/rss_s.gif",
+    "ts": "20250601101214"
+   }
+  }
+ },
+ "webservice-mit-asp-classic.html": {
+  "html_ts": "20250114140710",
+  "images": {}
+ },
+ "asp-mvc-2.html": {
+  "html_ts": "20250114131627",
+  "images": {}
+ },
+ "anonyme-datentypen.html": {
+  "html_ts": "20250601101329",
+  "images": {
+   "bullet_sidebars_hide.png": {
+    "url": "https://aztec-project.org/blog/anonyme-datentypen_files/bullet_sidebars_hide.png",
+    "ts": "20250601101330"
+   },
+   "bullet_toggle_minus.png": {
+    "url": "https://aztec-project.org/blog/anonyme-datentypen_files/bullet_toggle_minus.png",
+    "ts": "20250601101331"
+   },
+   "rss_s.gif": {
+    "url": "https://aztec-project.org/blog/anonyme-datentypen_files/rss_s.gif",
+    "ts": "20250601101331"
+   },
+   "share_save_171_16.png": {
+    "url": "https://aztec-project.org/blog/anonyme-datentypen_files/share_save_171_16.png",
+    "ts": "20250601101331"
+   }
+  }
+ },
+ "async.html": {
+  "html_ts": null,
+  "images": {}
+ },
+ "async-refactored.html": {
+  "html_ts": "20250114134342",
+  "images": {}
+ },
+ "barcamp-bodensee-2010.html": {
+  "html_ts": "20250114114407",
+  "images": {}
+ },
+ "clean-code-developer.html": {
+  "html_ts": null,
+  "images": {}
+ },
+ "clean-code-developer-yellow-brick-road.html": {
+  "html_ts": "20250601101331",
+  "images": {
+   "bullet_sidebars_hide.png": {
+    "url": "https://aztec-project.org/blog/clean-code-developer-yellow-brick-road_files/bullet_sidebars_hide.png",
+    "ts": "20250601101332"
+   },
+   "bullet_toggle_minus(1).png": {
+    "url": "https://aztec-project.org/blog/clean-code-developer-yellow-brick-road_files/bullet_toggle_minus(1).png",
+    "ts": "20250601101332"
+   },
+   "bullet_toggle_minus.png": {
+    "url": "https://aztec-project.org/blog/clean-code-developer-yellow-brick-road_files/bullet_toggle_minus.png",
+    "ts": "20250601101332"
+   },
+   "rss_s.gif": {
+    "url": "https://aztec-project.org/blog/clean-code-developer-yellow-brick-road_files/rss_s.gif",
+    "ts": "20250601101332"
+   }
+  }
+ },
+ "cleancode1.html": {
+  "html_ts": "20250114133226",
+  "images": {}
+ },
+ "cleancode2.html": {
+  "html_ts": "20250114122055",
+  "images": {}
+ },
+ "design-by-contract.html": {
+  "html_ts": "20250114140450",
+  "images": {}
+ },
+ "design-by-contract-teil2.html": {
+  "html_ts": "20250601101252",
+  "images": {}
+ },
+ "dime-casts.html": {
+  "html_ts": "20250114131549",
+  "images": {}
+ },
+ "dynamic-load.html": {
+  "html_ts": "20250601101323",
+  "images": {
+   "bullet_sidebars_hide.png": {
+    "url": "https://aztec-project.org/blog/dynamic-load_files/bullet_sidebars_hide.png",
+    "ts": "20250601101324"
+   },
+   "bullet_toggle_minus.png": {
+    "url": "https://aztec-project.org/blog/dynamic-load_files/bullet_toggle_minus.png",
+    "ts": "20250601101324"
+   },
+   "rss_s.gif": {
+    "url": "https://aztec-project.org/blog/dynamic-load_files/rss_s.gif",
+    "ts": "20250601101324"
+   }
+  }
+ },
+ "alt-net-energien.html": {
+  "html_ts": "20250114121547",
+  "images": {}
+ },
+ "mvp-winforms-teil1.html": {
+  "html_ts": null,
+  "images": {}
+ },
+ "mvp-winforms.html": {
+  "html_ts": "20250114132109",
+  "images": {}
+ },
+ "prio-conference-2009.html": {
+  "html_ts": "20250114125123",
+  "images": {}
+ },
+ "refaktorisierung.html": {
+  "html_ts": "20250601101342",
+  "images": {
+   "bullet_toggle_minus.png": {
+    "url": "https://aztec-project.org/blog/refaktorisierung_files/bullet_toggle_minus.png",
+    "ts": "20250601101342"
+   },
+   "rss_s.gif": {
+    "url": "https://aztec-project.org/blog/refaktorisierung_files/rss_s.gif",
+    "ts": "20250601101342"
+   }
+  }
+ },
+ "scrumbut.html": {
+  "html_ts": "20250114121008",
+  "images": {}
+ },
+ "softwarezellen.html": {
+  "html_ts": "20250601101252",
+  "images": {}
+ },
+ "test-public-methods.html": {
+  "html_ts": "20250114141241",
+  "images": {}
+ },
+ "plugin-pattern.html": {
+  "html_ts": "20250114120158",
+  "images": {}
+ },
+ "unittests-webforms.html": {
+  "html_ts": "20250114121657",
+  "images": {}
+ },
+ "code-to-html.html": {
+  "html_ts": "20250114134712",
+  "images": {}
+ },
+ "webcamps.html": {
+  "html_ts": "20260605232306",
+  "images": {}
+ },
+ "reflection.html": {
+  "html_ts": "20250114131122",
+  "images": {}
+ },
+ "programmierer.html": {
+  "html_ts": "20250114120714",
+  "images": {}
+ },
+ "aync.html": {
+  "html_ts": "20251110231532",
+  "images": {
+   "3e7b6cb163ea9cc8549abcb8b5a03e2e.jpeg": {
+    "url": "https://aztec-project.org/blog/aync_files/3e7b6cb163ea9cc8549abcb8b5a03e2e.jpeg",
+    "ts": "20250601101334"
+   },
+   "Form1.png": {
+    "url": "https://aztec-project.org/blog/aync_files/Form1.png",
+    "ts": "20250601101333"
+   },
+   "KickItImageGenerator.ashx": {
+    "url": "https://aztec-project.org/blog/aync_files/KickItImageGenerator.ashx",
+    "ts": "20250601101333"
+   },
+   "bullet_sidebars_hide.png": {
+    "url": "https://aztec-project.org/blog/aync_files/bullet_sidebars_hide.png",
+    "ts": "20250601101333"
+   },
+   "bullet_toggle_minus(1).png": {
+    "url": "https://aztec-project.org/blog/aync_files/bullet_toggle_minus(1).png",
+    "ts": "20250601101333"
+   },
+   "bullet_toggle_minus.png": {
+    "url": "https://aztec-project.org/blog/aync_files/bullet_toggle_minus.png",
+    "ts": "20250601101333"
+   },
+   "keineRueckmeldung.png": {
+    "url": "https://aztec-project.org/blog/aync_files/keineRueckmeldung.png",
+    "ts": "20250601101333"
+   },
+   "rss_s.gif": {
+    "url": "https://aztec-project.org/blog/aync_files/rss_s.gif",
+    "ts": "20250601101334"
+   },
+   "share_save_171_16.png": {
+    "url": "https://aztec-project.org/blog/aync_files/share_save_171_16.png",
+    "ts": "20250601101333"
+   }
+  }
+ },
+ "stupiddb1.html": {
+  "html_ts": "20250114121109",
+  "images": {}
+ },
+ "stupiddb2.html": {
+  "html_ts": "20250114131202",
+  "images": {}
+ }
+}

@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0123)https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" class=" hubtumix idc0_350"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./mvp-winforms_files/vglnk.js.Download"></script><script id="twitter-wjs" src="./mvp-winforms_files/widgets.js.Download"></script><script id="facebook-jssdk" src="./mvp-winforms_files/sdk.js.Download"></script><script type="text/javascript" async="" src="./mvp-winforms_files/page.js.Download"></script><script src="./mvp-winforms_files/athena.js.Download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app210.us.archive.org';v.server_ms=346;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="./mvp-winforms_files/bundle-playback.js.Download" charset="utf-8"></script>
+<script type="text/javascript" src="./mvp-winforms_files/wombat.js.Download" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="./mvp-winforms_files/ruffle.js.Download"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/","20161112050522","https://web.archive.org/","web","/_static/",
+	      "1478927122");
+</script>
+<link rel="stylesheet" type="text/css" href="./mvp-winforms_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./mvp-winforms_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+
+<title>build broken » Beispiel Model-View-Presenter mit WinForms</title>
+<meta name="generator" content="WordPress 3.4.2">
+<meta name="theme" content="Mandigo 1.41">
+<link rel="stylesheet" href="./mvp-winforms_files/style.css" type="text/css" media="screen">
+<style type="text/css">body{font-family:Arial,Sans-Serif;background-color:#44484F;}a{font-weight:bold;}.narrowcolumn .entry,.widecolumn .entry{line-height:1.4em;}.inline-widgets #wp-calendar caption,.blogname,.blogdesc{font-family:'Trebuchet MS','Lucida Grande',Verdana,Arial,Sans-Serif;}.blogname{font-size:4em;margin-top:15px;}.posttitle,#comments,#respond .title,#respond.pre27,#trackbacks{font-family:'Trebuchet MS','Lucida Grande',Verdana,Arial,Sans-Serif;}.commentlist li,#commentform input,#commentform textarea{font-family:'Lucida Grande',Verdana,Arial,Sans-Serif;}#commentform p{font-family:'Lucida Grande',Verdana,Arial,Sans-Serif;}.sidebars{font-family:'Lucida Grande',Verdana,Arial,Sans-Serif;}#page{width:987px;}#header{background:url(https://web.archive.org/web/20161112050522im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/header-1024.png);height:243px;width:987px;}#headerimg{height:226px;width:961px;background:url(https://web.archive.org/web/20161112050522im_/http://blog.aztec-project.org/wp-content/themes/mandigo/schemes/orange/images/head-1024.jpg) bottom center no-repeat;}#main{background:url(https://web.archive.org/web/20161112050522im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/bg-1024.png);width:957px;}#footer{background:url(https://web.archive.org/web/20161112050522im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/foot-1024.png);}.post{text-align:justify;background:#FAFAFA;border:1px solid #EEEEEE;}#footer{width:987px;}.sidebars{background:#EEEEEE;border:1px solid #DDDDDD;}#sidebar1 .sidebars{width:210px;}#sidebar2 .sidebars{width:210px;}.entry img{float:none;}.sidebars li{list-style-image:url(https://web.archive.org/web/20161112050522im_/http://blog.aztec-project.org/wp-content/themes/mandigo/schemes/orange/images/star.gif);}.commentlist{}.commentlist li{list-style:none;}#wp-calendar{margin:0!important;margin-top:-1.5em;}#wp-calendar caption{margin-top:-1.4em;}div#wp-calendar .nav{margin:0;}.datestamp div{font-family:'Lucida Grande','Lucida Sans Unicode',Arial,Sans-Serif;}.cal3{}.pages{text-align:right;}.pages ul li.has_sub{background:url(https://web.archive.org/web/20161112050522im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/icons/bullet_arrow_right.png) no-repeat center right;}.head_overlay{background:url(https://web.archive.org/web/20161112050522im_/http://blog.aztec-project.org/wp-content/themes/mandigo/images/head_overlay.png);}</style>
+<link rel="stylesheet" href="./mvp-winforms_files/scheme.css" type="text/css" media="screen">
+<link rel="alternate" type="application/rss+xml" title="build broken RSS Feed" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/feed/">
+<link rel="pingback" href="https://blog.aztec-project.org/xmlrpc.php">
+<link rel="alternate" type="application/rss+xml" title="build broken » Beispiel Model-View-Presenter mit WinForms Kommentar-Feed" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/feed/">
+<link rel="stylesheet" id="A2A_SHARE_SAVE-css" href="./mvp-winforms_files/addtoany.min.css" type="text/css" media="all">
+<script type="text/javascript" src="./mvp-winforms_files/comment-reply.js.Download"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.aztec-project.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.aztec-project.org/wp-includes/wlwmanifest.xml">
+<link rel="prev" title="Softwarezellen – eine Lösung um die Komplexität zu beherrschen" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/01/27/softwarezellen-eine-losung-um-die-komplexitat-zu-beherrschen/">
+<link rel="next" title="NoSQL mit StupidDB" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/">
+<link rel="canonical" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/">
+<link rel="shortlink" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/?p=888">
+<script type="text/javascript"><!--
+var a2a_config=a2a_config||{},wpa2a={done:false,html_done:false,script_ready:false,script_load:function(){var a=document.createElement('script'),s=document.getElementsByTagName('script')[0];a.type='text/javascript';a.async=true;a.src='https://web.archive.org/web/20161112050522/http://static.addtoany.com/menu/page.js';s.parentNode.insertBefore(a,s);wpa2a.script_load=function(){};},script_onready:function(){if(a2a.type=='page'){wpa2a.script_ready=true;if(wpa2a.html_done)wpa2a.init();}},init:function(){for(var i=0,el,target,targets=wpa2a.targets,length=targets.length;i<length;i++){el=document.getElementById('wpa2a_'+(i+1));target=targets[i];a2a_config.linkname=target.title;a2a_config.linkurl=target.url;if(el)a2a.init('page',{target:el});wpa2a.done=true;}}};a2a_config.tracking_callback=['ready',wpa2a.script_onready];a2a_localize = {
+	Share: "Empfehlen",
+	Save: "Speichern",
+	Subscribe: "Abonnieren",
+	Email: "E-Mail",
+    Bookmark: "Bookmark",
+	ShowAll: "zeige alle",
+	ShowLess: "Zeige weniger",
+	FindServices: "Finden Dienstleistung(en)",
+	FindAnyServiceToAddTo: "Um weitere Dienste ergänzen",
+	PoweredBy: "Powered by",
+	ShareViaEmail: "per E-Mail empfehlen",
+	SubscribeViaEmail: "per E-Mail abonnieren",
+	BookmarkInYourBrowser: "Seite den Bookmarks hinzufügen",
+	BookmarkInstructions: "Press Ctrl+D or \u2318+D to bookmark this page",
+	AddToYourFavorites: "Zu Ihren Favoriten hinzufügen",
+	SendFromWebOrProgram: "Von E-Mail-Adresse oder E-Mail-Programm senden",
+    EmailProgram: "E-Mail-Programm"
+};
+
+a2a_color_main="FAFAFA";a2a_color_border="AECADB";a2a_color_link_text="FF9B2A";a2a_color_link_text_hover="FF9B2A";a2a_color_bg="FAFAFA";
+//--></script>
+<meta property="og:site_name" content="build broken"><meta property="og:url" content="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/"><meta property="og:title" content="Beispiel Model-View-Presenter mit WinForms"><!--[if IE]>
+<style type="text/css">
+.addtoany_list a img{filter:alpha(opacity=70)}
+.addtoany_list a:hover img,.addtoany_list a.addtoany_share_save img{filter:alpha(opacity=100)}
+</style>
+<![endif]-->
+<script type="text/javascript" src="./mvp-winforms_files/jquery.js.Download"></script>
+<script type="text/javascript" src="./mvp-winforms_files/jquery.ifixpng.js.Download"></script>
+<script type="text/javascript">jQuery.noConflict();</script>
+<style type="text/css">.entry img,.entry embed,.entry object{max-width:880px;width:expression(this.clientWidth> 880 ? 880 : true);}.entry img{height:auto;}</style>
+<meta property="fb:admins" content="1109299946">
+<meta property="fb:app_id" content="134622216554391"><link rel="stylesheet" href="./mvp-winforms_files/font-awesome.min.css"><script src="./mvp-winforms_files/platform.js.Download"></script><script src="./mvp-winforms_files/page(1).js.Download"></script><style type="text/css">.a2a_menu,.a2a_menu * {-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;float:none;margin:0;padding:0;position: static;height:auto;width:auto;}.a2a_menu {border-radius: 6px;display:none;direction:ltr;background:#FAFAFA;font: 16px sans-serif-light, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, "Liberation Sans", sans-serif;color:#000;line-height:12px;border: 1px solid #AECADB;vertical-align:baseline;outline: 0; overflow:hidden;}.a2a_mini {min-width:200px;position:absolute;width: 300px;z-index:9999997;}.a2a_overlay {display: none;background: #AECADB; _height: expression( ((e=document.documentElement.clientHeight)?e:document.body.clientHeight)+"px" ); _width: expression( ((e=document.documentElement.clientWidth)?e:document.body.clientWidth)+"px" ); filter: alpha(opacity=50); opacity: .7;position: fixed;_position: absolute; top: 0;right: 0;left: 0;bottom: 0;z-index: 9999998;-webkit-tap-highlight-color: rgba(0,0,0,0);transition: opacity .14s;}.a2a_full {background: #FAFAFA;height: auto;height: calc(320px);top: 15%;_top: expression(40+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+"px"); left: 50%;margin-left: -320px; position: fixed;_position: absolute; text-align: center;width: 640px;z-index: 9999999;     transition: transform .14s, opacity .14s;}.a2a_full_header,.a2a_full_services,.a2a_full_footer {border: 0;margin: 0;padding: 12px;box-sizing: border-box;}.a2a_full_header {padding-bottom: 8px;}.a2a_full_services {height: 280px; overflow-y: scroll;padding: 0 12px;-webkit-overflow-scrolling: touch;}.a2a_full_services .a2a_i {display: inline-block;float: none;width: 181px;width: calc(33.334% - 18px);}div.a2a_full_footer {font-size: 12px;text-align: center;padding: 8px 14px;}div.a2a_full_footer a,div.a2a_full_footer a:visited {display: inline;font-size: 12px;line-height:14px;padding: 8px 14px; }div.a2a_full_footer a:hover,div.a2a_full_footer a:focus {background: none;border: 0;color: #FF9B2A;}div.a2a_full_footer a span.a2a_s_a2a,div.a2a_full_footer a span.a2a_w_a2a {background-size: 14px;border-radius: 3px;display: inline-block;height:14px;line-height:14px;margin: 0 3px 0 0;vertical-align: top;*vertical-align: middle; width:14px;}.a2a_modal {background: #FAFAFA;font: 24px sans-serif-light, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, "Liberation Sans", sans-serif;height: auto;top: 50%;_top: expression(40+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+"px"); left: 50%;margin-left: -320px; margin-top: -36px; position: fixed;_position: absolute; text-align: center;width: 640px;z-index: 9999999;     transition: transform .14s, opacity .14s;-webkit-tap-highlight-color: rgba(0,0,0,0);}.a2a_copy_link_container {position: relative;}span.a2a_s_link#a2a_copy_link_icon,span.a2a_w_link#a2a_copy_link_icon {background-size: 48px;border-radius: 0;display: inline-block;height:48px;left: 0;line-height:48px;margin: 0 3px 0 0;position: absolute;vertical-align: top;*vertical-align: middle; width:48px;}#a2a_copy_link_text {background-color: transparent;_background-color: #FAFAFA;border: 0;color: #FF9B2A;font: inherit;height: 48px;left: 62px;padding: 0;position: relative;width: 564px;width: calc(100% - 76px);}#a2a_copy_link_copied {background-color: #0166ff;background: linear-gradient(90deg, #0166ff 80%, #9cbfff);color: #fff;display: none;font: inherit;font-size: 16px;padding: 6px 8px;}@media print {.a2a_menu,.a2a_overlay {visibility: hidden;}}@keyframes a2aFadeIn {from { opacity: 0; }  to { opacity: 1; }}.a2a_starting {opacity: 0;}.a2a_starting.a2a_full {transform: scale(.8);}@media (max-width: 639px) {.a2a_full {border-radius: 0;top: 15%;left: 0;margin-left: auto;width: 100%;}.a2a_modal {left: 0;margin-left: 10px;width: calc(100% - 20px);}}@media (min-width: 318px) and (max-width: 437px) {.a2a_full .a2a_full_services .a2a_i {width: calc(50% - 18px);}}@media (max-width: 317px) {.a2a_full .a2a_full_services .a2a_i {width: calc(100% - 18px);}}@media (max-height: 436px) {.a2a_full {bottom: 40px;height: auto;top: 40px;}}.a2a_menu a {color:#FF9B2A;text-decoration:none;font: 16px sans-serif-light, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, "Liberation Sans", sans-serif;line-height:14px;height:auto;width:auto;outline:none;-moz-outline:none;}.a2a_menu a:visited{color:#FF9B2A}.a2a_menu a:hover,.a2a_menu a:active,.a2a_menu a:focus{color: #FF9B2A;border-color: #FAFAFA;border-style: solid;background-color: #FAFAFA;text-decoration: none;}.a2a_menu span.a2a_s_find {background-size: 24px;height:24px;left: 8px;position:absolute;top: 7px;width:24px;}.a2a_menu span.a2a_s_find svg {background-color: #FAFAFA;}.a2a_menu span.a2a_s_find svg path {fill: #AECADB;}#a2a_menu_container{display:inline-block} #a2a_menu_container{_display:inline} .a2a_menu_find_container {border: 1px solid #AECADB;border-radius: 6px;padding: 2px 24px 2px 0;position: relative;text-align: left;}.a2a_cols_container .a2a_col1{overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch}.a2a_menu input,.a2a_menu input[type="text"],input.a2a_copy_link_text,input.a2a_copy_link_text[type="text"] { display:block;background-image:none;box-shadow:none;line-height:100%;margin:0;outline:0;overflow:hidden;padding:0;-moz-box-shadow:none;-webkit-box-shadow:none;-webkit-appearance:none} .a2a_menu_find_container input.a2a_menu_find {background-color: transparent;_background-color: #FAFAFA;border: 0;color: #FF9B2A;font: inherit;font-size: 16px;height: 28px;line-height: 20px;left: 38px;outline: 0;padding: 2px 0;position: relative;width: 99%;}.a2a_clear{clear:both} .a2a_img {background:url(https://web.archive.org/web/20161112050658/https://static.addtoany.com/menu/icons.36.png);border:0;line-height:16px}.a2a_img,.a2a_svg {background-repeat:no-repeat;display:block;overflow:hidden;}.a2a_img{height:16px;line-height:16px;width:16px;}.a2a_svg{height:32px;line-height:32px;width:32px;background-color:rgba(0,0,0,.01);}a.a2a_i,i.a2a_i{display:block;float:left;border:1px solid #FAFAFA;line-height:24px;padding:6px 8px;text-align:left;white-space:nowrap;overflow: hidden;text-overflow: ellipsis;width:132px;}a.a2a_i span,a.a2a_more span {display: inline-block;overflow: hidden;vertical-align: top;*vertical-align: middle; }a.a2a_i .a2a_img,a.a2a_i .a2a_svg {margin: 0 6px 0 0;}a.a2a_i .a2a_svg,a.a2a_more .a2a_svg {background-size: 24px;height:24px;line-height:24px;width:24px;}a.a2a_sss:hover {border-left: 1px solid #AECADB;}a.a2a_menu_show_more_less{border-bottom:1px solid #FAFAFA;border-left:0;border-right:0;line-height:24px;margin:6px 0 0;padding:6px}a.a2a_menu_show_more_less span{display:inline-block;height:24px;margin:0 6px 0 0;} .a2a_kit .a2a_svg { background-repeat: repeat; }.a2a_default_style a{float:left;line-height:16px;padding:0 2px}.a2a_default_style a:hover .a2a_img,.a2a_default_style a:hover .a2a_svg,.a2a_floating_style a:hover .a2a_img,.a2a_floating_style a:hover .a2a_svg {opacity: .7;}.a2a_default_style .a2a_count,.a2a_default_style .a2a_svg,.a2a_floating_style .a2a_svg,.a2a_vertical_style .a2a_count,.a2a_menu .a2a_svg {border-radius:4px ;}.a2a_default_style .a2a_img, .a2a_default_style .a2a_dd, .a2a_default_style .a2a_svg,.a2a_default_style .a2a_counter img { float: left;}.a2a_default_style .a2a_img_text{margin-right:4px}.a2a_default_style .a2a_divider{border-left:1px solid #000;display:inline;float:left;height:16px;line-height:16px;margin:0 5px}.a2a_kit a{cursor:pointer}.a2a_floating_style { background-color: #fff; border-radius: 6px; padding: 4px; position: fixed; z-index: 9999995;    animation: a2aFadeIn .2s ease-in;}.a2a_vertical_style a { clear: left;display: block;overflow: hidden;padding: 4px;text-decoration: none; }.a2a_floating_style.a2a_default_style { bottom: 0; }.a2a_floating_style.a2a_default_style a { padding: 4px; }.a2a_count {background-color: #fff;border: 1px solid #ccc;box-sizing: border-box;color: #2a2a2a;display: block;float: left;font: 12px Arial,Helvetica,sans-serif;height: 16px;margin-left: 4px;position: relative;text-align: center;width: 50px;}.a2a_count:before,.a2a_count:after {border: solid transparent;border-width: 4px 4px 4px 0;content: "";height: 0;left: 0;line-height: 0;margin: -4px 0 0 -4px;position: absolute;top: 50%;width: 0;}.a2a_count:before {border-right-color: #ccc;}.a2a_count:after {border-right-color: #fff;margin-left: -3px;}.a2a_count span {    animation: a2aFadeIn .14s ease-in;}.a2a_vertical_style .a2a_counter img {display: block;}.a2a_vertical_style .a2a_count {float: none;margin-left: 0;margin-top: 6px; }.a2a_vertical_style .a2a_count:before,.a2a_vertical_style .a2a_count:after {border: solid transparent;border-width: 0 4px 4px 4px;content: "";height: 0;left: 50%;line-height: 0;margin: -4px 0 0 -4px;position: absolute;top: 0;width: 0;}.a2a_vertical_style .a2a_count:before {border-bottom-color: #ccc;}.a2a_vertical_style .a2a_count:after {border-bottom-color: #fff;margin-top: -3px;}.a2a_nowrap{white-space:nowrap}.a2a_note{margin:0 auto;padding:9px;font-size:12px;text-align:center}.a2a_note .a2a_note_note{margin:0;color:#FF9B2A}.a2a_wide a{display:block;margin-top:3px;border-top:1px solid #FAFAFA;text-align:center}.a2a_label {position: absolute !important;clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);overflow: hidden; }iframe.a2a_shim {background-color: transparent;border: 0;bottom: 0;filter: alpha(opacity=0); height: 100%;left: 0;right: 0;top: 0;position: absolute;width: 100%;z-index: 9999996;_height: expression( ((e=document.documentElement.clientHeight)?e:document.body.clientHeight)+"px" ); _width: expression( ((e=document.documentElement.clientWidth)?e:document.body.clientWidth)+"px" ); }.a2a_dd img {border:0;-ms-touch-action:manipulation;}.a2a_button_facebook_like iframe {max-width: none;}iframe[id^="PIN_"][id$="_nag"] {display: none !important;}.a2a_i_a2a{background-position:0 0!important}.a2a_i_a2a_sm{background-position:0 -17px!important}.a2a_i_agregator{background-position:0 -34px!important}.a2a_i_amazon{background-position:0 -51px!important}.a2a_i_aol{background-position:0 -68px!important}.a2a_i_app_net{background-position:0 -85px!important}.a2a_i_baidu{background-position:0 -102px!important}.a2a_i_balatarin{background-position:0 -119px!important}.a2a_i_behance{background-position:0 -136px!important}.a2a_i_bibsonomy{background-position:0 -153px!important}.a2a_i_bitty{background-position:0 -170px!important}.a2a_i_blinklist{background-position:0 -187px!important}.a2a_i_blogger{background-position:0 -204px!important}.a2a_i_blogmarks{background-position:0 -221px!important}.a2a_i_bookmark{background-position:0 -238px!important}.a2a_i_bookmarks_fr{background-position:0 -255px!important}.a2a_i_box{background-position:0 -272px!important}.a2a_i_buddymarks{background-position:0 -289px!important}.a2a_i_buffer{background-position:0 -306px!important}.a2a_i_care2{background-position:0 -323px!important}.a2a_i_chrome{background-position:0 -340px!important}.a2a_i_citeulike{background-position:0 -357px!important}.a2a_i_dailyrotation{background-position:0 -374px!important}.a2a_i_default{background-position:0 -391px!important}.a2a_i_delicious{background-position:0 -408px!important}.a2a_i_designfloat{background-position:0 -425px!important}.a2a_i_diary_ru{background-position:0 -442px!important}.a2a_i_diaspora{background-position:0 -459px!important}.a2a_i_digg{background-position:0 -476px!important}.a2a_i_dihitt{background-position:0 -493px!important}.a2a_i_diigo{background-position:0 -510px!important}.a2a_i_dzone{background-position:0 -527px!important}.a2a_i_email{background-position:0 -544px!important}.a2a_i_evernote{background-position:0 -561px!important}.a2a_i_facebook{background-position:0 -578px!important}.a2a_i_fark{background-position:0 -595px!important}.a2a_i_feed{background-position:0 -612px!important}.a2a_i_feedblitz{background-position:0 -629px!important}.a2a_i_feedbucket{background-position:0 -646px!important}.a2a_i_feedly{background-position:0 -663px!important}.a2a_i_feedmailer{background-position:0 -680px!important}.a2a_i_find{background-position:0 -697px!important}.a2a_i_firefox{background-position:0 -714px!important}.a2a_i_flickr{background-position:0 -731px!important}.a2a_i_flipboard{background-position:0 -748px!important}.a2a_i_folkd{background-position:0 -765px!important}.a2a_i_foursquare{background-position:0 -782px!important}.a2a_i_github{background-position:0 -799px!important}.a2a_i_gmail{background-position:0 -816px!important}.a2a_i_google{background-position:0 -833px!important}.a2a_i_google_classroom{background-position:0 -850px!important}.a2a_i_google_plus{background-position:0 -867px!important}.a2a_i_hatena{background-position:0 -884px!important}.a2a_i_instapaper{background-position:0 -901px!important}.a2a_i_itunes{background-position:0 -918px!important}.a2a_i_jamespot{background-position:0 -935px!important}.a2a_i_kakao{background-position:0 -952px!important}.a2a_i_kik{background-position:0 -969px!important}.a2a_i_kindle{background-position:0 -986px!important}.a2a_i_klipfolio{background-position:0 -1003px!important}.a2a_i_known{background-position:0 -1020px!important}.a2a_i_line{background-position:0 -1037px!important}.a2a_i_link{background-position:0 -1054px!important}.a2a_i_linkedin{background-position:0 -1071px!important}.a2a_i_livejournal{background-position:0 -1088px!important}.a2a_i_mail_ru{background-position:0 -1105px!important}.a2a_i_mendeley{background-position:0 -1122px!important}.a2a_i_meneame{background-position:0 -1139px!important}.a2a_i_miro{background-position:0 -1156px!important}.a2a_i_mixi{background-position:0 -1173px!important}.a2a_i_myspace{background-position:0 -1190px!important}.a2a_i_netlog{background-position:0 -1207px!important}.a2a_i_netvibes{background-position:0 -1224px!important}.a2a_i_netvouz{background-position:0 -1241px!important}.a2a_i_newsalloy{background-position:0 -1258px!important}.a2a_i_newsisfree{background-position:0 -1275px!important}.a2a_i_newsvine{background-position:0 -1292px!important}.a2a_i_nujij{background-position:0 -1309px!important}.a2a_i_odnoklassniki{background-position:0 -1326px!important}.a2a_i_oknotizie{background-position:0 -1343px!important}.a2a_i_oldreader{background-position:0 -1360px!important}.a2a_i_outlook_com{background-position:0 -1377px!important}.a2a_i_pinboard{background-position:0 -1394px!important}.a2a_i_pinterest{background-position:0 -1411px!important}.a2a_i_plurk{background-position:0 -1428px!important}.a2a_i_pocket{background-position:0 -1445px!important}.a2a_i_podnova{background-position:0 -1462px!important}.a2a_i_print{background-position:0 -1479px!important}.a2a_i_printfriendly{background-position:0 -1496px!important}.a2a_i_protopage{background-position:0 -1513px!important}.a2a_i_pusha{background-position:0 -1530px!important}.a2a_i_qzone{background-position:0 -1547px!important}.a2a_i_reddit{background-position:0 -1564px!important}.a2a_i_rediff{background-position:0 -1581px!important}.a2a_i_renren{background-position:0 -1598px!important}.a2a_i_segnalo{background-position:0 -1615px!important}.a2a_i_share{background-position:0 -1632px!important}.a2a_i_sina_weibo{background-position:0 -1649px!important}.a2a_i_sitejot{background-position:0 -1666px!important}.a2a_i_skype{background-position:0 -1683px!important}.a2a_i_slashdot{background-position:0 -1700px!important}.a2a_i_sms{background-position:0 -1717px!important}.a2a_i_snapchat{background-position:0 -1734px!important}.a2a_i_stumbleupon{background-position:0 -1751px!important}.a2a_i_stumpedia{background-position:0 -1768px!important}.a2a_i_svejo{background-position:0 -1785px!important}.a2a_i_symbaloo{background-position:0 -1802px!important}.a2a_i_telegram{background-position:0 -1819px!important}.a2a_i_thefreedictionary{background-position:0 -1836px!important}.a2a_i_thefreelibrary{background-position:0 -1853px!important}.a2a_i_tumblr{background-position:0 -1870px!important}.a2a_i_twiddla{background-position:0 -1887px!important}.a2a_i_twitter{background-position:0 -1904px!important}.a2a_i_typepad{background-position:0 -1921px!important}.a2a_i_viadeo{background-position:0 -1938px!important}.a2a_i_viber{background-position:0 -1955px!important}.a2a_i_vimeo{background-position:0 -1972px!important}.a2a_i_vk{background-position:0 -1989px!important}.a2a_i_wanelo{background-position:0 -2006px!important}.a2a_i_webnews{background-position:0 -2023px!important}.a2a_i_wechat{background-position:0 -2040px!important}.a2a_i_whatsapp{background-position:0 -2057px!important}.a2a_i_winksite{background-position:0 -2074px!important}.a2a_i_wordpress{background-position:0 -2091px!important}.a2a_i_wykop{background-position:0 -2108px!important}.a2a_i_xing{background-position:0 -2125px!important}.a2a_i_y18{background-position:0 -2142px!important}.a2a_i_yahoo{background-position:0 -2159px!important}.a2a_i_yim{background-position:0 -2176px!important}.a2a_i_yoolink{background-position:0 -2193px!important}.a2a_i_youmob{background-position:0 -2210px!important}.a2a_i_youtube{background-position:0 -2227px!important}.a2a_i_yummly{background-position:0 -2244px!important}</style><link rel="stylesheet" href="./mvp-winforms_files/icons.18.svg.css"><style type="text/css">p.tealditDotComNewBarNoticeBottomPadding{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.tealditDotComNewBarNotice {
+    background: rgba(254, 254, 254, 0.94);
+    border-radius: 0 !important;
+    border: 1px solid #efefef !important;
+    bottom: 0;
+    display: block;
+    font: 12px Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    height: 40px;
+    left: 0;
+    line-height: 1;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    position: fixed !important;
+    width: 100%;
+    z-index: 9999999999;
+    overflow: visible;
+    float: left;
+}
+
+.tealditDotComNewBarNotice * {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    border: 0 none;
+    text-decoration: none;
+}
+
+.tealditDotComNewBarNotice *:hover {
+    color: #000;
+    border: 0 none;
+    text-decoration: none;
+}
+
+.tealditDotComNewBarNotice ul.tealditUl {
+    display: block;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.tealditDotComNewBarNotice ul.tealditUl li {
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 90px;
+    padding: 5px;
+    padding-right: 0;
+    z-index: 1;
+    background: none !important;
+    list-style-type: none !important;
+}
+
+.tealditDotComNewBarNotice ul.tealditUl li:hover {
+    overflow: visible;
+}
+
+.tealditDotComNewBarNotice ul.tealditUl li.tealditLogo {
+    display: block;
+    padding: 0;
+    width: 43px;
+    position: absolute;
+    right: 0;
+    background: #eee !important;
+}
+
+.tealditDotComNewBarNotice ul.tealditUl li.tealditLogo a {
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 14px 0 10px;
+}
+
+.tealditDotComNewBarNotice ul.tealditUl li.fblikes {
+    padding-right: 0;
+    padding-top: 12px;
+}
+.tealditDotComNewBarNotice ul.tealditUl li.fblikes:hover {
+    width: 95px;
+}
+
+.tealditDotComNewBarNotice ul.tealditUl li.banner {
+    border-left: 1px solid #ddd;
+}
+
+.tealditDotComNewBarNotice ul.tealditUl li.tweet {
+    padding-right: 0;
+    padding-top: 12px;
+    width: 90px;
+}
+.tealditDotComNewBarNotice ul.tealditUl li.tweet:hover {width:105px;}
+
+.tealditDotComNewBarNotice ul.tealditUl li.gPlus1 {
+    padding-right: 0;
+    padding-top: 9px;
+    width: 80px;
+}
+.tealditDotComNewBarNotice ul.tealditUl li.gPlus1:hover {
+    width: 90px;
+}
+
+.tealditDotComNewBarNotice ul.tealditUl li.addtoany {
+    padding: 0;
+    margin: 5px 0 0 0;
+    width: 25px;
+}
+.tealditDotComNewBarNotice ul.tealditUl li.addtoany a span{
+    background-size: 21px;
+    width: 20px;
+    height: 20px;
+    margin: 8px 0 0 0;
+}
+
+.tealditDotComNewBarNotice ul.tealditUl li.fblikes div.fb_iframe_widget {
+}
+
+.tealditDotComNewBarNotice ul.tealditUl li.fblikes div.fb_iframe_widget:hover {
+}
+.tealditDotComNewBarNotice ul.tealditUl li.fblikes div.fb_iframe_widget:hover {}
+
+.tealditDotComNewBarNotice ul.tealditUl li.fblikes div.fb_iframe_widget span{}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://web.archive.org/web/20161112050522/https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style><script type="text/javascript" charset="utf-8" async="" src="./mvp-winforms_files/button.09a4c69b9e9879b3a066b7ecd72136d2.js.Download"></script></head>
+<body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;"><template shadowrootmode="closed"><div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;" class="">
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20161112050522/http%3A//blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><div id="wm-ipp-inside">
+  <div id="wm-toolbar" style="position:relative;display:flex;flex-flow:row nowrap;justify-content:space-between;">
+    <div id="wm-logo" style="/*width:110px;*/padding-top:12px;">
+      <a href="https://web.archive.org/web/" title="Wayback Machine home page"><img src="https://web.archive.org/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0"></a>
+    </div>
+    <div class="c" style="display:flex;flex-flow:column nowrap;justify-content:space-between;flex:1;">
+      <form class="u" style="display:flex;flex-direction:row;flex-wrap:nowrap;" target="_top" method="get" action="https://web.archive.org/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" onfocus="this.focus();this.select();" style="flex:1;" autocomplete="off"><input type="hidden" name="type" value="replay"><input type="hidden" name="date" value="20161112050522"><input type="submit" value="Go">
+      </form>
+      <div style="display:flex;flex-flow:row nowrap;align-items:flex-end;">
+                <div class="s" id="wm-nav-captures" style="flex:1;"><a class="t" href="https://web.archive.org/web/*/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" title="See a list of every capture for this URL">18 captures</a><div class="r" title="Timespan for captures of this URL">19 Feb 2010 - 19 Apr 2021</div></div>
+        <div class="k">
+          <a href="https://web.archive.org/web/20161101000000/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" id="wm-graph-anchor">
+            <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+              <canvas id="wm-sparkline-canvas" width="750" height="27" border="0"></canvas>
+            <div class="yt" style="display: none; width: 25px; height: 27px; left: 500px;"></div><div class="mt" style="display: none; width: 2px; height: 27px; left: 521px;"></div></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="n">
+      <table>
+        <tbody>
+          <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+          <tr class="m">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20160214175915/http://blog.aztec-project.org:80/2010/02/16/beispiel-model-view-presenter-winforms/" title="14 Feb 2016"><strong>Feb</strong></a></td>
+            <td class="c" id="displayMonthEl" title="You are here: 05:05:22 Nov 12, 2016">Nov</td>
+            <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20200426230325/https://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" title="26 Apr 2020"><strong>Apr</strong></a></td>
+          </tr>
+          <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+          <tr class="d">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20160214175915/http://blog.aztec-project.org:80/2010/02/16/beispiel-model-view-presenter-winforms/" title="17:59:15 Feb 14, 2016"><img src="https://web.archive.org/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0"></a></td>
+            <td class="c" id="displayDayEl" style="width:34px;font-size:22px;white-space:nowrap;" title="You are here: 05:05:22 Nov 12, 2016">12</td>
+            <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20200426230325/https://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" title="23:03:25 Apr 26, 2020"><img src="https://web.archive.org/_static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0"></a></td>
+          </tr>
+          <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+          <tr class="y">
+            <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20140720014329/http://blog.aztec-project.org:80/2010/02/16/beispiel-model-view-presenter-winforms/" title="20 Jul 2014"><strong>2014</strong></a></td>
+            <td class="c" id="displayYearEl" title="You are here: 05:05:22 Nov 12, 2016">2016</td>
+            <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20200426230325/https://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" title="26 Apr 2020"><strong>2020</strong></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="r" style="display:flex;flex-flow:column nowrap;align-items:flex-end;justify-content:space-between;">
+      <div id="wm-btns" style="text-align:right;height:23px;">
+                <span class="xxs">
+          <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/#" title="Share via My Web Archive" style="display: inline-block;">
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php" title="Sign In" id="wm-sign-in" style="display: none;">
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        </span>
+                <a class="xxs" href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+        <a id="wm-tb-close" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/#close" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" class="xxs">
+        <a href="https://web.archive.org/web/20161112050522/http://web.archive.org/screenshot/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" id="wm-screenshot" title="screenshot" style="visibility: hidden;">
+          <span class="wm-icon-screen-shot"></span>
+        </a>
+        <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/#" id="wm-video" title="video">
+          <span class="iconochive-movies"></span>
+        </a>
+        <a id="wm-share-facebook" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/#" data-url="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+        <a id="wm-share-twitter" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/#" data-url="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+      <div style="padding-right:2px;text-align:right;white-space:nowrap;">
+        <a id="wm-expand" class="wm-btn wm-closed" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/#expand"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span class="xxs" style="font-size:80%;">About this capture</span></a>
+      </div>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+        <div id="wm-capinfo-notice" source="api"></div>
+                <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/webwidecrawl);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/webwidecrawl" target="_new"><span class="wm-title">Internet Archive</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  The Internet Archive discovers and captures web pages through many different web crawls.
+
+At any given time several distinct crawls are running, some for months, and some every day or longer.
+
+View the web archive through the <a href="http://archive.org/web/web.php">Wayback Machine</a>.
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/wide00015)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/wide00015" target="_new"><span class="wm-title">Wide Crawl Number 15: Started Oct 1st, 2016 - Ended May 8th, 2017</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Web wide crawl.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="https://web.archive.org/_static/images/loading.gif" alt="loading"></div>
+    </div>
+    </div>
+  </div></div></div><link rel="stylesheet" type="text/css" href="./mvp-winforms_files/banner-styles.css"><link rel="stylesheet" type="text/css" href="./mvp-winforms_files/iconochive.css"><div class="wb-autocomplete-suggestions "></div></template>
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(750,27,25,2,"web","http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/","20161112050522",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=3PDvdIFv"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ 
+<div id="page">
+<div id="header" class="png">
+<div id="headerimg">
+<h1 class="blogname" id="blogname"><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/">build broken</a></h1><span class="blogname text-stroke-br">build broken</span><span class="blogname text-stroke-bl">build broken</span><span class="blogname text-stroke-tr">build broken</span><span class="blogname text-stroke-tl">build broken</span>
+<h6 class="blogdesc" id="blogdesc">but we can fix it! Sometimes :)</h6><span class="blogdesc text-stroke-br">but we can fix it! Sometimes :)</span><span class="blogdesc text-stroke-bl">but we can fix it! Sometimes :)</span><span class="blogdesc text-stroke-tr">but we can fix it! Sometimes :)</span><span class="blogdesc text-stroke-tl">but we can fix it! Sometimes :)</span>
+<ul class="pages png head_overlay">
+<li class="page_item"><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/">Home</a></li>
+<li class="page_item page-item-2"><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/about/">About</a></li>
+</ul>
+</div>
+</div>
+<div id="main" class="png">
+<table>
+<tbody><tr>
+<td id="content" class="widecolumn">
+<div class="navigation">
+<div class="alignleft">«&nbsp;<a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/01/27/softwarezellen-eine-losung-um-die-komplexitat-zu-beherrschen/" rel="prev">Softwarezellen – eine Lösung um die Komplexität zu beherrschen</a></div>
+<div class="alignright"><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/22/nosql-mit-stupiddb/" rel="next">NoSQL mit StupidDB</a>&nbsp;»</div>
+</div>
+<div class="post" id="post-888">
+<div class="postinfo">
+<div class="datestamp">
+<div>
+<span class="cal1 cal1x">Feb</span>
+<span class="cal2">16</span>
+<span class="cal3">2010</span>
+</div>
+</div>
+<span class="switch-post">
+<a href="javascript:toggleSidebars();" class="switch-sidebars"><img src="./mvp-winforms_files/bullet_sidebars_hide.png" alt="" class="png"></a><a href="javascript:togglePost(888);" id="switch-post-888"><img src="./mvp-winforms_files/bullet_toggle_minus.png" alt="" class="png"></a>
+</span>
+<h2 class="posttitle"><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" rel="bookmark" title="Permanent Link: Beispiel Model-View-Presenter mit WinForms">Beispiel Model-View-Presenter mit WinForms</a></h2>
+<small>
+Geschrieben von <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/author/sko/" title="Artikel von Stefan Kölle">Stefan Kölle</a> in <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/category/how-to/" title="Alle Artikel in How-To ansehen" rel="category tag">How-To</a>, <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/category/mvc/" title="Alle Artikel in MVC ansehen" rel="category tag">MVC</a>, tags: <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/tag/contract-first/" rel="tag">Contract-First</a>, <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/tag/mvp/" rel="tag">MVP</a>, <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/tag/winforms/" rel="tag">WinForms</a> </small>
+</div>
+<div class="entry">
+<p>Im Teil 1 (<a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2009/12/02/mvp-mit-WinForms-model-view-presenter/">MVP mit WinForms</a>) habe ich die Grundgedanken zur Implementierung von MVP in WinForms vorgestellt, mit der man WinForm-Anwendungen mit UnitTests abdecken kann. In einer komplexeren WinForm-Anwendung gibt es neben dem Startform auch mehrere Unterforms, die durch das Hauptform aufgerufen werden müssen.</p>
+<p><strong>Das Beispielprojekt<br>
+</strong><br>
+Zur Demonstration habe ich ein Beispielprogramm mit MVP entwickelt, welches einen sehr einfachen Twitterclient darstellt. Das Beispiel wurde nach Contract-First komponentenorientiert gebaut und besteht neben der MVP-Komponente aus weiteren Komponenten.</p>
+<p><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/wp-content/uploads/2010/02/Foto1.jpg"><img class="alignnone size-full wp-image-900" title="TwitterClient Architektur" src="./mvp-winforms_files/Foto1.jpg" alt="" width="200" height="159"></a></p>
+<p>Die weiteren Komponenten haben nichts mit MVP zu tun, sondern sollen nur zeigen, wie man MVP in diesem Umfeld integriert. -&gt; <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/wp-content/uploads/2010/02/TwitterClient.zip">Den kompletten Sourcecode downloaden</a></p>
+<p>Die Funktionen des Twitter-Clients sollen sein:<br>
+1. Anzeige der 20 neuesten Meldungen aus der Timeline im Hauptfenster<br>
+2. Der Benutzer soll Status-Updates bei Twitter posten können<br>
+3. Die Zugangsdaten des Twitter-Accounts sollen gespeichert werden können</p>
+<p><strong>Die WinForm-Komponente<br>
+</strong></p>
+<p>Um die Funktionen abzubilden, sind 3 Screens notwendig:<br>
+1. Hauptbildschirm mit der Timeline des Twitter-Accounts<br>
+2. Form für das Absenden eines Twitter-Status-Updates<br>
+3. Konfigurationsbildschirm für den Twitter-Account</p>
+<p><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/wp-content/uploads/2010/02/Foto2.jpg"><img class="alignnone size-medium wp-image-901" title="TwitterClient UI" src="./mvp-winforms_files/Foto2-300x143.jpg" alt="" width="300" height="143"></a></p>
+<p>Jedes WinForm besteht aus einer View-Klasse (dem WinForm), einem Model, welches als Singleton im IoC-Container konfiguriert wird und einem Presenter. Die einzelnen Funktionen in den Views sind im Beispielprojekt durch Tests abgedeckt und zeigen die notwendigen Tests für diese Art der Implementierung. Gerade durch geringen Funktionsumfang kann man das Muster der Verwendung gut erkennen.</p>
+<p>In der MVP-Komponente befindet sich auch der “Inversion of Control”-Container, der die einzelnen Komponenten zusammenfügt. Dies könnte auch in einer extra Runner-Komponente ausgelagert sein.</p>
+<p><strong>Aufrufen eines weiteren WinForms<br>
+</strong><br>
+Alle Abhängigkeiten werden per Dependency-Injection-Container an den Presenter übergeben. Da das Hauptform alle weiteren Views und Presenter instanziert, müssten diese alle bereits beim Programmstart instanziert werden. Um dies zu verhindern, habe ich eine IPresenterFactory eingeführt, die zur Laufzeit weitere Presenter nachinstanzieren kann. Die Factory selbst hält eine Referenz auf den Container und wird bei Programmstart im Container hinzugefügt. Um sicherzustellen, dass weiterhin alle anderen Abhängigkeiten über den Konstruktor definiert werden, können aus dieser Factory nur Klassen instanziert werden, die IPresenter implementieren.</p>
+<p><strong>Fazit</strong><br>
+Mit dieser Beispielanwendung kann man eine mögliche Implementierung von Model View Presenter in der Variante Supervising Controller sehen. Es ist also auch mit WinForms eine voll getestete MVP-Implementierung zu erstellen.</p>
+<p>Anhang:<br>
+<a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/wp-content/uploads/2010/02/TwitterClient.zip">Kompletter Sourcecode der Beispielanwendung als ZIP</a></p>
+<p><a href="https://web.archive.org/web/20161112050522/http://dotnet-kicks.de/kick/?url=http%3a%2f%2fblog.aztec-project.org%2f2010%2f02%2f16%2fbeispiel-model-view-presenter-winforms%2f"><img src="./mvp-winforms_files/KickItImageGenerator.ashx" border="0" alt="kick it on dotnet-kicks.de"></a></p>
+<div class="addtoany_share_save_container"><div class="a2a_kit a2a_target addtoany_list" id="wpa2a_1" style="line-height: 16px;"><a class="a2a_dd addtoany_share_save" href="https://web.archive.org/web/20161112050658/https://www.addtoany.com/share#url=https%3A%2F%2Fweb.archive.org%2Fweb%2F20161112050522%2Fhttp%3A%2F%2Fblog.aztec-project.org%2F2010%2F02%2F16%2Fbeispiel-model-view-presenter-winforms%2F&amp;title=Beispiel%20Model-View-Presenter%20mit%20WinForms"><img src="./mvp-winforms_files/share_save_171_16.png" width="171" height="16" alt="Share"></a></div>
+<script type="text/javascript"><!--
+wpa2a.script_load();
+//--></script>
+</div><fb:like href="http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" layout="standard" show_faces="true" width="450" action="like" colorscheme="light" style="margin-top:5px;" class="fb_edge_widget_with_comment fb_iframe_widget" fb-xfbml-state="parsed" fb-iframe-plugin-query="action=like&amp;app_id=&amp;color_scheme=light&amp;container_width=0&amp;href=http%3A%2F%2Fblog.aztec-project.org%2F2010%2F02%2F16%2Fbeispiel-model-view-presenter-winforms%2F&amp;layout=standard&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;width=450"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="f2299879ecc19" width="450px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./mvp-winforms_files/like.html" style="border: none; visibility: hidden;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></span></fb:like>
+<p class="postmetadata alt clear">
+<small>
+Geschrieben am Dienstag, 16. Februar 2010 um 8:48 am und ist zu finden in <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/category/how-to/" title="Alle Artikel in How-To ansehen" rel="category tag">How-To</a>, <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/category/mvc/" title="Alle Artikel in MVC ansehen" rel="category tag">MVC</a>. Du kannst die Antworten zu diesem Thema verfolgen unter <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/feed/">RSS 2.0</a> feed. Du kannst <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/#respond">Antwort</a>, oder <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/trackback/" rel="trackback">trackback</a> von deiner Seite.
+</small>
+</p>
+</div>
+</div>
+<div id="comments">
+3 Antworten zu “Beispiel Model-View-Presenter mit WinForms”
+</div>
+<ol class="commentlist" id="commentlist">
+<li class="comment even thread-even depth-1 alt" id="comment-248">
+<div id="div-comment-248" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/#"><img src="./mvp-winforms_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./mvp-winforms_files/18e59675ca319591185577cf3eaa8e59.jpeg" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn"><a href="https://web.archive.org/web/20161112050522/http://jcselke.blogspot.com/" rel="external nofollow" class="url">Jan Selke</a></cite> <span class="says">sagt:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/comment-page-1/#comment-248">
+Februar 16, 2010 um 9:19 am</a> </div>
+<div class="comment"><p>Hallo,<br>
+ich finde die Anwendung sehr schön und es sind die Eine oder Andere Anregung für mich auch enthalten <img src="./mvp-winforms_files/icon_smile.gif" alt=":-)" class="wp-smiley"> .<br>
+Die Konfiguration über Xml würde ich vielleicht noch versuchen zu eliminieren, es wird ja schönes Benennungsmuster eingehalten (CoC).<br>
+Ich habe es zwar noch nicht laufen lassen, es sah aber im TimelinePresenter so aus, als wenn noch ein versehentliches Verlassen verhindert werden könnte…<br>
+Viele Grüße,<br>
+Jan</p></div>
+<div class="comment"><div class="reply">
+</div></div>
+</div>
+</li>
+<li class="comment byuser comment-author-sko bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-270">
+<div id="div-comment-270" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/#"><img src="./mvp-winforms_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./mvp-winforms_files/dd231104fe0e1a7b87be55834a7c0c86.jpeg" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn"><a href="https://web.archive.org/web/20161112050522/http://www.stefankoelle.de/" rel="external nofollow" class="url">Stefan Kölle</a></cite> <span class="says">sagt:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/comment-page-1/#comment-270">
+Februar 19, 2010 um 5:36 pm</a> </div>
+<div class="comment"><p>Hallo Jan,</p></div>
+<div class="comment"><p>danke fuer deinen Input, das Container.xml ist wirklich nicht schoen und koennte man sicher eleganter loesen. Du hast mich da auf eine gute Idee gebracht.</p></div>
+<div class="comment"><p>Was meinst du mit versehenliches Verlassen?</p></div>
+<div class="comment"><p>Gruss<br>
+Stefan</p></div>
+<div class="comment"><div class="reply">
+</div></div>
+</div>
+</li>
+<li class="comment even thread-even depth-1 alt" id="comment-283">
+<div id="div-comment-283" class="comment-body">
+<span class="switch-post"><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/#"><img src="./mvp-winforms_files/bullet_toggle_minus(1).png" alt="" class="png"></a></span><div class="comment-author vcard">
+<img alt="" src="./mvp-winforms_files/18e59675ca319591185577cf3eaa8e59.jpeg" class="avatar avatar-32 photo" height="32" width="32"> <cite class="fn"><a href="https://web.archive.org/web/20161112050522/http://jcselke.blogspot.com/" rel="external nofollow" class="url">Jan Christian Selke</a></cite> <span class="says">sagt:</span> </div>
+<div class="comment-meta commentmetadata"><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/comment-page-1/#comment-283">
+Februar 22, 2010 um 12:27 pm</a> </div>
+<div class="comment"><p>Hallo nochmal,</p></div>
+<div class="comment"><p>freut mich, wenn ich damit einen Impuls geben konnte.</p></div>
+<div class="comment"><p>Zu dem versehentlichen Verlassen:<br>
+Ich habe vor Kurzem etwas über das “graceful exit” einer Anwendung gelesen. Deine Anwendung hatte ich nicht gestartet, sondern mir nur den Quellcode quergelesen. Dabei ist mir aufgefallen, dass nur ein Application.Exit beim Close ausgeführt wird, der Anwender erhält keine Chance doch in der Anwendung zu bleiben. Eventuell habe ich es auch einfach nicht gesehen (habe es ja auch nicht laufen lassen)…<br>
+Soll kein Mäkeln an Kleinigkeiten sein, sondern eher ein Beispiel dafür, dass mir die Anwendung recht gut gefällt. <img src="./mvp-winforms_files/icon_wink.gif" alt=";-)" class="wp-smiley"> </p></div>
+<div class="comment"><p>Viele Grüße,<br>
+Jan</p></div>
+<div class="comment"><div class="reply">
+</div></div>
+</div>
+</li>
+<li style="display: none;">&nbsp;</li>
+</ol>
+<div class="navigation">
+<div class="alignleft"></div>
+<div class="alignright"></div>
+</div>
+<div id="respond">
+<div class="title">Hinterlasse einen Kommentar</div>
+<div class="cancel-comment-reply">
+<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/#respond" style="display:none;">Click here to cancel reply</a></small>
+</div>
+<form action="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/wp-comments-post.php" method="post" id="commentform">
+<input type="hidden" name="comment_post_ID" value="888" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1">
+<label for="author"><small>Name (benötigt)</small></label></p>
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2">
+<label for="email"><small>E-mail (wird nicht veröffentlicht) (benötigt)</small></label></p>
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3">
+<label for="url"><small>Webseite</small></label></p>
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+<p>
+<input name="submit" type="submit" id="submit" tabindex="5" value="Kommentar absenden">
+<input type="hidden" name="comment_post_ID" value="888">
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="eb022aa2f2"></p>
+<p style="clear: both;" class="subscribe-to-comments">
+<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;">
+<label for="subscribe">Notify me of followup comments via e-mail</label>
+</p>
+<br class="clear">
+</form>
+</div>
+<script type="text/javascript">
+<!-- // <![CDATA[
+
+		jQuery(document).ready(function() {
+			if (jQuery('#trackbacklist li').length == 1)
+				jQuery('#trackbacks, #trackbacklist').hide();
+			jQuery('li.comment>div>*').filter(':not(.comment-author, .comment-meta)').wrap('<div class="comment"><\/div>');
+			
+			jQuery('.comment-author').before('<span class="switch-post"><a href="#"><img src="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/wp-content/themes/mandigo/images/icons/bullet_toggle_minus.png" alt="" class="png" /><\/a><\/span>');
+		});
+
+// ]]> -->
+</script>
+</td>
+<script src="./mvp-winforms_files/Loader_37820.js.Download" type="text/javascript"></script></tr>
+</tbody></table>
+</div>
+<div id="footer" class="png">
+<p>
+Unterstützt von <a href="https://web.archive.org/web/20161112050522/http://wordpress.org/">WordPress</a>, <a href="https://web.archive.org/web/20161112050522/http://www.onehertz.com/portfolio/wordpress/" target="_blank" title="WordPress themes">Mandigo theme</a> by tom.
+<br><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/feed/"><img src="./mvp-winforms_files/rss_s.gif" alt=""> Einträge (RSS)</a>
+und <a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/comments/feed/"><img src="./mvp-winforms_files/rss_s.gif" alt=""> Kommentare (RSS)</a>.
+</p>
+</div>
+</div>
+<script type="text/javascript"><!--
+wpa2a.targets=[
+{title:'Beispiel Model-View-Presenter mit WinForms',url:'https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/'}];
+wpa2a.html_done=true;if(wpa2a.script_ready&&!wpa2a.done)wpa2a.init();wpa2a.script_load();
+//--></script>
+<div id="fb-root" class=" fb_reset"><script src="./mvp-winforms_files/all.js.Download" async=""></script><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./mvp-winforms_files/fTmIQU3LxvB.html" style="border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" data-ruffle-polyfilled=""></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./mvp-winforms_files/fTmIQU3LxvB(1).html" style="border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" data-ruffle-polyfilled=""></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId  : '',
+	      status : true,
+	      cookie : true,
+	      xfbml  : true
+	    });
+	  };
+
+	  (function() {
+	    var e = document.createElement('script');
+	    e.src = document.location.protocol + '//web.archive.org/web/20161112050522/http://connect.facebook.net/en_US/all.js';
+	    e.async = true;
+	    document.getElementById('fb-root').appendChild(e);
+	  }());
+	</script>
+<script type="text/javascript">
+<!-- // <![CDATA[
+
+	jQuery(document).ready(function() {
+		jQuery('#rssicon, #searchsubmit').hover(
+			function() { this.src = this.src.replace('.gif','_hover.gif'); },
+			function() { this.src = this.src.replace('_hover.gif','.gif'); }
+		);
+
+		jQuery('.entry img[align=left]' ).addClass('alignleft' );
+		jQuery('.entry img[align=right]').addClass('alignright');
+		
+		if (jQuery.browser.msie) {
+			if (/^[56]/.test(jQuery.browser.version)) {
+				jQuery.ifixpng('https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/wp-content/themes/mandigo/images/1x1.gif');
+				jQuery('body, .png').ifixpng();
+				jQuery('.commentlist.pre27 .avatar').height(36);
+			}
+
+		}
+		
+		jQuery('p:has(.dropcap)').append('<br class="clear"/>');
+
+		togglePost = function(id) {
+			if (!id) return;
+			icon = jQuery('#switch-post-'+ id +' img');
+			icon.attr('src', /minus/.test(icon.attr('src')) ? icon.attr('src').replace('minus', 'plus') : icon.attr('src').replace('plus', 'minus'));
+			jQuery('#post-'+ id +' .entry').animate({ height: 'toggle', opacity: 'toggle' }, 1000);
+		}
+
+		jQuery('.switch-post img').bind('click', function() {
+			id = jQuery(this).parents('li').attr('id').replace(/[^\d]+-/, '');
+			icon = jQuery('#comment-'+ id +' .switch-post img');
+			src  = icon.attr('src');
+			icon.attr('src', /minus/.test(src) ? src.replace('minus', 'plus') : src.replace('plus', 'minus'));
+			jQuery('#comment-'+ id +' div.comment').animate({ height: 'toggle', opacity: 'toggle' }, 1000);
+			return false;
+		});
+
+		toggleSidebars = function() {
+			icon = jQuery('.switch-sidebars img');
+			icon.attr('src', /hide/.test(icon.attr('src')) ? icon.attr('src').replace('hide', 'show') : icon.attr('src').replace('show', 'hide'));
+			jQuery('.sidebars').animate({ width: 'toggle', height: 'toggle', padding: 'toggle', border: 'toggle' }, 1000);
+		}
+
+		jQuery('.widgettitle, .linkcat *:first, .wpg2blockwidget h3').click(function() {
+			jQuery(this).siblings().animate({ height: 'toggle', opacity: 'toggle' }, 1000);
+		}).css({cursor: 'n-resize'});
+
+		jQuery.each(['tl','tr','bl','br'],function() {
+			jQuery('#blogname').after('<span class="blogname text-stroke-'+ this +'">'+ jQuery('#blogname a').html() +'<\/span>');
+			jQuery('#blogdesc').after('<span class="blogdesc text-stroke-'+ this +'">'+ jQuery('#blogdesc'  ).html() +'<\/span>');
+		});
+
+		jQuery('#header .page_item:has(ul)').addClass('has_sub, png');
+		
+		jQuery('#header .page_item').hover(
+			function() {
+				ul = jQuery(this).find('>ul');
+				if (ul.hasClass('sliding')) return;
+				a  = jQuery(this).find('>a');
+				if (jQuery(this).parent().hasClass('pages')) {
+					y = a.position().top + a.height();
+				x = a.position().left + a.width() - ul.width();
+				}
+				else {
+					y = jQuery(this).position().top - 5;
+					x = jQuery(this).parent().width();
+				}
+				jQuery(this)
+					.find('>ul')
+					.css({left:x, top:y})
+					.addClass('sliding')
+					.slideDown(300, function() { jQuery(this).removeClass('sliding'); });
+			},
+			function() {
+				jQuery(this)
+					.find('>ul')
+					.addClass('sliding')
+					.slideUp(800, function() { jQuery(this).removeClass('sliding').hide(); });
+			}
+		);
+
+		jQuery('.commentlist li:even').addClass('alt');
+});
+// ]]> -->
+</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://web.archive.org/web/20161112050522/https://ssl." : "https://web.archive.org/web/20161112050522/http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./mvp-winforms_files/ga.js.Download" type="text/javascript"></script><script charset="UTF-8" src="./mvp-winforms_files/de.js.Download"></script><div style="position: static;"><div class="a2a_overlay" id="a2apage_overlay"></div><div id="a2apage_modal" class="a2a_menu a2a_modal" role="dialog" tabindex="-1" aria-label="Copy link" style="display:none"><div class="a2a_copy_link_container"><span id="a2a_copy_link_icon" class="a2a_svg a2a_s_link" onclick="a2a.gEl(&#39;a2a_copy_link_text&#39;).click()"></span><input id="a2a_copy_link_text" type="text" title="Copy link"><div id="a2a_copy_link_copied">Copied!</div></div></div><div class="a2a_menu a2a_full" id="a2apage_full" role="dialog" tabindex="-1" aria-label="Empfehlen"><div class="a2a_full_header"><div id="a2apage_find_container" class="a2a_menu_find_container"><input id="a2apage_find" class="a2a_menu_find" type="text" onclick="a2a.focus_find()" onkeyup="a2a.do_find()" autocomplete="off" title="Um weitere Dienste ergänzen"><span id="a2apage_find_icon" class="a2a_svg a2a_s_find" onclick="a2a.focus_find()"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="24" height="24" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path fill="#CCCCCC" d="M19.7 18.2l-4.5-4.5c0.7-1.1 1.2-2.3 1.2-3.6 0-3.5-2.8-6.3-6.3-6.3 -3.5 0-6.3 2.8-6.3 6.3 0 3.5 2.8 6.3 6.3 6.3 1.4 0 2.6-0.4 3.6-1.2l4.5 4.5c0.6 0.6 1.3 0.7 1.7 0.2C20.4 19.5 20.3 18.8 19.7 18.2zM10.1 14.6c-2.5 0-4.5-2.1-4.5-4.5 0-2.5 2.1-4.5 4.5-4.5 2.5 0 4.5 2.1 4.5 4.5C14.6 12.5 12.6 14.6 10.1 14.6z"></path></svg></span></div></div><div class="a2a_full_services" id="a2apage_full_services" role="presentation"><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#facebook" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_facebook"></span>Facebook </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#twitter" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_twitter"></span>Twitter </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#google_plus" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_google_plus"></span>Google+ </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#pinterest" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_pinterest"></span>Pinterest </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#email" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_email"></span>Email </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#linkedin" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_linkedin"></span>LinkedIn </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#reddit" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_reddit"></span>Reddit </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#tumblr" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_tumblr"></span>Tumblr </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#wordpress" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_wordpress"></span>WordPress </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#google_gmail" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_gmail"></span>Google Gmail </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#whatsapp" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_whatsapp"></span>WhatsApp </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#stumbleupon" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_stumbleupon"></span>StumbleUpon </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#aim" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_aim"></span>AIM </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#amazon_wish_list" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_amazon"></span>Amazon Wish List </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#aol_mail" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_aol"></span>AOL Mail </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#app_net" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_app_net"></span>App.net </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#baidu" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_baidu"></span>Baidu </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#balatarin" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_balatarin"></span>Balatarin </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#bibsonomy" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_bibsonomy"></span>BibSonomy </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#bitty_browser" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_bitty"></span>Bitty Browser </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#blinklist" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_blinklist"></span>Blinklist </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#blogger_post" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_blogger"></span>Blogger Post </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#blogmarks" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_blogmarks"></span>BlogMarks </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#bookmarks_fr" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_bookmarks_fr"></span>Bookmarks.fr </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#box_net" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_box"></span>Box.net </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#buddymarks" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_buddymarks"></span>BuddyMarks </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#buffer" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_buffer"></span>Buffer </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#care2_news" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_care2"></span>Care2 News </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#citeulike" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_citeulike"></span>CiteULike </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#copy_link" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_link"></span>Copy Link </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#delicious" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_delicious"></span>Delicious </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#design_float" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_designfloat"></span>Design Float </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#diary_ru" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_diary_ru"></span>Diary.Ru </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#diaspora" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_diaspora"></span>Diaspora </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#digg" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_digg"></span>Digg </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#dihitt" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_dihitt"></span>diHITT </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#diigo" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_diigo"></span>Diigo </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#douban" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_douban"></span>Douban </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#draugiem" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_draugiem"></span>Draugiem </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#dzone" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_dzone"></span>DZone </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#evernote" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_evernote"></span>Evernote </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#facebook_messenger" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_facebook_messenger"></span>Facebook Messenger </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#fark" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_fark"></span>Fark </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#flipboard" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_flipboard"></span>Flipboard </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#folkd" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_folkd"></span>Folkd </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#google_bookmarks" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_google"></span>Google Bookmarks </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#google_classroom" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_google_classroom"></span>Google Classroom </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#hacker_news" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_y18"></span>Hacker News </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#hatena" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_hatena"></span>Hatena </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#instapaper" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_instapaper"></span>Instapaper </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#jamespot" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_jamespot"></span>Jamespot </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#kakao" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_kakao"></span>Kakao </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#kik" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_kik"></span>Kik </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#kindle_it" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_kindle"></span>Kindle It </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#known" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_known"></span>Known </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#line" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_line"></span>Line </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#livejournal" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_livejournal"></span>LiveJournal </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#mail_ru" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_mail_ru"></span>Mail.Ru </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#mendeley" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_mendeley"></span>Mendeley </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#meneame" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_meneame"></span>Meneame </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#mixi" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_mixi"></span>Mixi </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#myspace" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_myspace"></span>MySpace </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#netlog" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_netlog"></span>Netlog </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#netvouz" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_netvouz"></span>Netvouz </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#newsvine" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_newsvine"></span>NewsVine </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#nujij" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_nujij"></span>NUjij </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#odnoklassniki" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_odnoklassniki"></span>Odnoklassniki </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#oknotizie" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_oknotizie"></span>Oknotizie </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#outlook_com" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_outlook_com"></span>Outlook.com </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#pinboard" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_pinboard"></span>Pinboard </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#plurk" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_plurk"></span>Plurk </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#pocket" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_pocket"></span>Pocket </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#print" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_print"></span>Print </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#printfriendly" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_printfriendly"></span>PrintFriendly </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#protopage_bookmarks" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_protopage"></span>Protopage Bookmarks </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#pusha" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_pusha"></span>Pusha </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#qzone" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_qzone"></span>Qzone </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#rediff" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_rediff"></span>Rediff MyPage </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#renren" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_renren"></span>Renren </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#segnalo" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_segnalo"></span>Segnalo </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#sina_weibo" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_sina_weibo"></span>Sina Weibo </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#sitejot" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_sitejot"></span>SiteJot </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#skype" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_skype"></span>Skype </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#slashdot" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_slashdot"></span>Slashdot </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#sms" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_sms"></span>SMS </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#stumpedia" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_stumpedia"></span>Stumpedia </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#svejo" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_svejo"></span>Svejo </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#symbaloo_feeds" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_symbaloo"></span>Symbaloo Feeds </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#telegram" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_telegram"></span>Telegram </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#trello" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_trello"></span>Trello </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#tuenti" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_tuenti"></span>Tuenti </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#twiddla" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_twiddla"></span>Twiddla </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#typepad_post" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_typepad"></span>TypePad Post </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#viadeo" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_viadeo"></span>Viadeo </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#viber" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_viber"></span>Viber </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#vk" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_vk"></span>VK </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#wanelo" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_wanelo"></span>Wanelo </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#webnews" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_webnews"></span>Webnews </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#wechat" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_wechat"></span>WeChat </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#wykop" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_wykop"></span>Wykop </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#xing" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_xing"></span>XING </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#yahoo_bookmarks" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_yahoo"></span>Yahoo Bookmarks </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#yahoo_mail" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_yahoo"></span>Yahoo Mail </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#yahoo_messenger" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_yim"></span>Yahoo Messenger </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#yoolink" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_yoolink"></span>Yoolink </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#youmob" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_youmob"></span>YouMob </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#yummly" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_yummly"></span>Yummly </a><i class="a2a_i"></i><i class="a2a_i"></i></div><div class="a2a_full_footer"><a href="https://web.archive.org/web/20161112050658/https://www.addtoany.com" title="Share Buttons" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_a2a"></span>AddToAny</a></div></div><div id="a2apage_dropdown" class="a2a_menu a2a_mini" onmouseover="a2a.onMouseOver_stay()" tabindex="-1" aria-label="Empfehlen" style="display:none"><div id="a2apage_title_container" class="a2a_menu_title_container" style="display:none"><div id="a2apage_title" class="a2a_menu_title"></div></div><div class="a2a_mini_services" id="a2apage_mini_services"><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#facebook" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_facebook"></span>Facebook </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#twitter" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_twitter"></span>Twitter </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#google_plus" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_google_plus"></span>Google+ </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#pinterest" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_pinterest"></span>Pinterest </a></div><div id="a2apage_cols_container" class="a2a_cols_container"><div class="a2a_col1" id="a2apage_col1"></div><div id="a2apage_2_col1" style="display:none"><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#google_gmail" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_gmail"></span>Google Gmail </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#aol_mail" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_aol"></span>AOL Mail </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#outlook_com" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_outlook_com"></span>Outlook.com </a><a rel="nofollow" class="a2a_i" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#yahoo_mail" target="_blank"><span class="a2a_svg a2a_s__default a2a_s_yahoo"></span>Yahoo Mail </a><a rel="nofollow" class="a2a_i a2a_emailer" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#email_form" target="_blank" id="a2apage_any_email"><span class="a2a_svg a2a_s__default a2a_s_email"></span>Any email </a><a rel="nofollow" class="a2a_i a2a_emailer a2a_email_client" href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/#email_form" target="" id="a2apage_email_client"><span class="a2a_svg a2a_s__default a2a_s_email"></span>Email app</a></div><div class="a2a_clear"></div></div><div class="a2apage_wide a2a_wide"><a href="https://web.archive.org/web/20161112050522/http://blog.aztec-project.org/2010/02/16/beispiel-model-view-presenter-winforms/" id="a2apage_show_more_less" class="a2a_menu_show_more_less a2a_more" title="zeige alle"><span class="a2a_svg a2a_s__default a2a_s_a2a"></span>More…</a></div></div><div style="height: 1px; width: 1px; position: absolute; z-index: 100000; top: 0px; visibility: hidden;"><iframe id="a2apage_sm_ifr" height="1" width="1" title="AddToAny Utility Frame" transparency="true" allowtransparency="true" frameborder="0" src="./mvp-winforms_files/sm14.html" style="height: 1px; width: 1px; border: 0px; left: 0px; top: 0px; position: absolute; z-index: 100000;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" data-ruffle-polyfilled=""></iframe></div></div>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9511047-1"); pageTracker._trackPageview(); } catch(err) {}</script>
+
+
+
+<div class="tealditDotComNewBarNotice"><ul class="tealditUl"><li class="fblikes">
+    <div id="fb-root"></div>
+    
+    <div class="fb-like fb_iframe_widget" data-width="55" data-height="65" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="parsed" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=90&amp;height=65&amp;href=http%3A%2F%2Fblog.aztec-project.org%2F2010%2F02%2F16%2Fbeispiel-model-view-presenter-winforms%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false&amp;width=55"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="f12813aa50c4a72" width="55px" height="65px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./mvp-winforms_files/like(1).html" style="border: none; visibility: hidden;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;"></iframe></span></div>
+</li><li class="gPlus1"><!-- Place this tag in your head or just before your close body tag. -->
+    
+    <!-- Place this tag where you want the +1 button to render. -->
+    <div class="g-plusone"></div>
+</li><li class="tweet"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: absolute; visibility: hidden; width: 0px; height: 0px;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" title="Twitter Tweet Button" src="./mvp-winforms_files/tweet_button.2dbd32894063b53338de1c1d4a747ea9.en.html"></iframe>
+    
+</li><li class="addtoany"><!-- AddToAny BEGIN -->
+    <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="line-height: 32px;">
+        <a class="a2a_dd" href="https://web.archive.org/web/20161112050658/https://www.addtoany.com/share#url=http%3A%2F%2Fblog.aztec-project.org%2F2010%2F02%2F16%2Fbeispiel-model-view-presenter-winforms%2F&amp;title=build%20broken%20%C2%BB%20Beispiel%20Model-View-Presenter%20mit%20WinForms"><span class="a2a_svg a2a_s__default a2a_s_a2a"></span><span class="a2a_label">Teilen</span></a>
+    <div style="clear: both;"></div></div>
+    
+    
+    <!-- AddToAny END -->
+    
+</li><!--
+<li class="banner">
+    <a href="https://web.archive.org/web/20161111102915/http://www.tkqlhce.com/s875biroiq5B8CCD98576A886FB57A7D68AFEF666?sid=recipesofworld" target="_blank" onmouseover="window.status='http://www.hostmonster.com';return true;" onmouseout="window.status=' ';return true;">
+        <img src="https://web.archive.org/web/20161111102915/http://www.tqlkg.com/ge108y7B-53PVSWWXTSPRQUSSQZVPRURXQSUZYZQQQ" alt="" border="0"/>
+    </a>
+    -->
+    <!-- Google adsense starts -->
+    <!--script async src="//web.archive.org/web/20161111102915/http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9567128729272204" data-ad-slot="2220424816"
+         data-ad-format="auto"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script-->
+    <!-- Google adsense starts -->
+<!--</li>--><li class="tealditLogo">
+    <a href="https://web.archive.org/web/20161111102915/http://www.tealdit.com/timeline/?utm_medium=toolbar" onclick="this.href = getWRUrl();" target="_blank" title="Tealdit free sharebar" id="tealditlogo">t</a>
+</li>
+
+
+</ul></div><p class="tealditDotComNewBarNoticeBottomPadding">&nbsp;</p><div data-lastpass-root="" style="position: absolute !important; top: 0px !important; left: 0px !important; height: 0px !important; width: 0px !important;"><template shadowrootmode="closed"><div style="position: absolute; height: 100vh; width: 100vw; z-index: 2147483647; border-radius: 4px; top: 0px; left: 0px; max-height: 0px; max-width: 280px; min-width: auto;"><iframe data-lastpass-infield="true" allow="clipboard-write" src="chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/webclient-infield.html" style="border: none; height: 100%; width: 100%;"></iframe></div></template></div><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" allow="autoplay &#39;self&#39;; fullscreen &#39;self&#39;" src="./mvp-winforms_files/saved_resource.html"></iframe></body></html>
