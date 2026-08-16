@@ -86,6 +86,35 @@ buildbroken-blog-archive/
    Ergebnis liegt in `public/` und kann auf beliebigem statischen Hosting
    (nginx-Container, Gitea Pages, GitHub Pages) deployt werden.
 
+## Link-Status (tote Links kennzeichnen)
+
+Externe Links in Artikeln und Kommentaren werden in `data/links.json` gepflegt
+und clientseitig (`static/js/link-status.js`) verarbeitet:
+
+- **`broken`**: Die URL wird im Text normal angezeigt, aber beim Klick öffnet
+  sich ein kleines Modal "Diese URL scheint nicht mehr verfügbar zu sein" mit
+  einem Button zur Web-Archive-Version (`https://web.archive.org/web/*/<url>`).
+- **`replacement`**: Die URL wird automatisch auf eine nachgewiesene
+  Nachfolge-URL umgeschrieben (z. B. `codinghorror.com` → `blog.codinghorror.com`).
+
+Der Link-Checker `scripts/check_links.py` prüft alle tatsächlich gerenderten
+`<a href>`-Links und aktualisiert `data/links.json`:
+
+```bash
+.venv/bin/python scripts/check_links.py           # prüfen + data/links.json aktualisieren
+.venv/bin/python scripts/check_links.py --check-only  # nur prüfen, nichts schreiben
+```
+
+Verhalten des Checkers:
+
+- Er liest die Links aus dem **gebauten** `public/` (vorher `hugo --minify`),
+  damit nur echte Links erfasst werden (Code-Beispiele/Platzhalter ignoriert).
+- HTTP 403/429 (Bot-Schutz) und DNS-/Timeout-Fehler (ERR) werden **nicht**
+  als neu broken gemeldet; bestehende broken-Einträge bleiben erhalten,
+  solange die URL nicht eindeutig wieder mit 200 antwortet.
+- Manuelle `replacement`-Einträge werden nie überschrieben.
+- Das Skript ist idempotent: ein Lauf ohne Änderungen meldet "0 neu / 0 entfernt".
+
 ## Hosting (Cloudflare Pages, migriert in Workers)
 
 Das Projekt wird über die Cloudflare-Pages-**Git-Integration** deployed

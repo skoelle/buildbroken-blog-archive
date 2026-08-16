@@ -19,6 +19,11 @@ final; nichts neu herunterladen.
   `hugo --minify --cleanDestinationDir`.
 - **Deployment:** Cloudflare-Workers über `wrangler.json`
   (`assets.directory: public`, `not_found_handling: 404-page`).
+- **Link-Status:** `data/links.json` (broken/replacement) wird von
+  `scripts/check_links.py` aktualisiert. Vor dem Lauf muss `hugo --minify`
+  gebaut sein (Links werden aus `public/` gelesen). `replacement`-Einträge
+  und manuell kuratierte `broken`-Einträge werden nie automatisch überschrieben;
+  403/429 (Bot-Schutz) und DNS/Timeout werden nicht als broken markiert.
 - **Content** in `content/posts/*.md` und `content/_index.md` wird von Hand
   gepflegt. Titel sollen unter ~60 Zeichen bleiben.
 - **SEO-Metadaten** werden zentral in `layouts/_default/baseof.html` erzeugt
