@@ -95,5 +95,19 @@
   <footer class="site-footer">
     <p>&copy; 2009-{{ now.Format "2006" }} build broken &middot; <a href="{{ "/impressum/" | relURL }}">Impressum</a> &middot; archiviert als statische Seite.</p>
   </footer>
+
+  <dialog id="broken-link-dialog" class="broken-link-dialog">
+    <div class="broken-link-dialog-inner">
+      <p class="broken-link-title">Diese URL scheint nicht mehr verfügbar zu sein</p>
+      <p class="broken-link-url" id="broken-link-url"></p>
+      <div class="broken-link-actions">
+        <a class="broken-link-archive" id="broken-link-archive" target="_blank" rel="noopener">Auf web.archive.org ansehen</a>
+        <button type="button" data-dialog-close>Schließen</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="application/json" id="link-status-data">{{ (dict "broken" (site.Data.links.broken | default dict) "replacement" (site.Data.links.replacement | default dict)) | jsonify | safeJS }}</script>
+  <script src="{{ "js/link-status.js" | relURL }}"></script>
 </body>
 </html>
