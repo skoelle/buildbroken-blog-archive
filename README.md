@@ -94,20 +94,17 @@ unverändert):
    Tab **Import an existing Git repository** wählen und das Repo auswählen.
 3. Build-Einstellungen hinterlegen:
    - **Framework preset:** Hugo
-   - **Build command (Bereitstellungsbefehl):** `hugo --minify -b $CF_PAGES_URL`
+   - **Build command (Bereitstellungsbefehl):** `hugo --minify`
    Ein eigenes **Build output directory** kann bei Cloudflare Pages nicht
    angegeben werden — es kommt aus der Hugo-Konfiguration (`publishDir` in
    `hugo.toml`, Standard `public`).
 4. Speichern. Es ist **kein Deploy-Befehl nötig**: Jeder Push auf den
    verbundenen GitHub-Branch (z. B. `main`) baut und deployed automatisch.
-   `$CF_PAGES_URL` wird von Cloudflare beim Build gesetzt und liefert die
-   Deployment-URL als `baseURL` — dadurch stimmen alle generierten Links im
-   HTML.
 
-> Hinweis: `npx wrangler deploy` ist für das direkte Deployment von
-> Workers-Skripten gedacht, nicht für ein Pages-Projekt mit Git-Integration.
-> Hier übernimmt der automatische Build bei jedem Push das Deployment — ein
-> manueller `wrangler deploy`-Aufruf ist nicht nötig.
+Die `wrangler.json` im Projekt-Root konfiguriert das Deployment:
+- `name`: Projektname (`buildbroken-blog-archive`)
+- `compatibility_date`: Datum der Cloudflare-Laufzeit
+- `assets.directory`: `public` — das Hugo-Ausgabeverzeichnis, das bereitgestellt wird
 
 ## Layout anpassen
 
