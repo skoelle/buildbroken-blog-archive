@@ -6,7 +6,7 @@ original_url: "https://aztec-project.org/blog/reflection.html"
 archive_url: "https://web.archive.org/web/20250114131122/https://aztec-project.org/blog/reflection.html"
 author: "Thomas Christian"
 categories: ["How-To"]
-tags: ["Assemblies", "Assemby", "C#", "Reflection"]
+tags: ["Assemblies", "Assembly", "C#", "Reflection"]
 ---
 
 ## Vorbereitung

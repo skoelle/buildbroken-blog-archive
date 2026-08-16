@@ -12,6 +12,7 @@ paginate = 10
 [params]
   subtitle = "but we can fix it! Sometimes :)"
   bannerImage = "/images/banner.jpg"
+  description = "build broken – Das Blog-Archiv des .NET-/Softwareentwicklungs-Blogs (2009–2010): Artikel zu Clean Code, ASP.NET, MVC, MVP, WinForms, StupidDB, NoSQL, Scrum und mehr. Von Stefan Kölle, Christina Hirth, Thomas Christian und Andreas Seebauer."
 
 [markup.goldmark.renderer]
   unsafe = true
