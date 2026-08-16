@@ -73,6 +73,12 @@ a:hover { text-decoration: underline; }
 }
 
 /* ==== About-Intro auf Startseite ==== */
+.welcome-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+  letter-spacing: -.02em;
+}
 .about-intro {
   margin-bottom: 10px;
   padding: 4px 0 20px;

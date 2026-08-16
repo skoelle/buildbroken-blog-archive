@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
 {{ if eq $paginator.PageNumber 1 }}
+<h1 class="welcome-title">Willkommen auf unserem dotnet developer blog 👋</h1>
 {{ with .Content }}
 <div class="about-intro">{{ . }}</div>
 {{ end }}
