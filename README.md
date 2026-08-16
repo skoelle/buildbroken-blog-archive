@@ -15,8 +15,8 @@ Hugo-Templates und CSS), nicht für die archivierten Bloginhalte selbst.
 
 | Bereich | Alte URL (Wayback) | Neue lokale URL |
 |---|---|---|
-| Startseite | `blog/blog.html` | `/` |
-| About | `blog/about.html` | `/about/` |
+| Startseite (inkl. About-Text) | `blog/blog.html` | `/` |
+| About | `blog/about.html` | `/` (Text liegt auf der Startseite) |
 | Blogartikel | `blog/<slug>.html` | `/posts/<slug>/` |
 | Bilder | extern/beliebig | `/images/<slug>/<dateiname>` |
 | CSS | Theme-CSS | `/css/style.css` |
@@ -40,8 +40,7 @@ Interne Links zwischen Artikeln werden vom Parser automatisch von
 buildbroken-blog-archive/
 ├── hugo.toml                  # Hugo-Konfiguration
 ├── content/
-│   ├── _index.md              # Startseite
-│   ├── about.md               # wird vom Parser aus about.html befüllt
+│   ├── _index.md              # Startseite (About-Text liegt hier, kein eigenes /about/)
 │   └── posts/                 # wird vom Parser mit *.md befüllt
 ├── layouts/                   # eigenes Theme, angelehnt an das Original-Design
 │   ├── _default/baseof.html

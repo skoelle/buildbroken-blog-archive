@@ -7,7 +7,7 @@ Alle Dateien liegen als HTML unter `https://aztec-project.org/blog/<name>.html` 
 | Dateiname | Titel | Ziel |
 |---|---|---|
 | `blog.html` | Aztec Project Build Broken Blog Startseite | index (wird nicht als Post geparst) |
-| `about.html` | Aztec Project Build Broken About Us | content/about.md |
+| `about.html` | Aztec Project Build Broken About Us | Startseite-Intro (in `_index.md`, kein eigenes `/about/`) |
 | `dotnet-openspace-leipzig-2009-buchung.html` | .NET Open Space 2009 | post |
 | `dotnet-openspace-leipzig-2009.html` | .NET Open Space 2009 in Leipzig (Bericht) | post |
 | `dotnet-openspace-sued-2009-buchung.html` | .NET Open Space Süd 2009 | post |
