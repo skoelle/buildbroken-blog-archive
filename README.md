@@ -4,6 +4,13 @@ Statisches Archiv des ehemaligen ".NET/build broken"-Blogs (`aztec-project.org/b
 aufgebaut mit [Hugo](https://gohugo.io). Alle Inhalte stammen aus web.archive.org
 Downloads und werden lokal gehostet (Bilder, CSS, Content).
 
+Die Blogartikel unter `content/posts/` und die zugehörigen Bilder wurden
+ursprünglich von den Autoren von "build broken" (aztec-project.org, 2009–2010)
+geschrieben und werden hier ausschließlich zu persönlichen Archivierungszwecken
+aufbewahrt. Das Urheberrecht verbleibt bei den ursprünglichen Autoren; die
+MIT-Lizenz dieses Repositories gilt nur für den Code (Parser-Skripte,
+Hugo-Templates und CSS), nicht für die archivierten Bloginhalte selbst.
+
 ## URL-Struktur
 
 | Bereich | Alte URL (Wayback) | Neue lokale URL |
@@ -75,6 +82,32 @@ buildbroken-blog-archive/
    ```
    Ergebnis liegt in `public/` und kann auf beliebigem statischen Hosting
    (nginx-Container, Gitea Pages, GitHub Pages) deployt werden.
+
+## Hosting (Cloudflare Pages, migriert in Workers)
+
+Das Projekt wird über die Cloudflare-Pages-**Git-Integration** deployed
+(Pages wurde inzwischen in den Workers-Bereich migriert, das Prinzip ist
+unverändert):
+
+1. **GitHub-Repo** anlegen und dieses Projekt hineinpushen.
+2. In Cloudflare unter **Workers & Pages → Create application → Pages** den
+   Tab **Import an existing Git repository** wählen und das Repo auswählen.
+3. Build-Einstellungen hinterlegen:
+   - **Framework preset:** Hugo
+   - **Build command (Bereitstellungsbefehl):** `hugo --minify -b $CF_PAGES_URL`
+   Ein eigenes **Build output directory** kann bei Cloudflare Pages nicht
+   angegeben werden — es kommt aus der Hugo-Konfiguration (`publishDir` in
+   `hugo.toml`, Standard `public`).
+4. Speichern. Es ist **kein Deploy-Befehl nötig**: Jeder Push auf den
+   verbundenen GitHub-Branch (z. B. `main`) baut und deployed automatisch.
+   `$CF_PAGES_URL` wird von Cloudflare beim Build gesetzt und liefert die
+   Deployment-URL als `baseURL` — dadurch stimmen alle generierten Links im
+   HTML.
+
+> Hinweis: `npx wrangler deploy` ist für das direkte Deployment von
+> Workers-Skripten gedacht, nicht für ein Pages-Projekt mit Git-Integration.
+> Hier übernimmt der automatische Build bei jedem Push das Deployment — ein
+> manueller `wrangler deploy`-Aufruf ist nicht nötig.
 
 ## Layout anpassen
 
