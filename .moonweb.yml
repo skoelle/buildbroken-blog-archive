@@ -1,0 +1,6 @@
+title: "build broken"
+emoji: "🗄️"
+category: code
+subcategory: "Web Projects"
+status: active
+stack: [Hugo, Go Templates, Markdown, Vanilla CSS, Cloudflare Workers]
