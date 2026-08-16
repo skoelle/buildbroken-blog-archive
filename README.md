@@ -69,6 +69,10 @@ buildbroken-blog-archive/
    pip install -r requirements.txt
    python parse_buildbroken_archive.py --source ../archive/wayback-html --output .. --download-images
    ```
+   > **Wichtig:** Der Parser soll **nicht mehr erneut ausgeführt** werden. Die
+   > generierten Artikel in `content/posts/*.md` wurden nachträglich manuell
+   > ausgebessert (Titel gekürzt, Tags korrigiert, `alt`-Attribute ergänzt,
+   > Links umgeschrieben). Ein erneuter Lauf würde diese Handarbeit überschreiben.
 3. Lokale Vorschau:
    ```bash
    cd ..
@@ -104,6 +108,23 @@ Die `wrangler.json` im Projekt-Root konfiguriert das Deployment:
 - `name`: Projektname (`buildbroken-blog-archive`)
 - `compatibility_date`: Datum der Cloudflare-Laufzeit
 - `assets.directory`: `public` — das Hugo-Ausgabeverzeichnis, das bereitgestellt wird
+- `assets.not_found_handling`: `404-page` — liefert die eigene `public/404.html` (statt eines generischen 404) für nicht gefundene Pfade
+
+## SEO
+
+Das Layout erzeugt für jede Seite automatisch SEO-Metadaten (zentral in
+`layouts/_default/baseof.html`):
+
+- `meta name="description"` (aus Frontmatter/`.Description`, sonst aus `.Summary`; für Taxonomie-, Autor- und Archiv-Seiten generisch formuliert, auf ~160 Zeichen gekürzt)
+- `link rel="canonical"` mit der absoluten URL
+- Open-Graph- und Twitter-Card-Tags (`og:type` article/website, `og:image` Banner, `twitter:card` summary_large_image)
+- `<title>`: Tag- und Kategorie-Seiten werden differenziert (`MVC (Tag)` vs. `MVC (Kategorie)`), Länge auf ~60 Zeichen begrenzt
+
+Außerdem:
+
+- Eigene `layouts/_default/404.html`, die via `assets.not_found_handling: "404-page"` von Cloudflare ausgeliefert wird
+- `robots.txt` verweist auf `sitemap.xml` (Hugo-generiert)
+- Content-Bilder in `content/posts/*.md` tragen `alt`-Attribute; der dekorative Banner hat bewusst leeres `alt=""`
 
 ## Layout anpassen
 
