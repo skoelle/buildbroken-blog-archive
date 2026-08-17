@@ -30,9 +30,10 @@
     return null;
   }
 
-  var content = document.querySelector(".post-content");
-  if (!content) return;
+  var containers = document.querySelectorAll(".post-content, .about-intro, .excerpt");
+  if (!containers.length) return;
 
+  Array.prototype.forEach.call(containers, function (content) {
   var links = content.querySelectorAll("a[href^='http']");
   Array.prototype.forEach.call(links, function (a) {
     var href = a.getAttribute("href");
@@ -54,6 +55,7 @@
       var rep = replacement[hit.key];
       if (rep) a.setAttribute("href", rep);
     }
+  });
   });
 
   if (dialog) {
