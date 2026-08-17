@@ -1,1 +1,2 @@
 archive/wayback-html/** linguist-vendored
+*.md linguist-detectable
