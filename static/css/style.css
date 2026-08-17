@@ -234,11 +234,15 @@ a:hover { text-decoration: underline; }
 .original-source { color: #999; margin-top: 30px; }
 
 /* ==== Link-Status (broken) ==== */
-.post-content a.is-broken {
+.post-content a.is-broken,
+.about-intro a.is-broken,
+.excerpt a.is-broken {
   color: #a06020;
   border-bottom: 1px dashed #c9853f;
 }
-.post-content a.is-broken:hover {
+.post-content a.is-broken:hover,
+.about-intro a.is-broken:hover,
+.excerpt a.is-broken:hover {
   color: var(--accent);
   text-decoration: none;
 }
