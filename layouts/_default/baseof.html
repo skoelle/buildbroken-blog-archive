@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  {{- $title := cond .IsHome .Site.Title .Title }}
+  {{- $title := cond .IsHome (.Site.Params.homeTitle | default .Site.Title) .Title }}
   {{- if and .IsNode (ne .Kind "home") }}
     {{- if eq .Kind "term" }}{{ $title = printf "%s (%s)" .Title (cond (eq .Data.Singular "tag") "Tag" "Kategorie") }}{{ end }}
   {{- end }}
