@@ -65,7 +65,7 @@ buildbroken-blog-archive/
 │   ├── parse_buildbroken_archive.py
 │   └── requirements.txt
 ├── URLS.md                    # 📋 Liste aller zu parsenden Quell-URLs/Dateien
-└── TODO.md                    # 📌 Arbeitsauftrag für die lokale KI
+└── ...
 ```
 
 ---
