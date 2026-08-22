@@ -24,7 +24,8 @@ final; nichts neu herunterladen.
   gebaut sein (Links werden aus `public/` gelesen). `replacement`-Einträge
   und manuell kuratierte `broken`-Einträge werden nie automatisch überschrieben;
   403/429 (Bot-Schutz) und DNS/Timeout werden nicht als broken markiert.
-- **Content** in `content/posts/*.md` und `content/_index.md` wird von Hand
+- **Content** in `content/posts/*.md`, `content/_index.md`,
+  `content/categories/*/_index.md` und `content/tags/*/_index.md` wird von Hand
   gepflegt. Titel sollen unter ~60 Zeichen bleiben.
 - **SEO-Metadaten** werden zentral in `layouts/_default/baseof.html` erzeugt
   (description/canonical/OG/Twitter). Keine Per-Post-Hardcodes außer nötig.
