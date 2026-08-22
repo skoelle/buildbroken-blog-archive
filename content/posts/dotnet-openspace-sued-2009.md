@@ -17,6 +17,7 @@ Während der Vorstellungsrunde haben wir gemerkt, dass das Open Space nicht nur 
 Falls sich jemand nicht mehr an uns erinnert, hier ein Bild von uns <img src="/images/dotnet-openspace-sued-2009/icon_smile.gif" alt="" class="wp-smiley"/>
 
 <img src="/images/dotnet-openspace-sued-2009/16787936.jpg" alt="Foto vom Open Space Süd 2009"/>  
+
 (von links nach rechts: [Andreas Seebauer](http://www.xing.com/profile/Andreas_Seebauer2), [Stefan Kölle](http://www.xing.com/profile/Stefan_Koelle), [Thomas Christian](http://www.xing.com/profile/Thomas_Christian9), [Christina Hirth](http://www.xing.com/profile/Christina_Hirth2))
 
 Es gab zwar keine vorher festgelegten Themen, aber diese wurden vor Ort vorgeschlagen und danach demokratisch bestimmt. Es wurden sehr interessante Bereiche besprochen, aber leider konnte man nicht in jeden Open Space gleichzeitig. <img src="/images/dotnet-openspace-sued-2009/icon_smile.gif" alt="" class="wp-smiley"/>
