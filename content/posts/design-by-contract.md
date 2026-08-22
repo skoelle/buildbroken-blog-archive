@@ -17,7 +17,7 @@ Wikipedia definiert DbC folgendermaßen:
 
 [Stefan Lieser](http://www.lieser-online.de/blog/) hat über das neue Konzept einen sehr guten Artikel in [www.visualstudio1.de](http://www.visualstudio1.de/) geschrieben, mit Begriffsklärung und Anwendungsbeispiele. Kurz zusammengefasst ist die Rede von Folgendem: anstelle, dass man in jeder Methode auf not-null or not-empty usw. prüft, schreibt man die Erwartungen als Code hin. Diese werden von Tools wie z.B. Resharper erkannt und bei fehlerhaften Aufruf der Methode, wird der Entwickler gewarnt. Am besten finde ich, dass man den Kontrakt-Code z.B. für einen Interface in eine separate Klasse schreiben kann und diese wird durch Attribute (`ContractClassFor`) gefunden. Also wird dadurch der eigentliche Code nicht größer.
 
-Das soll nicht bedeuten, dass der Entwickler der Methode die Verantwortung von sich schiebt <img src="/images/design-by-contract/icon_wink.gif" alt=";)" class="wp-smiley"/> , sondern dass er Bedingungen der “Nutzung” offenlegt, Informationen, die bisher nur durch das Anschauen des Codes oder durch mündliche/schriftliche Mitteilung möglich war. Mit **Spec#** kann man die **Intention-Revealing Interfaces** ganz genau schreiben: mit veröffentlichten und kompilierten Bedingungen.
+Das soll nicht bedeuten, dass der Entwickler der Methode die Verantwortung von sich schiebt <img src="/images/design-by-contract/icon_wink.gif" alt="" class="wp-smiley"/> , sondern dass er Bedingungen der “Nutzung” offenlegt, Informationen, die bisher nur durch das Anschauen des Codes oder durch mündliche/schriftliche Mitteilung möglich war. Mit **Spec#** kann man die **Intention-Revealing Interfaces** ganz genau schreiben: mit veröffentlichten und kompilierten Bedingungen.
 
 <img src="/images/design-by-contract/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
 
@@ -39,7 +39,7 @@ Das soll nicht bedeuten, dass der Entwickler der Methode die Verantwortung von s
 
    Hallo Rainer,
 
-   danke für den Hinweis, das ist mir schon bekannt. Steht auch in den o.g. Artikel, den ich hier nicht abschreiben wollte, er ist ja nicht von mir <img src="/images/design-by-contract/icon_smile.gif" alt=":)" class="wp-smiley"/> . Außerdem würde ich ja nie über Code schreiben, den ich selbst nicht ausprobiert habe, also ist es klar, dass es jetzt schon geht.  
+   danke für den Hinweis, das ist mir schon bekannt. Steht auch in den o.g. Artikel, den ich hier nicht abschreiben wollte, er ist ja nicht von mir <img src="/images/design-by-contract/icon_smile.gif" alt="" class="wp-smiley"/> . Außerdem würde ich ja nie über Code schreiben, den ich selbst nicht ausprobiert habe, also ist es klar, dass es jetzt schon geht.  
    Der andere Grund, warum ich das nicht speziell erwähnt habe, ist, dass es z.Z. zwar möglich ist, das Konzept anzuwenden, aber die Unterstützung seitens VS fehlt, es sei denn, du nutzt TSF.
 
    Mir ging es eigentlich darum, dass es endlich möglich ist, Anforderungen als Code zu implementieren und als solche schriftlich festhalten, verfolgen und auswerten.

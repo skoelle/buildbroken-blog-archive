@@ -52,7 +52,7 @@ Glückwunsch nochmal an die Gewinner des Wettbewerbs (Schiffe versenken).
 
    Hallo Ralph,
 
-   natürlich nicht <img src="/images/webcamps/icon_smile.gif" alt=":)" class="wp-smiley"/> . Für die Veranstalter war es nur wichtig, dass man sich mit den Technologien beschäftigt. Ob der Code clean war oder nicht, war völlig egal.  
+   natürlich nicht <img src="/images/webcamps/icon_smile.gif" alt="" class="wp-smiley"/> . Für die Veranstalter war es nur wichtig, dass man sich mit den Technologien beschäftigt. Ob der Code clean war oder nicht, war völlig egal.  
    Wir wollten es eben so machen wie an der Arbeit.
 
    Gruß  

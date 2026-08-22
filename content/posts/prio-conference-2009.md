@@ -63,6 +63,6 @@ Vielen Dank
 
    Hallo Sebastian,
 
-   das könnte durchaus der Fall gewesen sein. <img src="/images/prio-conference-2009/icon_wink.gif" alt=";)" class="wp-smiley"/>
+   das könnte durchaus der Fall gewesen sein. <img src="/images/prio-conference-2009/icon_wink.gif" alt="" class="wp-smiley"/>
 
    lg Tom

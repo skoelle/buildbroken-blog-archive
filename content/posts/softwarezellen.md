@@ -9,7 +9,7 @@ categories: ["Architektur", "Clean Code Developing"]
 tags: ["Architektur"]
 ---
 
-Wir haben wie viele von uns in der Webentwicklung vor vielen Jahren mit Scriptsprachen und mit prozeduralen – Spaghetti-Code <img src="/images/softwarezellen/icon_wink.gif" alt=";)" class="wp-smiley"/> – angefangen. Mit der Zeit wuchs unsere Webpräsenz zu einer unüberschaubaren Anwendung mit manchen Seiten, die keiner von uns mehr anfassen wollte – aus Angst vor den Konsequenzen.
+Wir haben wie viele von uns in der Webentwicklung vor vielen Jahren mit Scriptsprachen und mit prozeduralen – Spaghetti-Code <img src="/images/softwarezellen/icon_wink.gif" alt="" class="wp-smiley"/> – angefangen. Mit der Zeit wuchs unsere Webpräsenz zu einer unüberschaubaren Anwendung mit manchen Seiten, die keiner von uns mehr anfassen wollte – aus Angst vor den Konsequenzen.
 
 Um etwas Ordnung in die Webanwendungen zu bringen, haben wir also vor 4 Jahren angefangen, nach einem 3-Schichten-Modell zu entwickeln. Wir haben neue Funktionalitäten und neue Anwendungen nur noch so gebaut und wir waren für eine kurze Zeit zufrieden. Alles lief gut. Als wir den Umstieg auf .NET begonnen haben, haben wir weiterhin nach einem Mehr-Schichten-Modell gearbeitet, wir haben nur die Anzahl der Schichten erhöht.
 
@@ -27,7 +27,7 @@ Seit dem Besuch von Ralf und Stefan haben wir uns die Artikelserie von Ralf von 
 
 Wir haben noch einen langen und interessanten Weg vor uns, aber eins ist jetzt schon sicher: wir werden versuchen unsere nächste Projekte durch Softzellen modellieren.
 
-Solange die Komplexität nicht wieder die Überhand gewinnt <img src="/images/softwarezellen/icon_wink.gif" alt=";)" class="wp-smiley"/>
+Solange die Komplexität nicht wieder die Überhand gewinnt <img src="/images/softwarezellen/icon_wink.gif" alt="" class="wp-smiley"/>
 
 <img src="/images/softwarezellen/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
 

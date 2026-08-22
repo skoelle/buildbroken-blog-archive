@@ -54,7 +54,7 @@ Anhang:
    [Februar 16, 2010 um 9:19 am](/posts/mvp-winforms/)
 
    Hallo,  
-   ich finde die Anwendung sehr schön und es sind die Eine oder Andere Anregung für mich auch enthalten <img src="/images/mvp-winforms/icon_smile.gif" alt=":-)" class="wp-smiley"/> .  
+   ich finde die Anwendung sehr schön und es sind die Eine oder Andere Anregung für mich auch enthalten <img src="/images/mvp-winforms/icon_smile.gif" alt="" class="wp-smiley"/> .  
    Die Konfiguration über Xml würde ich vielleicht noch versuchen zu eliminieren, es wird ja schönes Benennungsmuster eingehalten (CoC).  
    Ich habe es zwar noch nicht laufen lassen, es sah aber im TimelinePresenter so aus, als wenn noch ein versehentliches Verlassen verhindert werden könnte…  
    Viele Grüße,  
@@ -81,7 +81,7 @@ Anhang:
 
    Zu dem versehentlichen Verlassen:  
    Ich habe vor Kurzem etwas über das “graceful exit” einer Anwendung gelesen. Deine Anwendung hatte ich nicht gestartet, sondern mir nur den Quellcode quergelesen. Dabei ist mir aufgefallen, dass nur ein Application.Exit beim Close ausgeführt wird, der Anwender erhält keine Chance doch in der Anwendung zu bleiben. Eventuell habe ich es auch einfach nicht gesehen (habe es ja auch nicht laufen lassen)…  
-   Soll kein Mäkeln an Kleinigkeiten sein, sondern eher ein Beispiel dafür, dass mir die Anwendung recht gut gefällt. <img src="/images/mvp-winforms/icon_wink.gif" alt=";-)" class="wp-smiley"/>
+   Soll kein Mäkeln an Kleinigkeiten sein, sondern eher ein Beispiel dafür, dass mir die Anwendung recht gut gefällt. <img src="/images/mvp-winforms/icon_wink.gif" alt="" class="wp-smiley"/>
 
    Viele Grüße,  
    Jan

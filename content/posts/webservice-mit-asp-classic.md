@@ -9,7 +9,7 @@ categories: ["Webservice"]
 tags: [".NET", "ASP-Classic", "Refaktorisierung", "Webservice"]
 ---
 
-Seit einiger Zeit sind wir dabei, unser Portal zu refaktorisieren. Das entfernte Ziel ist, alles in .NET um zu bauen. Das betrifft zur Zeit über tausend Seiten aber wir möchten noch in diesem Leben fertig sein <img src="/images/webservice-mit-asp-classic/icon_wink.gif" alt=";)" class="wp-smiley"/>
+Seit einiger Zeit sind wir dabei, unser Portal zu refaktorisieren. Das entfernte Ziel ist, alles in .NET um zu bauen. Das betrifft zur Zeit über tausend Seiten aber wir möchten noch in diesem Leben fertig sein <img src="/images/webservice-mit-asp-classic/icon_wink.gif" alt="" class="wp-smiley"/>
 
 Dazu kommt noch, dass wir – selbstverständlich – agiles Softwarentwicklung betreiben, was eine ständige und rhythmische Iteration vorsieht, keine Mega-Projekte mit ungewissem Ende. Also haben wir die verschiedenen Bereiche identifiziert und diese werden einer nach dem anderen neu gebaut.  
 Die neuen DLL-s in .NET werden mit Hilfe von verschiedenen Webservices angesprochen. Das führt allerdings unweigerlich dazu, 2 Technologien – ASP-Classic und .NET(C#) – miteinander sicher kommunizieren zu lassen. Das funktioniert so:
@@ -110,15 +110,15 @@ Noch ein paar Bemerkungen:
 
    [Dezember 15, 2009 um 10:49 am](/posts/webservice-mit-asp-classic/)
 
-   Klar, das funktioniert mit allen SOAP-Webservices. Die Fehlermeldung ist typisch Microsoft, kann alles mögliche bedeuten <img src="/images/webservice-mit-asp-classic/icon_wink.gif" alt=";)" class="wp-smiley"/>  
+   Klar, das funktioniert mit allen SOAP-Webservices. Die Fehlermeldung ist typisch Microsoft, kann alles mögliche bedeuten <img src="/images/webservice-mit-asp-classic/icon_wink.gif" alt="" class="wp-smiley"/>  
    Was steht bei dir in Zeile 34?
 3. **kai**
 
    [Dezember 15, 2009 um 11:07 am](/posts/webservice-mit-asp-classic/)
 
-   Oh… mir fällt gerade auf (ich nahm diesen Webservice, weil er LÄUFT und im Netz funktionsfähig ist), dass dieser Webservice eine Guid über einen Login generieren muss, deswegen funktioniert es mit Sicherheit nicht! <img src="/images/webservice-mit-asp-classic/icon_wink.gif" alt=";)" class="wp-smiley"/>
+   Oh… mir fällt gerade auf (ich nahm diesen Webservice, weil er LÄUFT und im Netz funktionsfähig ist), dass dieser Webservice eine Guid über einen Login generieren muss, deswegen funktioniert es mit Sicherheit nicht! <img src="/images/webservice-mit-asp-classic/icon_wink.gif" alt="" class="wp-smiley"/>
 
-   Werde erstmal weiter schauen, trotzdem vielen Dank für die schnelle Antwort! <img src="/images/webservice-mit-asp-classic/icon_smile.gif" alt=":)" class="wp-smiley"/>
+   Werde erstmal weiter schauen, trotzdem vielen Dank für die schnelle Antwort! <img src="/images/webservice-mit-asp-classic/icon_smile.gif" alt="" class="wp-smiley"/>
 
    Falls es nichts wird, melde ich mich noch einmal!
 4. **kai**
@@ -147,12 +147,12 @@ Noch ein paar Bemerkungen:
 
    [Dezember 15, 2009 um 1:00 pm](/posts/webservice-mit-asp-classic/)
 
-   Ich will nicht spammen, wollte dir das aber noch mit auf den Weg geben: Vielen Dank für den Code! <img src="/images/webservice-mit-asp-classic/icon_smile.gif" alt=":)" class="wp-smiley"/>
+   Ich will nicht spammen, wollte dir das aber noch mit auf den Weg geben: Vielen Dank für den Code! <img src="/images/webservice-mit-asp-classic/icon_smile.gif" alt="" class="wp-smiley"/>
 8. **Christina Hirth**
 
    [Dezember 15, 2009 um 1:03 pm](/posts/webservice-mit-asp-classic/)
 
-   Hei Kai, kein Problem <img src="/images/webservice-mit-asp-classic/icon_smile.gif" alt=":)" class="wp-smiley"/>
+   Hei Kai, kein Problem <img src="/images/webservice-mit-asp-classic/icon_smile.gif" alt="" class="wp-smiley"/>
 
    Du musst diesen Webservice Publishen, ihn auf einen erreichbaren Webserver veröffentlichen. Dann müsste alles passen.
 9. **kai**
@@ -163,9 +163,9 @@ Noch ein paar Bemerkungen:
 
    Und jetzt habe ich das erst mit den strParameters verstanden, ich dachte die bräuchte man nur, wenn man der Methode des Webservice via SOAP Parameter übergeben wollen würde, dies war bis gerade auskommentiert.
 
-   Es waren also 2 Sachen zu bewältigen… <img src="/images/webservice-mit-asp-classic/icon_wink.gif" alt=";)" class="wp-smiley"/>
+   Es waren also 2 Sachen zu bewältigen… <img src="/images/webservice-mit-asp-classic/icon_wink.gif" alt="" class="wp-smiley"/>
 
-   Jetzt läuft es, vielen Dank! <img src="/images/webservice-mit-asp-classic/icon_smile.gif" alt=":)" class="wp-smiley"/>
+   Jetzt läuft es, vielen Dank! <img src="/images/webservice-mit-asp-classic/icon_smile.gif" alt="" class="wp-smiley"/>
 
    Eine Frage bleibt bei mir aber noch offen!
 
@@ -173,12 +173,12 @@ Noch ein paar Bemerkungen:
 
    Ist der Parameter überhaupt notwendig? Eigentlich teilt man doch schon über den Soap-Envelope (strParameters) mit, welche Funktion des Webservice man aufrufen möchte oder nicht?
 
-   Wirklich, vielen Dank, Christina! <img src="/images/webservice-mit-asp-classic/icon_smile.gif" alt=":)" class="wp-smiley"/>
+   Wirklich, vielen Dank, Christina! <img src="/images/webservice-mit-asp-classic/icon_smile.gif" alt="" class="wp-smiley"/>
 10. **Christina Hirth**
 
     [Dezember 15, 2009 um 3:20 pm](/posts/webservice-mit-asp-classic/)
 
-    Ich weiß nicht genau, aber ich könnte mir sehr gut vorstellen, dass weil im Webservice eine einzige Funktion vorhanden ist, ist diese sozusagen die “Default”-Adresse <img src="/images/webservice-mit-asp-classic/icon_wink.gif" alt=";)" class="wp-smiley"/>  
+    Ich weiß nicht genau, aber ich könnte mir sehr gut vorstellen, dass weil im Webservice eine einzige Funktion vorhanden ist, ist diese sozusagen die “Default”-Adresse <img src="/images/webservice-mit-asp-classic/icon_wink.gif" alt="" class="wp-smiley"/>  
     Aber die Frage ist interessant, ich werde das bei der nächsten Gelegenheit überprüfen.
 
     Es freut mich sehr, dass du auch so begeistert bist, wie ich damals war, als es das erste mal diese alte Technik-neue Technik Kommunikation hingehauen hat
@@ -196,9 +196,9 @@ Noch ein paar Bemerkungen:
 
     Deine Default-Theorie kann es leider nicht sein, weil ich bereits 2 Methoden in meinem Webservice habe.
 
-    Sehr interessant… <img src="/images/webservice-mit-asp-classic/icon_smile.gif" alt=":)" class="wp-smiley"/>
+    Sehr interessant… <img src="/images/webservice-mit-asp-classic/icon_smile.gif" alt="" class="wp-smiley"/>
 
-    Nunja, hauptsache es funktioniert, WIE ist nur halb so wichtig! <img src="/images/webservice-mit-asp-classic/icon_wink.gif" alt=";)" class="wp-smiley"/>
+    Nunja, hauptsache es funktioniert, WIE ist nur halb so wichtig! <img src="/images/webservice-mit-asp-classic/icon_wink.gif" alt="" class="wp-smiley"/>
 
     Wünsche dir ebenfalls schöne Feiertage, bin für heute erstmal raus.
 

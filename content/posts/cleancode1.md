@@ -108,21 +108,21 @@ Teil 2 gibt es [hier](/posts/cleancode2/)
 
    Was das KATEGORISCHE Abweisen von Kommentaren betrifft, kann ich wirklich nicht einverstanden sein. Ich kann mir Millionen von Fällen vorstellen, wo ein Name nicht aussagend genug sein kann. aber ich finde auch, dass Namen genau so wichtig sind wie DRY oder The Boy Scout Rule.
 
-   Bin schon auf die Fortsetzung gespannt <img src="/images/cleancode1/icon_smile.gif" alt=":)" class="wp-smiley"/>
+   Bin schon auf die Fortsetzung gespannt <img src="/images/cleancode1/icon_smile.gif" alt="" class="wp-smiley"/>
 2. **[Peter Bucher](http://www.aspnetzone.de/blogs/peterbucher/)**
 
    [August 11, 2009 um 7:45 pm](/posts/cleancode1/)
 
    Salute Andreas
 
-   Coole Zusammenfassung, gefällt mir gut <img src="/images/cleancode1/icon_smile.gif" alt=":-)" class="wp-smiley"/> .  
+   Coole Zusammenfassung, gefällt mir gut <img src="/images/cleancode1/icon_smile.gif" alt="" class="wp-smiley"/> .  
    Ein paar Anmerkungen bzw. Ergänzungen:
 
    Das Buch “Clean Code” ist extra extrem und provokant geschrieben, es soll provozieren.  
    Man sollte nicht alles 1:1 übernehmen und als bare Münze hinnehmen, sondern nur das und soviel wie es Sinn macht.
 
    Mit den Kommentaren sind nicht die JavaDocs / XmlDocs von C# / VB.NET gemeint. API Dokumentation ist nach wie vor sehr wichtig und hilfreich und sollte benutzt und aktualisiert werden.  
-   Stell dir nur mal ein .NET Framework ohne Intellisense-Kommentare vor <img src="/images/cleancode1/icon_smile.gif" alt=":-)" class="wp-smiley"/> .
+   Stell dir nur mal ein .NET Framework ohne Intellisense-Kommentare vor <img src="/images/cleancode1/icon_smile.gif" alt="" class="wp-smiley"/> .
 
    Zu dont`t return null / don`t pass null muss ich sagen, das Clean Code auf Java fokusiert ist und das dort anders sein  
    kann. Man sollte null mit Bedacht und Strategie einsetzen, so eine pauschale Aussage kann ich aber für C# nicht gelten lassen.
@@ -144,7 +144,7 @@ Teil 2 gibt es [hier](/posts/cleancode2/)
    Aber müssen wir denn jetzt alle um jeden Preis nach den Empfehlungen des Buches “Clean Code” von Robert C. Martin unseren Code umschreiben? Nein, ich denke, manchmal ist es viel vernünftiger seinem Stil treu zu bleiben. Dennoch kann man dabei funktionellen, sauberen, lesbaren Code schreiben.  
    Wenn ich lese, dies und das ist “böse” und “verboten”, dann hat das etwas von “Bibel”, wo ich mich dann frage, wer gibt hier wem das Recht, Dinge als “verboten” zu deklarieren.
 
-   Also man sollte bei aller Clean-Code Diskussion immer das Ziel nicht aus den Augen verlieren und vor allem auf dem Teppich bleiben. <img src="/images/cleancode1/icon_wink.gif" alt=";-)" class="wp-smiley"/>
+   Also man sollte bei aller Clean-Code Diskussion immer das Ziel nicht aus den Augen verlieren und vor allem auf dem Teppich bleiben. <img src="/images/cleancode1/icon_wink.gif" alt="" class="wp-smiley"/>
 
    Grüße aus dem Frankenland.
 

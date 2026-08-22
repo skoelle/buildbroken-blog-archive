@@ -16,6 +16,6 @@ Ich lese gerade das Buch [Agile Principles, Patterns and Practices in C#](http:/
 >
 > Das Ziel von Refaktorisierung ist die Bereinigung des Codes, jeden Tag, jede Stunde, jede Minute. Wir wollen nicht den Code versauen. Wir wollen nicht ständig gezwungen zu sein, schmutzigen Bits und Bytes sauber zu schrubben. Wir wollen jeder Zeit in der Lage zu sein, unser System mühelos zu erweitern und zu verändern. Der wichtigste Faktor, der uns das möglich macht, ist die Sauberkeit des Codes.
 
-Das Buch habe zwar noch nicht ganz durch, aber was ich bis jetzt gelesen habe, kann ich nur unterschreiben. Es beinhaltet die Prinzipien, wie man in einem agilen Team sauberen Code plant und Mustern und Beispiele, wie man ihn schreibt. Und wie ihr ja sieht, ist es in eine ganz tolle Art geschrieben <img src="/images/refaktorisierung/icon_smile.gif" alt=":)" class="wp-smiley"/>
+Das Buch habe zwar noch nicht ganz durch, aber was ich bis jetzt gelesen habe, kann ich nur unterschreiben. Es beinhaltet die Prinzipien, wie man in einem agilen Team sauberen Code plant und Mustern und Beispiele, wie man ihn schreibt. Und wie ihr ja sieht, ist es in eine ganz tolle Art geschrieben <img src="/images/refaktorisierung/icon_smile.gif" alt="" class="wp-smiley"/>
 
 <img src="/images/refaktorisierung/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>

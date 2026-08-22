@@ -13,7 +13,7 @@ Es ist soweit, morgen geht es los: unsere erste [Open Space Veranstaltung](http:
 
 Wir fahren zu viert hin, alle sehr gespannt und erwartungsvoll, mit sehr viele Fragen in den Taschen.
 
-Ich habe auch noch eine geheime Frage, worauf ich eine Antwort finden hoffe: warum sind außer mir keine Frauen dabei !! <img src="/images/dotnet-openspace-sued-2009-buchung/icon_smile.gif" alt=":)" class="wp-smiley"/>
+Ich habe auch noch eine geheime Frage, worauf ich eine Antwort finden hoffe: warum sind außer mir keine Frauen dabei !! <img src="/images/dotnet-openspace-sued-2009-buchung/icon_smile.gif" alt="" class="wp-smiley"/>
 
 ## Kommentare (Archiv)
 

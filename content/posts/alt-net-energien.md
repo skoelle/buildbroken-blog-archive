@@ -26,7 +26,7 @@ Seht ihr ähnliche Tendenzen wie Jeremy in der deutschen Community?
 
    [August 27, 2009 um 7:45 pm](/posts/alt-net-energien/)
 
-   Es scheint, dass ALT.NET die FDP der Softwareentwicklungswelt ist: die Opposition von der (gefühlten) Herrschaft vom Microsoft <img src="/images/alt-net-energien/icon_wink.gif" alt=";)" class="wp-smiley"/> Und als solche, ist seine Rolle unabdingbar!  
+   Es scheint, dass ALT.NET die FDP der Softwareentwicklungswelt ist: die Opposition von der (gefühlten) Herrschaft vom Microsoft <img src="/images/alt-net-energien/icon_wink.gif" alt="" class="wp-smiley"/> Und als solche, ist seine Rolle unabdingbar!  
    Das heißt aber noch lange nicht, dass alles was die (CSU) Microsoft tut BÖSE ist, auch wenn sie jedem Amateur das Programieren ermöglichen. Ich meine, Dreamweaver hatte bereits vor 10 Jahren fertige Codeschnipsel für Datenbankanbindung bereitgestellt aber man musste den NICHT nutzen, man konnte es auch selbst ausprogrammieren. Also anders gesagt: keine zwingt dich, oder?  
    Eins ist sicher: es gibt den Heiligen Gral der Softwareentwicklung – noch nicht. Und das bedeutet, man sollte alles mit Obacht genießen und sich vergewissern, dass der gewählte Weg zu dem bestimmten Projekt und zu dem bestimmten Team passt. Dann kann man auch den richtigen Code schreiben und danach ruhig schlafen, egal ob es um Microsoft-Framework oder um Castle-AddOns geht. Und die Amateur-Coder werden ihrer Arbeit nicht lange verkaufen können, wenn diese unpflegbar und unwartbar ist.
 
@@ -39,7 +39,7 @@ Seht ihr ähnliche Tendenzen wie Jeremy in der deutschen Community?
 
    Praktisches Beispiel: DataReader, DataSet, TypedDataset, xDataSource, LINQ to SQL oder Entity Framework – das alles in nicht einmal 6 Jahren. Jeweils für “the next big thing” verkauft oder gepriesen. Jetzt kann ich hergehen und jedes Mal den aktuellsten Liebling verkaufen und preisen, oder ich greife – ganz pragmatisch – eben zu dem für mich gerade besten und kapsele es einfach in einem Repository, so dass es beliebig austauschbar ist. Um dahin zu kommen, muss man sich aber ein paar Gedanken rund um seinen Code bzw. die Architektur des selben machen und eben nicht alles ungeprüft nachplappern oder die unsäglichen Beispiele übernehmen. Das versetzt mich dann gleichzeitig auch mal in die Lage zu sagen, dass das Entity Framework eben immer noch scheiße ist, dass die ASP.NET-MVC-Sample-Apps zusammengestümpert sind usw. Und im Übrigen macht es MS selbst auch ein ganzes Stück besser, da sie wohl nirgendwo so schonungsloses Feedback für ihre eigenen Produkte bekommen. Von den “Zusammenklickern” können sie das jedenfalls nicht erwarten.
 
-   War das jetzt eigentlich noch die Frage? Egal, ich drücke einfach mal den Absenden-Button <img src="/images/alt-net-energien/icon_wink.gif" alt=";-)" class="wp-smiley"/> .
+   War das jetzt eigentlich noch die Frage? Egal, ich drücke einfach mal den Absenden-Button <img src="/images/alt-net-energien/icon_wink.gif" alt="" class="wp-smiley"/> .
 3. **Stefan Kölle**
 
    [August 31, 2009 um 7:28 pm](/posts/alt-net-energien/)

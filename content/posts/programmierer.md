@@ -9,7 +9,7 @@ categories: ["Clean Code Developing"]
 tags: ["Clean Code"]
 ---
 
-Obwohl wir [Jeff Atwood](http://www.codinghorror.com/blog/) schon vor Monaten von unseren Bloggerliste gestrichen haben, ich habe ihn noch nicht aus meinem Googlereader entfernt. Er ist ein Typ, der liebt viel Wirbel zu verursachen ([Scott Hanselmann](http://www.hanselman.com/blog/) nennt ihn aus den Wörtern *friend* und *enemy* “my friendemy” <img src="/images/programmierer/icon_wink.gif" alt=";)" class="wp-smiley"/> ) aber manchmal trifft er den Nagel auf den Kopf. So auch in seinem letzten Artikel [“The Non-Programming Programmer”](http://www.codinghorror.com/blog/2010/02/the-nonprogramming-programmer.html).
+Obwohl wir [Jeff Atwood](http://www.codinghorror.com/blog/) schon vor Monaten von unseren Bloggerliste gestrichen haben, ich habe ihn noch nicht aus meinem Googlereader entfernt. Er ist ein Typ, der liebt viel Wirbel zu verursachen ([Scott Hanselmann](http://www.hanselman.com/blog/) nennt ihn aus den Wörtern *friend* und *enemy* “my friendemy” <img src="/images/programmierer/icon_wink.gif" alt="" class="wp-smiley"/> ) aber manchmal trifft er den Nagel auf den Kopf. So auch in seinem letzten Artikel [“The Non-Programming Programmer”](http://www.codinghorror.com/blog/2010/02/the-nonprogramming-programmer.html).
 
 > …  
 > I wrote that article in 2007, and I am stunned, but not entirely surprised, to hear that three years later “the vast majority” of so-called programmers who apply for a programming job interview are unable to write the smallest of programs. To be clear, hard is a relative term — we’re not talking about complicated, Google-style graduate computer science interview problems. This is extremely simple stuff we’re asking candidates to do. And they can’t. **It’s the equivalent of attempting to hire a truck driver and finding out that 90 percent of the job applicants can’t find the gas pedal or the gear shift.**
@@ -43,7 +43,7 @@ Was haltet ihr von Coding bei der Einstellung? Ist das auch in Europa üblich? W
 
    Hallo Christina, ich überlege gerade, was schlimmer ist: ein Programmierer, der das Geschäft irgendwann von der Pieke auf gelernt – jetzt aber meint, dass das fürs ganze Programmiererlebe reicht oder ein Quereinsteiger, dem Basics fehlen – dafür aber gewillt ist, sich permanent zu verbessern… Wie so oft, hängt es vermutlich davon ab, was man erreichen will / muss, wenn man die betreffende Person einstellt.
 
-   Code-Reviews sind hier bestimmt kein schlechter Ansatz, aber sie sollten vielleicht nicht das einzige Einstellungskriterium sein. Auf jeden Fall sollte der Code aber gemeinsam reviewed werden, denn vielleicht hat ja auch der Reviewer eine verkehrte Sicht <img src="/images/programmierer/icon_wink.gif" alt=";-)" class="wp-smiley"/>
+   Code-Reviews sind hier bestimmt kein schlechter Ansatz, aber sie sollten vielleicht nicht das einzige Einstellungskriterium sein. Auf jeden Fall sollte der Code aber gemeinsam reviewed werden, denn vielleicht hat ja auch der Reviewer eine verkehrte Sicht <img src="/images/programmierer/icon_wink.gif" alt="" class="wp-smiley"/>
 
    Ich habe in den letzten Jahren in anderen Bereichen (Maschinen-/Anlagenbau) festgestellt, dass man den perfekten Mitarbeiter nicht bekommt. Viel wichtiger ist es imho, die Stärken und Schwächen des einzelnen zu kennen (das ist ein mühsamer Prozess) und daraus ein schlagkräftiges Team zu formen.
 3. **Christina Hirth**
@@ -58,7 +58,7 @@ Was haltet ihr von Coding bei der Einstellung? Ist das auch in Europa üblich? W
 
    Ich finde deine Idee mit dem Dojo – in der Probezeit, nehme ich an – sehr gut, die Teilnahme oder Nicht-Teilnahme an so eine kleine Herausforderung kann sehr vieles aussagen.
 
-   Du bist in der Position, in der dir die deutschen Gepflogenheiten bei der Zusammenstellung eines Team egal sein kann, ich dagegen sitze an der anderen Seite des Tisches <img src="/images/programmierer/icon_wink.gif" alt=";)" class="wp-smiley"/> Ich wünschte mir, dass mehr Leute so denken würden wie du. Vielleicht könnte das auch zu einer Aufgabe der CCD-Bewegung werden.
+   Du bist in der Position, in der dir die deutschen Gepflogenheiten bei der Zusammenstellung eines Team egal sein kann, ich dagegen sitze an der anderen Seite des Tisches <img src="/images/programmierer/icon_wink.gif" alt="" class="wp-smiley"/> Ich wünschte mir, dass mehr Leute so denken würden wie du. Vielleicht könnte das auch zu einer Aufgabe der CCD-Bewegung werden.
 
    Christina
 4. **Christina Hirth**
@@ -68,7 +68,7 @@ Was haltet ihr von Coding bei der Einstellung? Ist das auch in Europa üblich? W
    Hallo Alex,
 
    Ich bin genau deiner Meinung, es hängt fast alles davon ab, wozu die Position ausgeschrieben wurde. Die Frage ist allerdings, ob da noch Platz für Nachbesserung vorhanden ist, wo eventuell kein Wille ist. Dann bin ich mehr für den Quereinsteiger – ich bin auch einer – wenn der Grund für die Neuorientierung eine falsche erste Wahl war und nicht “ich habe mir mal eine Homepage gebastelt, also bin ich Programmierer”  
-   Was den perfekten Mitarbeiter betrifft: hoffentlich gibt es ihn noch nicht, das würde das Leben der anderen im Team für immer vermiesen <img src="/images/programmierer/icon_wink.gif" alt=";)" class="wp-smiley"/>
+   Was den perfekten Mitarbeiter betrifft: hoffentlich gibt es ihn noch nicht, das würde das Leben der anderen im Team für immer vermiesen <img src="/images/programmierer/icon_wink.gif" alt="" class="wp-smiley"/>
 5. **[Golo Roden](http://www.des-eisbaeren-blog.de/)**
 
    [März 14, 2010 um 7:28 pm](/posts/programmierer/)
@@ -116,7 +116,7 @@ Was haltet ihr von Coding bei der Einstellung? Ist das auch in Europa üblich? W
 
    Hallo André,
 
-   endlich jemand aus der anderen Mannschaft <img src="/images/programmierer/icon_smile.gif" alt=":)" class="wp-smiley"/>
+   endlich jemand aus der anderen Mannschaft <img src="/images/programmierer/icon_smile.gif" alt="" class="wp-smiley"/>
 
    Deine Vorgehensweise finde ich sehr effizient, aber hätte es nicht passieren können, dass der Bewerbungsstress dein Bild über den Kandidaten verzehren könnte? Oder wusste er schon vor vornherein, dass die Aufgabe unvollständig ist?
 
@@ -128,9 +128,9 @@ Was haltet ihr von Coding bei der Einstellung? Ist das auch in Europa üblich? W
 
     [März 15, 2010 um 1:54 pm](/posts/programmierer/)
 
-    Dass der “Bewerbungsstreß” meine Wahrnehmung verzerrt haben könnte, kann ich nicht aussließen. Da die Aufgaben allerdings meist recht einfach waren und ich auf eine angenehme Gesprächsatmosphäre geachtet habe, hoffe bzw. glaube ich nicht, dass jemand so viel Streß hatte, dass es zu einer vollkommen falschen Wahrnehmung hätte führen können. Außerdem sollte man auch bedenkend, dass es bei der späteren Ausübung des Jobs immer wieder Situationen geben kann, in denen man unter Streß / Druck arbeiten muss. Daher simulierte die Situation vielleicht sogar ein wenig eine realistische Arbeitssituation <img src="/images/programmierer/icon_wink.gif" alt=";-)" class="wp-smiley"/>
+    Dass der “Bewerbungsstreß” meine Wahrnehmung verzerrt haben könnte, kann ich nicht aussließen. Da die Aufgaben allerdings meist recht einfach waren und ich auf eine angenehme Gesprächsatmosphäre geachtet habe, hoffe bzw. glaube ich nicht, dass jemand so viel Streß hatte, dass es zu einer vollkommen falschen Wahrnehmung hätte führen können. Außerdem sollte man auch bedenkend, dass es bei der späteren Ausübung des Jobs immer wieder Situationen geben kann, in denen man unter Streß / Druck arbeiten muss. Daher simulierte die Situation vielleicht sogar ein wenig eine realistische Arbeitssituation <img src="/images/programmierer/icon_wink.gif" alt="" class="wp-smiley"/>
 
-    Zur Frage ob die Kandidaten vorher wussten, was sie erwartet: Wenn sie gefragt haben dann schon <img src="/images/programmierer/icon_wink.gif" alt=";-)" class="wp-smiley"/>  
+    Zur Frage ob die Kandidaten vorher wussten, was sie erwartet: Wenn sie gefragt haben dann schon <img src="/images/programmierer/icon_wink.gif" alt="" class="wp-smiley"/>  
     Auf Nachfrage habe ich immer sehr ausführlich beschrieben wie wir vorgehen werden. Wer nicht gefragt hat, der hat halt Pech gehabt. Ich denke auch, dass es schon eine Menge über den Bewerber aussagt, ob er sich nach Erhalt einer Einladung telefonisch meldet um ein paar Fragen vorab zu klären, oder nicht.
 11. **[KW12: Seitwert, Giana Sisters, Dumm 3.0, UML und mehr - Der Softwareentwickler Blog](http://www.der-softwareentwickler-blog.de/2010/03/26/kw12-giana-sisters-dumm-3-0-uml-visual-studio-2010-und-mehr/)**
 
