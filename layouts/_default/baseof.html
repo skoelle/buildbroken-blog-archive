@@ -11,6 +11,8 @@
   {{- $desc := "" }}
   {{- if .IsHome }}
     {{- $desc = .Site.Params.description }}
+  {{- else if .Content }}
+    {{- $desc = .Content | plainify }}
   {{- else if .IsNode }}
     {{- if eq .Kind "term" }}
       {{- if eq .Data.Singular "tag" }}
