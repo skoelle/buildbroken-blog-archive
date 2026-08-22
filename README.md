@@ -41,6 +41,8 @@ buildbroken-blog-archive/
 ├── hugo.toml                  # Hugo-Konfiguration
 ├── content/
 │   ├── _index.md              # Startseite (About-Text liegt hier, kein eigenes /about/)
+│   ├── categories/            # pro Kategorie eine _index.md mit Einleitungstext
+│   ├── tags/                  # pro Tag eine _index.md mit Einleitungstext
 │   └── posts/                 # wird vom Parser mit *.md befüllt
 ├── layouts/                   # eigenes Theme, angelehnt an das Original-Design
 │   ├── _default/baseof.html
@@ -149,11 +151,49 @@ Das Layout erzeugt für jede Seite automatisch SEO-Metadaten (zentral in
 - Open-Graph- und Twitter-Card-Tags (`og:type` article/website, `og:image` Banner, `twitter:card` summary_large_image)
 - `<title>`: Tag- und Kategorie-Seiten werden differenziert (`MVC (Tag)` vs. `MVC (Kategorie)`), Länge auf ~60 Zeichen begrenzt
 
+Für die Startseite wird ein eigener `<title>` über `params.homeTitle` in
+`hugo.toml` konfiguriert (statt nur dem bloginfo `title`). Die Description
+der Startseite kommt aus `params.description`.
+
 Außerdem:
 
 - Eigene `layouts/_default/404.html`, die via `assets.not_found_handling: "404-page"` von Cloudflare ausgeliefert wird
 - `robots.txt` verweist auf `sitemap.xml` (Hugo-generiert)
 - Content-Bilder in `content/posts/*.md` tragen `alt`-Attribute; der dekorative Banner hat bewusst leeres `alt=""`
+
+## Kategorien & Tags
+
+Kategorie- und Tag-Seiten können individuelle Einleitungstexte haben. Dafür
+legt man in `content/categories/<name>/_index.md` bzw. `content/tags/<name>/_index.md`
+eine Datei mit Front Matter und Body-Text an:
+
+```markdown
+---
+title: "Clean Code Developing"
+---
+
+Die Grundlage unserer Arbeit: SOLID, DRY, Refactoring und professionelle Software-Entwicklung.
+```
+
+Der `title` in der Front Matter bestimmt die `<h2>`-Überschrift auf der Seite.
+**Wichtig:** Die Groß-/Kleinschreibung muss korrekt sein (z.B. `C#`, `MVC`,
+`Visual Studio`), da Hugo den slug automatisch kleinschreibt (URL: `/tags/c#/`).
+
+Der Body-Text wird als `<div class="archive-intro">` zwischen Überschrift und
+Artikelliste gerendert (via `layouts/_default/term.html`). Ohne Body-Text
+wird kein `<div>` generiert — die Seiten funktionieren auch ohne Einleitungstexte.
+
+Aktuelle Kategorien (17): Architektur, BarCamp, Clean Code Developing, How-To,
+MVC, Open Space, Pattern, prio.conference, Release, Scrum, StupidDB, Tipps,
+Unit Testing, Veranstaltung, Visual Studio Addins, Webanwendungen, Webservice.
+
+Aktuelle Tags (43): Addin, Architektur, ASP-Classic, Assemblies, Assembly,
+Basics, Buch, Buchempfehlung, C#, CCD, Clean Code, Coding, Community,
+Contract-First, Datenbank, Datenschutz, Facebook, HowTo, HTML, MVC, MVP,
+NoSQL, Open Space, Patterns, Plug-In, prio.conference, Refaktorisierung,
+Reflection, Schemalos, SCRUM, Social Web, Sonne, Sourcecode, StupidDB,
+Unit Tests, Veranstaltung, Visual Studio, Webapplication, WebCamp, WebCast,
+Webservice, WinForms, Wordpress.
 
 ## Layout anpassen
 
