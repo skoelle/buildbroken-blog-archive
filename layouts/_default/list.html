@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ with .Content }}<div class="taxonomy-intro">{{ . }}</div>{{ end }}
 <h2 class="archive-title">{{ .Title }}</h2>
 <div class="post-list">
   {{ range .Pages }}
