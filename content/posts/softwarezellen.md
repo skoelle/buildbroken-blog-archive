@@ -29,8 +29,6 @@ Wir haben noch einen langen und interessanten Weg vor uns, aber eins ist jetzt s
 
 Solange die Komplexität nicht wieder die Überhand gewinnt <img src="/images/softwarezellen/icon_wink.gif" alt="" class="wp-smiley"/>
 
-<img src="/images/softwarezellen/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
-
 ## Kommentare (Archiv)
 
 1. **[Tweets that mention build broken » Softwarezellen – eine Lösung um die Komplexität zu beherrschen -- Topsy.com](http://topsy.com/tb/bit.ly/aYQGup)**

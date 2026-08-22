@@ -34,8 +34,6 @@ Um uns möglichst nah an den Projekten in der Arbeit zu orientieren, haben wir e
 
 Glückwunsch nochmal an die Gewinner des Wettbewerbs (Schiffe versenken).
 
-<img src="/images/webcamps/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
-
 ## Kommentare (Archiv)
 
 1. <img src="/images/webcamps/3e7b6cb163ea9cc8549abcb8b5a03e2e.jpeg" width="32" height="32" class="avatar avatar-32 photo" alt="Avatar"/> **[Ralf Westphal](http://ralfw.blogspot.com/)**

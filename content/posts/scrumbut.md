@@ -32,8 +32,6 @@ Wir sind nun in Sprint 21 und nach 2 Open Spaces um ausreichenden Erfahrungsaust
 
 Ich rate allen, die SCRUM einführen wollen, sich wirklich so nah wie möglich an SCRUM zu halten. Die Sprints 1 – 15 wirkten bei uns auch sehr gut, doch erst danach fiel uns auf, dass gerade die Sprint-Retrospektive ein sehr wichtiges Meeting ist. All diese Regeln sind durch mehrjährige Erfahrungen entstanden und sie haben sich schon in größeren Firmen bewährt. Warum dann nicht davon profitieren?
 
-<img src="/images/scrumbut/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
-
 ## Kommentare (Archiv)
 
 1. **Mike Bild**

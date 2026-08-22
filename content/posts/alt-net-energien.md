@@ -18,8 +18,6 @@ Was wohl langfristig nötig ist, dass wir uns über den Grundgedanken von ALT.NE
 
 Seht ihr ähnliche Tendenzen wie Jeremy in der deutschen Community?
 
-<img src="/images/alt-net-energien/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
-
 ## Kommentare (Archiv)
 
 1. **Christina Hirth**

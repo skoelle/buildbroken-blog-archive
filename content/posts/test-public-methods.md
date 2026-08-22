@@ -41,8 +41,6 @@ InternalsVisibleTo("ThirdAssembly")]`
 
 The former syntax is legal but fails, because each instance simply redefines and replaces any earlier ones, the latter syntax works as required.
 
-<img src="/images/test-public-methods/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
-
 ## Kommentare (Archiv)
 
 1. **Thomas Christain**

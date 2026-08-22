@@ -20,8 +20,6 @@ Ich musste allerdings beim Lesen ständig auf die Situation “danach” denken,
 
 Was haltet ihr von Coding bei der Einstellung? Ist das auch in Europa üblich? Würde das die unpassenden Personen ausfiltern? Oder soll man sich die Zeit nehmen und dem Kandidaten “ungesehen” die Probezeit anbieten? Würde das vielleicht zu viele Personen ausfiltern? Kann man sich das überhaupt erlauben in der heutigen Zeit der Fachkräftemangel? (Gut, man fragt sich natürlich, ob wir hier über “Fachkraft” sprechen dürfen…)
 
-<img src="/images/programmierer/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
-
 ## Kommentare (Archiv)
 
 1. <img src="/images/programmierer/3e7b6cb163ea9cc8549abcb8b5a03e2e.jpeg" width="32" height="32" class="avatar avatar-32 photo" alt="Avatar"/> **[Ralf Westphal](http://ralfw.blogspot.com/)**

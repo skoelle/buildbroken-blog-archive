@@ -190,4 +190,3 @@ Dieses Vorgehen hat uns nicht nur den seit langen gesuchten Weg zum Testen von W
 Was die Adapter-Klassen betrifft: inzwischen haben wir auch System.IO “adaptiert” und bald werden die anderen System-Klassen folgen, je nach Bedarf.  
 [Download VS2008-Projekt](/assets/TestableWebForm.zip)
 
-<img src="/images/unittests-webforms/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>

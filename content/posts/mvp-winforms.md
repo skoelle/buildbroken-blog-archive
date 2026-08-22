@@ -45,8 +45,6 @@ Mit dieser Beispielanwendung kann man eine mögliche Implementierung von Model V
 Anhang:  
 [Kompletter Sourcecode der Beispielanwendung als ZIP](/assets/TwitterClient.zip)
 
-<img src="/images/mvp-winforms/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
-
 ## Kommentare (Archiv)
 
 1. **[Jan Selke](http://jcselke.blogspot.com/)**

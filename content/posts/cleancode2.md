@@ -107,8 +107,6 @@ In diesem Kapitel zeigt Uncle Bob eine Liste von Smells und wie man sie beseitig
 
 An dieser Stelle ein Dank an mein Entwicklerteam, dass ich das Buch so lange in Beschlag nehmen durfte <img src="/images/cleancode2/icon_smile.gif" alt="" class="wp-smiley"/> (Teil 2 ging irgendwie zäher). Einen großen Dank auch an [Peter Bucher](http://www.aspnetzone.de/blogs/peterbucher/) und [Rene Drescher-Hackel](http://weblog.drescher-hackel.de/) für ihre Ergänzungen bzw. Einwände. Man darf sicherlich nicht alles so ganz ernst nehmen und man kann es auch übertreiben (siehe Pyramiden etc.). Natürlich sollte man nicht blind durch die Welt laufen, sondern auch Dinge hinterfragen, aber man muss sagen, dass die Punkte von [CCD](http://www.clean-code-developer.de/) (das ja auf diesem Buch beruht) durchaus plausibel sind. Ich denke schon, dass [CCD](http://www.clean-code-developer.de/) unerfahrenen aber auch erfahrenen Entwicklern einen SOLIDen Weg zeigt, den man gehen kann und der sogar schon gepflastert ist. Man kann sich natürlich auch mit der Machete durch dichten Dschungel schlagen, was natürlich cool ist <img src="/images/cleancode2/icon_smile.gif" alt="" class="wp-smiley"/> – aber halt wesentlich langsamer. Es sei denn man ist Chuck Norris.
 
-<img src="/images/cleancode2/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
-
 ## Kommentare (Archiv)
 
 1. **[build broken » Clean Code Teil 1](/posts/cleancode1/)**

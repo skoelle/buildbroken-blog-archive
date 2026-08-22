@@ -94,8 +94,6 @@ Clean Tests folgen noch 5 anderen Regeln:
 
 Teil 2 gibt es [hier](/posts/cleancode2/)
 
-<img src="/images/cleancode1/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
-
 ## Kommentare (Archiv)
 
 1. **Christina**

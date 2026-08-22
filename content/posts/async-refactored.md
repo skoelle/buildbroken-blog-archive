@@ -140,8 +140,6 @@ return number \* number;
 
 }
 
-<img src="/images/async-refactored/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
-
 ## Kommentare (Archiv)
 
 1. <img src="/images/async-refactored/3e7b6cb163ea9cc8549abcb8b5a03e2e.jpeg" width="32" height="32" class="avatar avatar-32 photo" alt="Avatar"/> **[Ralf Westphal](http://ralfw.blogspot.com/)**

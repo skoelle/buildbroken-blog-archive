@@ -19,8 +19,6 @@ Wikipedia definiert DbC folgendermaßen:
 
 Das soll nicht bedeuten, dass der Entwickler der Methode die Verantwortung von sich schiebt <img src="/images/design-by-contract/icon_wink.gif" alt="" class="wp-smiley"/> , sondern dass er Bedingungen der “Nutzung” offenlegt, Informationen, die bisher nur durch das Anschauen des Codes oder durch mündliche/schriftliche Mitteilung möglich war. Mit **Spec#** kann man die **Intention-Revealing Interfaces** ganz genau schreiben: mit veröffentlichten und kompilierten Bedingungen.
 
-<img src="/images/design-by-contract/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
-
 ## Kommentare (Archiv)
 
 1. **[Rainer Hilmer](http://dotnet-forum.de/blogs/rainerhilmer/default.aspx)**

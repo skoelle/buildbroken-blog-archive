@@ -25,8 +25,6 @@ Der Code, den ein Entwickler schreibt, gehört meistens nicht ihm. Ich bin siche
 
 Nimmt eure Arbeit ernst und werdet ein professioneller Entwickler. Ihr werdet nach kürzester Zeit die Freude an einem korrekten und qualitativen Code entdecken und auch eure Teamkollegen und Chefs werden dafür dankbar sein.
 
-<img src="/images/clean-code-developer-yellow-brick-road/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
-
 ## Kommentare (Archiv)
 
 1. **[build broken » Clean Code Teil 1](/posts/cleancode1/)**

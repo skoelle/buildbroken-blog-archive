@@ -146,4 +146,3 @@ Assert .That( m_message,  Is .EqualTo(  "Postcondition failed: bill.Id > 0"  ) )
 
 Ich hoffe, das Beispiel ist ausführlich genug, um die Vorteile von DbC zu highlighten. [Stefan](http://www.lieser-online.de/blog/), vielen dank noch mal für den Artikel, ich habe mich natürlich von dir inspirieren lassen.
 
-<img src="/images/design-by-contract-teil2/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>

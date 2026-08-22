@@ -18,4 +18,3 @@ Ich lese gerade das Buch [Agile Principles, Patterns and Practices in C#](http:/
 
 Das Buch habe zwar noch nicht ganz durch, aber was ich bis jetzt gelesen habe, kann ich nur unterschreiben. Es beinhaltet die Prinzipien, wie man in einem agilen Team sauberen Code plant und Mustern und Beispiele, wie man ihn schreibt. Und wie ihr ja sieht, ist es in eine ganz tolle Art geschrieben <img src="/images/refaktorisierung/icon_smile.gif" alt="" class="wp-smiley"/>
 
-<img src="/images/refaktorisierung/KickItImageGenerator.ashx" alt="kick it on dotnet-kicks.de"/>
